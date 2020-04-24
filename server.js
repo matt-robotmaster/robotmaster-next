@@ -1,4 +1,4 @@
-const express = require('express')
+import express from 'express';
 import next from 'next';
 import nextI18NextMiddleware from 'next-i18next/middleware';
 
