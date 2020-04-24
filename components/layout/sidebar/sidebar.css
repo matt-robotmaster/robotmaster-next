@@ -1,0 +1,42 @@
+.sidebar {
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.sidebar.affix {
+  top: 10px;
+}
+.sidebar.affix-bottom {
+  position: absolute;
+}
+.sidebar .nav > li > a {
+  color: #999;
+  border-left: 2px solid transparent;
+  padding: 4px 20px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.sidebar .nav .nav > li > a {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 30px;
+  font-size: 12px;
+}
+.sidebar .nav > .active > a, .sidebar .nav > li > a:hover, .sidebar .nav > li > a:focus {
+  color: #e32726;
+  text-decoration: none;
+  background-color: transparent;
+  border-left-color: #e32726;
+}
+.sidebar .nav > .active > a, .sidebar .nav > .active:hover > a, .sidebar .nav > .active:focus > a {
+  font-weight: 700;
+}
+.sidebar .nav .nav > .active > a, .sidebar .nav .nav > .active:hover > a, .sidebar .nav .nav > .active:focus > a {
+  font-weight: 500;
+}
+.sidebar .nav ul.nav {
+  display: none;
+}
+.sidebar .nav > .active > ul.nav {
+  display: block;
+}

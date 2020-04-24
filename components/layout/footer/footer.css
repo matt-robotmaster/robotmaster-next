@@ -1,0 +1,45 @@
+.footer {
+  padding-top: 40px;
+  background: #2c2c2c;
+  color: #fefefe;
+  font-size: 14px;
+  text-align: center;
+}
+.footer h5 {
+  font-weight: bold;
+}
+.footer a {
+  color: #a4a4a4;
+}
+.footer a:hover {
+  color: #fefefe;
+  text-decoration: none;
+}
+.footer ul {
+  padding: 0;
+}
+.footer ul li {
+  list-style: none;
+}
+.footer ul.follow i {
+  font-size: 24px;
+}
+.footer ul.follow li {
+  display: inline;
+  margin-right: 4px;
+}
+.footer .legal {
+  color: #a4a4a4;
+  margin-top: 50px;
+  text-align: center;
+}
+.footer .legal .copyright {
+  margin-right: 20px;
+}
+.footer .legal .icon {
+  font-size: 25px;
+  margin-left: 5px;
+}
+.legalPara {
+  margin: auto;
+}
