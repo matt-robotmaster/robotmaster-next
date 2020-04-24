@@ -4,12 +4,12 @@ import Navbar from "./navbar/navbar";
 import Footer from "./footer/footer";
 import SocialPages from "./social-actions/social-actions";
 
-export default function (props) {
+export default function ({children}) {
     return (
         <div className={'layout'}>
           <Topbar/>
           <Navbar/>
-          {props.children}
+          {children}
           <Footer/>
           <SocialPages/>
         </div>

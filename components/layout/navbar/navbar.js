@@ -1,10 +1,8 @@
 import React from "react";
 import {Navbar, Nav, Container} from "react-bootstrap";
+import { withTranslation } from 'next-i18next';
 
-import './navbar.css';
-import {FormattedMessage} from "react-intl";
-
-export default function () {
+const navbar = ({ t }) => {
   return (
       <Container>
         <Navbar bg="light" expand="lg">
@@ -18,15 +16,21 @@ export default function () {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="/about"><FormattedMessage id='about-page-caption'/></Nav.Link>
-              <Nav.Link href="/products"><FormattedMessage id='products-page-caption'/></Nav.Link>
-              <Nav.Link href="/applications"><FormattedMessage id='application-page-caption'/></Nav.Link>
-              <Nav.Link href="/why-robotmaster"><FormattedMessage id='why-page-caption'/></Nav.Link>
-              <Nav.Link href="/success-stories"><FormattedMessage id='success-page-caption'/></Nav.Link>
-              <Nav.Link href="/partners"><FormattedMessage id='partners-page-caption'/></Nav.Link>
+              <Nav.Link href="/about">{t('about-page-caption')}</Nav.Link>
+              <Nav.Link href="/products">{t('products-page-caption')}</Nav.Link>
+              <Nav.Link href="/applications">{t('application-page-caption')}</Nav.Link>
+              <Nav.Link href="/why-robotmaster">{t('why-page-caption')}</Nav.Link>
+              <Nav.Link href="/success-stories">{t('success-page-caption')}</Nav.Link>
+              <Nav.Link href="/partners">{t('partners-page-caption')}</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
       </Container>
   );
+};
+
+navbar.getInitialProps = async () => {
+  return { namespacesRequired: ['common'] };
 }
+
+export default withTranslation('common')(navbar);

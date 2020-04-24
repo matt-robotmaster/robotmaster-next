@@ -1,44 +1,43 @@
 import React from "react";
-import {FormattedMessage} from "react-intl";
+import { withTranslation } from 'next-i18next';
 
-import './footer.css';
-import applications from '../../applications/applications.json';
+import applications from '../../../applications.json';
 
-export default function () {
+const footer = ({ t }) => {
   const columns = [{
-    title: <FormattedMessage id='footer-section-about'/>,
+    title: t('footer-section-about'),
     list: [
-      [<FormattedMessage id='about-title-1'/>, 'about#our-story'],
-      [<FormattedMessage id='about-title-2'/>, 'about#our-team'],
-      [<FormattedMessage id='partners-page-caption'/>, 'partners'],
-      [<FormattedMessage id='events-page-caption'/>, 'events'],
+      [t('about-title-1'), 'about#our-story'],
+      [t('about-title-2'), 'about#our-team'],
+      [t('partners-page-caption'), 'partners'],
+      [t('events-page-caption'), 'events'],
     ],
   }, {
-    title: <FormattedMessage id='blog-page-caption'/>,
+    title: t('blog-page-caption'),
     list: [
-      [<FormattedMessage id='footer-newsroom-whatsnew'/>, 'newsroom'],
-      [<FormattedMessage id='success-page-caption'/>, 'success-stories'],
-      [<FormattedMessage id='success-section-2-title'/>, 'success-stories#media'],
+      [t('footer-newsroom-whatsnew'), 'newsroom'],
+      [t('success-page-caption'), 'success-stories'],
+      [t('success-section-2-title'), 'success-stories#media'],
     ],
   }, {
-    title: <FormattedMessage id='products-page-caption'/>,
+    title: t('products-page-caption'),
     list: [
-      [<FormattedMessage id='whats-new-v66-title'/>, 'newsroom/robotmaster-v7-offline-robot-programming-launch'],
-      [<FormattedMessage id='products-title-2'/>, 'products#interactive'],
-      [<FormattedMessage id='products-title-3'/>, 'products#main-features'],
+      [t('whats-new-v66-title'), 'newsroom/robotmaster-v7-offline-robot-programming-launch'],
+      [t('products-title-2'), 'products#interactive'],
+      [t('products-title-3'), 'products#main-features'],
     ],
   }, {
-    title: <FormattedMessage id='application-page-caption'/>,
+    title: t('application-page-caption'),
     list: applications.map(function(app) {
       return [
-        <FormattedMessage id={'application-' + app.id}/>, 'applications/' + app.path,
+        t('application-' + app.id), 'applications/' + app.path,
       ];
     }),
   }, {
-    title: <FormattedMessage id='why-page-caption'/>,
+    title: t('why-page-caption'),
     list: [
-      [<FormattedMessage id='why-title-1'/>, 'why-robotmaster#robotmaster-cad-cam-programming'],
-      [<FormattedMessage id='why-title-2'/>, 'why-robotmaster#solving-robotic-programming-challenges'],
+      [t('why-title-1'), 'why-robotmaster#robotmaster-cad-cam-programming'],
+      [t('why-title-2'), 'why-robotmaster#solving-robotic-programming-challenges'],
     ],
   }];
 
@@ -85,31 +84,31 @@ export default function () {
           <div className="row legal">
             <p className='legalPara'>
               <a href="privacy">
-                {<FormattedMessage id='privacy-page-caption'/>}
+                {t('privacy-page-caption')}
               </a>
               <span>
                 {' | '}
               </span>
               <a href="disclaimer">
-                {<FormattedMessage id='disclaimer-page-caption'/>}
+                {t('disclaimer-page-caption')}
               </a>
               <span>
                 {' | '}
               </span>
               <a href="eula">
-                {<FormattedMessage id='footer-terms-of-use'/>}
+                {t('footer-terms-of-use')}
               </a>
               <span>
                 {' | '}
               </span>
               <a href="gdpr">
-                {<FormattedMessage id='footer-gdpr'/>}
+                {t('footer-gdpr')}
               </a>
               <span>
                 {' | '}
               </span>
               <span className="copyright">
-                {<FormattedMessage id='footer-copyright'/>}
+                {t('footer-copyright')}
               </span>
               {createIcon('facebook-square',
                   'https://www.facebook.com/robotmasterolp')}
@@ -127,3 +126,9 @@ export default function () {
       </div>
   );
 }
+
+footer.getInitialProps = async () => {
+  return { namespacesRequired: ['common'] };
+}
+
+export default withTranslation('common')(footer);

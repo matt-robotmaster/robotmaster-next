@@ -1,0 +1,72 @@
+[
+  {
+    "path": "cutting",
+    "id": "cutting",
+    "videos": 4
+  },
+  {
+    "path": "machining",
+    "id": "machining",
+    "videos": 3
+  },
+  {
+    "path": "trimming",
+    "id": "trimming",
+    "videos": 3
+  },
+  {
+    "path": "welding",
+    "id": "welding",
+    "videos": 4
+  },
+  {
+    "path": "polishing",
+    "id": "polishing",
+    "videos": 4
+  },
+  {
+    "path": "dispensing",
+    "id": "dispensing",
+    "videos": 2
+  },
+  {
+    "path": "deburring",
+    "id": "deburring",
+    "videos": 2
+  },
+  {
+    "path": "paint",
+    "id": "paint",
+    "videos": 2
+  },
+  {
+    "path": "surface-treatment",
+    "id": "surface",
+    "videos": 2
+  },
+  {
+    "path": "cooperative-robotics",
+    "id": "coop",
+    "videos": 1
+  },
+  {
+    "path": "additive-manufacturing",
+    "id": "addman",
+    "videos": 7
+  },
+  {
+    "path": "deflashing",
+    "id": "deflashing",
+    "videos": 1
+  },
+  {
+    "path": "part-to-tool",
+    "id": "part",
+    "videos": 2
+  },
+  {
+    "path": "rail-rotary",
+    "id": "rail",
+    "videos": 1
+  }
+]

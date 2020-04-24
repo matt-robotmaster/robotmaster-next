@@ -1,36 +1,34 @@
 import React from 'react';
-import {FormattedMessage} from 'react-intl';
+import { withTranslation } from 'next-i18next';
 import {Dropdown, DropdownButton} from 'react-bootstrap';
 
-import './topbar.css';
-
-export default function(props) {
+const topbar = ({ t, isTopbarFixed }) => {
   return (
-      <div className={'topbar ' + (props.isTopbarFixed ? 'topbarFixed' : '')}>
+      <div className={'topbar ' + (isTopbarFixed ? 'topbarFixed' : '')}>
         <div className="container">
           <a
               className={'btn btn-primary navbar-cta navbar-cta-first ' +
-              (props.isTopbarFixed ? 'navbar-cta-fixed' : '')}
+              (isTopbarFixed ? 'navbar-cta-fixed' : '')}
               href="contact/live-demo-request">
-            <FormattedMessage id='topbar-live-demo'/>
+            {t('topbar-live-demo')}
           </a>
           <a
               className={'btn btn-primary navbar-cta ' +
-              (props.isTopbarFixed ? 'navbar-cta-fixed' : '')}
+              (isTopbarFixed ? 'navbar-cta-fixed' : '')}
               href="contact/contact-me-request">
-            <FormattedMessage id='topbar-contact-me'/>
+            {t('topbar-contact-me')}
           </a>
           <a href="contact">
-            <FormattedMessage id='contact-page-caption'/>
+            {t('contact-page-caption')}
           </a>
           <a href="newsroom">
-            <FormattedMessage id='blog-page-caption'/>
+            {t('blog-page-caption')}
           </a>
           <a
               href="https://robotmaster.atlassian.net/servicedesk/customer/portals"
               rel='noreferrer noopener'
               target="_blank">
-            <FormattedMessage id='topbar-support'/>
+            {t('topbar-support')}
           </a>
           <DropdownButton id="dropdown-basic-button" title="Dropdown button">
             <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
@@ -40,4 +38,10 @@ export default function(props) {
         </div>
       </div>
   );
+};
+
+topbar.getInitialProps = async () => {
+  return { namespacesRequired: ['common'] };
 }
+
+export default withTranslation('common')(topbar);
