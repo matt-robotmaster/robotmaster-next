@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "next": "9.3.5",
+    "next-i18next": "^4.3.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   }
