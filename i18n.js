@@ -1,12 +1,6 @@
-import NextI18Next from 'next-i18next';
+const NextI18Next = require('next-i18next').default;
 
-const NextI18NextInstance = new NextI18Next({
+exports.NextI18NextInstance = new NextI18Next({
   defaultLanguage: 'en',
   otherLanguages: ['de']
-})
-
-export default NextI18NextInstance;
-export const {
-  appWithTranslation,
-  withTranslation,
-} = NextI18NextInstance;
+});
