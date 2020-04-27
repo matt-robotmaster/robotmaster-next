@@ -3,7 +3,7 @@ import Layout from '../../components/layout/layout';
 import {Carousel, Col, Container, Row} from 'react-bootstrap';
 import classes from './index.module.css';
 import Ribbon from '../../components/ribbon/ribbon';
-import { i18n, Link, withTranslation } from '../../i18n';
+import { withTranslation } from '../../i18n';
 
 const slides = [
   'slideshow-img-1',
@@ -15,8 +15,7 @@ const slides = [
   'slideshow-img-7',
 ];
 
-const Home = ({ t, lang }) => {
-  i18n.changeLanguage(lang);
+const Home = ({ t }) => {
   return (
       <Layout>
         <Head>
@@ -171,11 +170,10 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps() {
   return {
     props: {
-      namespacesRequired: ['common'],
-      lang: params.lang
+      namespacesRequired: ['common']
     }
   };
 }
