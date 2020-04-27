@@ -1,0 +1,521 @@
+[
+  {
+    "title": "IMTS 2020",
+    "date": "September 14-19",
+    "location": "Chicago, IL, USA",
+    "booth": "236311",
+    "venue": "McCormick Place",
+    "img": "/img/events/imts-2020.jpg",
+    "website": "https://www.imts.com",
+    "home": true
+  },
+  {
+    "title": "FABTECH Las Vegas 2020",
+    "date": "November 18-20",
+    "location": "Las Vegas, NV, USA",
+    "booth": "N1613",
+    "venue": "Las Vegas Convention Center",
+    "img": "/img/events/fabtech-lv-2020.jpg",
+    "website": "https://www.fabtechexpo.com",
+    "home": true
+  },
+  {
+    "title": "Automatica 2020",
+    "date": "December 8-11",
+    "location": "Munich, Germany",
+    "booth": "Hall B6, Booth 127",
+    "venue": "Neue Messe München",
+    "img": "/img/events/automatica-2020.jpg",
+    "website": "https://automatica-munich.com",
+    "home": true
+  },
+  {
+    "title": "Aerodef 2020",
+    "date": "March 17-18",
+    "location": "Fort Worth, Texas",
+    "booth": "412",
+    "venue": "Fort Worth Convention Center",
+    "img": "/img/events/aerodef-2020.jpg",
+    "website": "https://www.aerodefevent.com",
+    "home": false
+  },
+  {
+    "title": "FABTEH Canada 2020",
+    "date": "June 16-18",
+    "location": "Toronto, ON, Canada",
+    "booth": "984",
+    "venue": "Toronto Congress Centre",
+    "img": "/img/events/fabtech-canada-2020.jpg",
+    "website": "https://canada.fabtechexpo.com",
+    "home": false
+  },
+  {
+    "title": "IREX 2019",
+    "date": "December 18-21",
+    "location": "Tokyo, Japan",
+    "booth": "B-05",
+    "venue": "Tokyo Big Sight",
+    "img": "/img/events/irex.jpg",
+    "website": "https://biz.nikkan.co.jp/eve/irex/english/",
+    "home": false
+  },
+  {
+    "title": "FABTECH 2019",
+    "date": "November 11-14",
+    "location": "Chicago, USA",
+    "booth": "B23004",
+    "venue": "McCormick Place",
+    "img": "/img/events/fabtech-2019.jpg",
+    "website": "http://www.fabtechexpo.com/",
+    "home": false
+  },
+  {
+    "title": "CMTS 2019",
+    "date": "September 30- October 03",
+    "location": "Toronto, Canada",
+    "booth": "Booth 1010",
+    "venue": "The International Centre",
+    "img": "/img/events/cmts-2019.jpg",
+    "website": "https://cmts.ca",
+    "home": false
+  },
+  {
+    "title": "Online RIA Webinar 2019",
+    "date": "October 01",
+    "location": "Online",
+    "booth": "N/A",
+    "venue": "Robotics.org",
+    "img": "/img/events/ria-2019.jpg",
+    "website": "https://www.robotics.org/webinar-detail.cfm/webinars/the-revolution-of-robotic-offline-programming/id/72",
+    "home": false
+  },
+  {
+    "title": "EMO Hannover 2019",
+    "date": "September 16-21",
+    "location": "Hannover, Germany",
+    "booth": "Hall 09, Stand B023",
+    "venue": "Hannover Messe",
+    "img": "/img/events/emo-2019.jpg",
+    "website": "https://www.emo-hannover.de",
+    "home": false
+  },
+  {
+    "title": "LAMIERA",
+    "date": "May 15-18",
+    "location": "Milano, Italy",
+    "booth": "Hall 18, Stand F19",
+    "venue": "Fiera Milano",
+    "img": "/img/events/lamiera-2019.jpg",
+    "website": "https://lamiera.net/en/exhibition/",
+    "home": false
+  },
+  {
+    "title": "Aerodef 2019",
+    "date": "April 30 - May 1",
+    "location": "Long Beach, USA",
+    "booth": "1522",
+    "venue": "Long Beach Convention Center",
+    "img": "/img/events/aerodef-2019.jpg",
+    "website": "https://www.aerodefevent.com/",
+    "home": false
+  },
+  {
+    "title": "Automate 2019",
+    "date": "April 8-11",
+    "location": "Chicago, USA",
+    "booth": "7951",
+    "venue": "The McCormick Place",
+    "img": "/img/events/automate-2019.jpg",
+    "website": "https://www.automateshow.com",
+    "home": false
+  },
+  {
+    "title": "JEC World 2019",
+    "date": "March 12-14",
+    "location": "Paris, France",
+    "booth": "Hall 6, Booth A43",
+    "venue": "Paris-Nord Villepinte",
+    "img": "/img/events/jec-2019.jpg",
+    "website": "https://www.jec-world.events",
+    "home": false
+  },
+  {
+    "title": "FABTECH 2018",
+    "date": "November 6-8, 2018",
+    "location": "Atlanta, USA",
+    "booth": "C12428",
+    "venue": "Georgia World Congress Center",
+    "img": "/img/events/fabtech-2018.jpg",
+    "website": "https://www.fabtechexpo.com/",
+    "home": false
+  },
+  {
+    "title": "BIMU 2018",
+    "date": "October 9-13, 2018",
+    "location": "Milan, Italy",
+    "booth": "Hall 13, A45",
+    "venue": "Fieramilano",
+    "img": "/img/events/bimu-2018.jpg",
+    "website": "http://www.bimu.it/en/",
+    "home": false
+  },
+  {
+    "title": "EUROBLECH",
+    "date": "October 23-26, 2018",
+    "location": "Hannover, Germany",
+    "booth": "Hall 13, H61",
+    "venue": "Hannover Messe",
+    "img": "/img/events/euroblech-2018.jpg",
+    "website": "https://www.euroblech.com/2018/english/",
+    "home": false
+  },
+  {
+    "title": "IMTS 2018",
+    "date": "September 10-15, 2018",
+    "location": "Chicago, USA",
+    "booth": "236311",
+    "venue": "McCormick Place",
+    "img": "/img/events/imts-2018.jpg",
+    "website": "www.imts.com/",
+    "home": false
+  },
+  {
+    "title": "Automatica 2018",
+    "date": "June 19-22, 2018",
+    "location": "Munich, Germany",
+    "booth": "B5.309",
+    "venue": "Messe München",
+    "img": "/img/events/automatica-2018.jpg",
+    "website": "https://automatica-munich.com/index-2.html",
+    "home": false
+  },
+  {
+    "title": "Design Engineering & Manufacturing Solutions Expo (DMS)",
+    "date": "June 20-22, 2018",
+    "location": "Tokyo, Japan",
+    "booth": "E29-42",
+    "venue": "Tokyo Big Sight Japan",
+    "img": "/img/events/dms-japan.jpg",
+    "website": "http://www.dms-tokyo.jp/en/Home/",
+    "home": false
+  },
+  {
+    "title": "FABTECH Canada 2018",
+    "date": "June 12-14, 2018",
+    "location": "Toronto, Canada",
+    "booth": "676",
+    "venue": "Toronto Congress Centre (South Building)",
+    "img": "/img/events/fabtech-canada-2018.jpg",
+    "website": "http://fabtechcanada.com/",
+    "home": false
+  },
+  {
+    "title": "FABTECH Mexico 2018",
+    "date": "May 2-4, 2018",
+    "location": "Mexico City, Mexico",
+    "booth": "2508",
+    "venue": "Centro Citibanamex",
+    "img": "/img/events/fabtech-mexico-2018.jpg",
+    "website": "https://mexico.fabtechexpo.com/",
+    "home": false
+  },
+  {
+    "title": "2018 Japan International Welding Show",
+    "date": "April 25-28, 2018",
+    "location": "Tokyo, Japan",
+    "booth": "E2087",
+    "venue": "TOKYO Big Sight",
+    "img": "/img/events/iws.jpg",
+    "website": "https://weldingshow.jp/en/",
+    "home": false
+  },
+  {
+    "title": "A & T 2018",
+    "date": "April 18-20, 2018",
+    "location": "Turin, Italy",
+    "booth": "G46",
+    "venue": "Oval Lingotto",
+    "img": "/img/events/a-t.jpg",
+    "website": "https://www.aetevent.com/",
+    "home": false
+  },
+  {
+    "title": "JEC World 2018",
+    "date": "March 6-8, 2018",
+    "location": "Villepinte, France",
+    "booth": "6E73",
+    "venue": "Paris-Nord-Villepinte",
+    "img": "/img/events/jec-2018.jpg",
+    "website": "http://www.jeccomposites.com/knowledge/international-composites-agenda/jec-world-2018",
+    "home": false
+  },
+  {
+    "title": "IREX 2017",
+    "date": "November 29 - December 2, 2017",
+    "location": "Tokyo, Japan",
+    "booth": "IRV12",
+    "venue": "Tokyo Big Sight Japan",
+    "img": "/img/events/irex-2017.png",
+    "website": "https://biz.nikkan.co.jp/eve/irex/english/",
+    "home": false
+  },
+  {
+    "title": "FABTECH 2017",
+    "date": "November 6-9, 2017",
+    "location": "Chicago, IL",
+    "booth": "B17013",
+    "venue": "McCormick Place",
+    "img": "/img/events/fabtech-banner.jpg",
+    "website": "https://www.fabtechexpo.com",
+    "home": false
+  },
+  {
+    "title": "Schweissen & Schneiden 2017",
+    "date": "September 25-29, 2017",
+    "location": "Dusseldorf, Germany",
+    "booth": "Hall 13, Stand E60",
+    "venue": "Messe Essen",
+    "img": "/img/events/s&s-banner.jpg",
+    "website": "https://www.schweissen-schneiden.com/joining-cutting-surfacing/",
+    "home": false
+  },
+  {
+    "title": "EMO 2017",
+    "date": "September 18-23, 2017",
+    "location": "Hannover, Germany",
+    "booth": "Hall 25, Stand B10",
+    "venue": "Hannover Messe",
+    "img": "/img/events/emo-banner.jpg",
+    "website": "http://www.emo-hannover.de/home",
+    "home": false
+  },
+  {
+    "title": "A&T 2017",
+    "date": "May 3-5, 2017",
+    "location": "Turin, Italy",
+    "booth": "D34/D36",
+    "venue": "Oval Lingotto",
+    "img": "/img/events/italy-show.png",
+    "website": "http://affidabilita.eu/aet/default.aspx",
+    "home": false
+  },
+  {
+    "title": "FABTECH Mexico 2017",
+    "date": "May 2-4, 2017",
+    "location": "Monterrey, Mexico",
+    "booth": "1027",
+    "venue": "Cintermex",
+    "img": "/img/events/fabtech-mexico-2017.jpg",
+    "website": "https://mexico.fabtechexpo.com/",
+    "home": false
+  },
+  {
+    "title": "Automate 2017",
+    "date": "April 3-6, 2017",
+    "location": "Chicago, IL",
+    "booth": "2037",
+    "venue": "The McCormick Place",
+    "img": "/img/events/automate-2017.jpg",
+    "website": "https://www.automateshow.com/",
+    "home": false
+  },
+  {
+    "title": "JEC 2017",
+    "date": "March 14-16, 2017",
+    "location": "Paris, France",
+    "booth": "Hall 6 booth U61",
+    "venue": "Paris Nord Villepinte Exhibition Centre",
+    "img": "/img/events/jec-2017.jpg",
+    "website": "http://www.jeccomposites.com",
+    "home": false
+  },
+  {
+    "title": "FABTECH 2016",
+    "date": "November 16-18, 2016",
+    "location": "Las Vegas, NV",
+    "booth": "N-3724",
+    "venue": "Las Vegas Convention Center",
+    "img": "/img/events/fabtech-2016.jpg",
+    "website": "https://www.fabtechexpo.com/fabtech-2016/",
+    "home": false
+  },
+  {
+    "title": "EuroBlech 2016",
+    "date": "October 25-29, 2016",
+    "location": "Hannover, Germany",
+    "booth": "Hall 13, Stand H73",
+    "venue": "Hannover Messe",
+    "img": "/img/events/euroblech-banner.jpg",
+    "website": "https://www.euroblech.com/english/",
+    "home": false
+  },
+  {
+    "title": "IMTS 2016",
+    "date": "September 12-17, 2016",
+    "location": "Chicago, IL",
+    "booth": "N-6322",
+    "venue": "McCormick Place",
+    "img": "/img/events/imts-2016.jpg",
+    "website": "https://www.imts.com",
+    "home": false
+  },
+  {
+    "title": "FABTECH Mexico 2016",
+    "date": "May 4-6, 2016",
+    "location": "Mexico City, Mexico",
+    "booth": "1920",
+    "venue": "Centro Banamex",
+    "img": "/img/events/fabtech-mexico-2016.jpg",
+    "website": "https://mexico.fabtechexpo.com",
+    "home": false
+  },
+  {
+    "title": "Automatica 2016",
+    "date": "June 21-24, 2016",
+    "location": "Munich, Germany",
+    "booth": "B5.309A",
+    "venue": "Messe München",
+    "img": "/img/events/automatica-2016.jpg",
+    "website": "https://www.automatica-munich.com",
+    "home": false
+  },
+  {
+    "title": "SIMTOS 2016",
+    "date": "April 13-17, 2016",
+    "location": "Gyeonggi-do, Korea",
+    "booth": "Booth 07E300",
+    "venue": "KINTEX",
+    "img": "/img/events/simtos-banner.jpg",
+    "website": "http://www.simtos.org/eng/Index.do",
+    "home": false
+  },
+  {
+    "title": "CCMTS 2016",
+    "date": "April 11-15, 2016",
+    "location": "Shanghai, China",
+    "booth": "N3-617",
+    "venue": "SNIEC (Shanghai New International Exhibition Center)",
+    "img": "/img/events/ccmts-banner.jpg",
+    "website": "http://www.ccmtshow.com/enindex.jsp",
+    "home": false
+  },
+  {
+    "title": "MACH 2016",
+    "date": "April 11-15, 2016",
+    "location": "Birmingham, UK",
+    "booth": "Hall 4, Booth 4111",
+    "venue": "The NEC",
+    "img": "/img/events/machtech-banner.jpg",
+    "website": "https://www.machexhibition.com",
+    "home": false
+  },
+  {
+    "title": "FABTECH Canada 2016",
+    "date": "March 22-24, 2016",
+    "location": "Toronto, Canada",
+    "booth": "1725",
+    "venue": "The Toronto Congress Centre",
+    "img": "/img/events/fabtech-canada-2016.jpg",
+    "website": "http://fabtechcanada.com",
+    "home": false
+  },
+  {
+    "title": "PNAA - Pacific Northwest Aerospace Alliance",
+    "date": "February 9-11, 2016",
+    "location": "Seattle, USA",
+    "venue": "Lynnwood Convention Center",
+    "img": "/img/events/pnaa-2016.jpg",
+    "website": "http://www.pnaa.net",
+    "home": false
+  },
+  {
+    "title": "iREX 2015",
+    "date": "December 2-5, 2015",
+    "location": "Tokyo, Japan",
+    "booth": "IR1-13",
+    "venue": "Tokyo International Exhibition Center",
+    "img": "/img/events/irex.jpg",
+    "website": "https://biz.nikkan.co.jp/eve/irex/english/",
+    "home": false
+  },
+  {
+    "title": "Metalex 2015",
+    "date": "November 18-12, 2015",
+    "location": "Bangkok, Thailand",
+    "booth": "Hall 105 booth A517",
+    "venue": "BITEC",
+    "img": "/img/events/metalex-show-banner.jpg",
+    "website": "http://www.metalex.co.th/en/Home/",
+    "home": false
+  },
+  {
+    "title": "FABTECH 2015",
+    "date": "November 9 - 12, 2015",
+    "location": "Chicago, Illinois, USA",
+    "booth": "N22070",
+    "venue": "McCormick Place",
+    "img": "/img/events/fabtech-2015.jpg",
+    "website": "https://www.fabtechexpo.com/",
+    "home": false
+  },
+  {
+    "title": "COMPOSITES ENGINEERING SHOW 2015",
+    "date": "November 4 - 5, 2015",
+    "location": "Birmingham, UK",
+    "booth": "Stand C211",
+    "venue": "NEC, Hall 5",
+    "img": "/img/events/Composites+UK+banner.jpg",
+    "website": "https://www.advancedengineeringuk.com/composites-engineering-show/",
+    "home": false
+  },
+  {
+    "title": "CHINA INTERNATIONAL INDUSTRIAL FAIR",
+    "date": "November 3 - 7, 2015",
+    "location": "Shanghai, China",
+    "booth": "F188, Hall 4.1",
+    "venue": "National Exhibition and Convention Center",
+    "img": "/img/events/CIIF+banner.jpg",
+    "website": "http://www.chinaexhibition.com/Official_Site/31-3-Shanghai_New_International_Expo_Centre_(SNIEC).html",
+    "home": false
+  },
+  {
+    "title": "Robot World 2015",
+    "date": "October 27 - 29, 2015",
+    "location": "Seoul, South Korea",
+    "booth": "10B-015",
+    "venue": "KINTEX Center",
+    "img": "/img/events/HHI_show+banner.jpg",
+    "website": "http://www.robotworld.or.kr/eng/",
+    "home": false
+  },
+  {
+    "title": "CAMX 2015",
+    "date": "October 26 - 29, 2015",
+    "location": "Dallas, Texas, USA",
+    "booth": "W108",
+    "venue": "Dallas Convention Center",
+    "img": "/img/events/camx.jpg",
+    "website": "https://www.thecamx.org/",
+    "home": false
+  },
+  {
+    "title": "BRAZIL WELDING 2015",
+    "date": "October 20 - 23, 2015",
+    "location": "São Paulo, Brazil",
+    "booth": "TBD",
+    "venue": "Expo Center Norte",
+    "img": "/img/events/brazil-welding-2015.png",
+    "website": "http://www.brazil-welding-show.com/ultramodern-joining-technology/",
+    "home": false
+  },
+  {
+    "title": "EMO MILANO 2015",
+    "date": "October 5 - 10, 2015",
+    "location": "Milan, Italy",
+    "booth": "Pavilion 4, Stand A36",
+    "venue": "Fieramilano",
+    "img": "/img/events/emo-2015.jpg",
+    "website": "http://www.emo-milano.com/en/home/",
+    "home": false
+  }
+]

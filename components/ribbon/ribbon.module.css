@@ -1,0 +1,32 @@
+.ribbon {
+  text-align: center;
+}
+.ribbonH2 {
+  font-size: 17px;
+  color: #3e3e3e;
+}
+.imgContainer {
+  position: relative;
+}
+.imgContainerImg {
+  margin: 0 auto;
+  height: 180px;
+  max-width: 435px;
+}
+@media screen and (max-width: 767px) {
+  .bannerSlideElement {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fixedImageImg {
+    max-width: 100%;
+  }
+}
+.ribbonA {
+  color: #000;
+}
+.ribbon a:hover, .ribbon a:active {
+  font-weight: bold;
+  color: #e32726;
+}
