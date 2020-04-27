@@ -1,14 +1,18 @@
-import React, { useEffect } from "react";
-import Router from 'next/router';
+import React from 'react';
+import Head from 'next/head';
+import { getInitialLocale } from '../translations/getInitialLocale';
+import { useRouter } from 'next/dist/client/router';
 
-const Home = () => {
-  useEffect(() => {
-    const {pathname} = Router;
-    if(pathname === '/' ){
-      Router.push('/en');
-    }
+const Index = () => {
+  const router = useRouter();
+  React.useEffect(() => {
+    router.replace('/[lang]', `/${getInitialLocale()}`)
   });
-  return null;
+  return (
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
+  );
 };
 
-export default Home;
+export default Index;

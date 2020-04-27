@@ -1,9 +1,11 @@
+import React from 'react';
+import useTranslation from "../../hooks/useTranslation";
+import withLocale from "../../hocs/withLocale";
 import Head from 'next/head';
 import Layout from '../../components/layout/layout';
 import {Carousel, Col, Container, Row} from 'react-bootstrap';
 import classes from './index.module.css';
 import Ribbon from '../../components/ribbon/ribbon';
-import { withTranslation } from '../../i18n';
 
 const slides = [
   'slideshow-img-1',
@@ -15,7 +17,8 @@ const slides = [
   'slideshow-img-7',
 ];
 
-const Home = ({ t }) => {
+const Home = () => {
+  const { t } = useTranslation();
   return (
       <Layout>
         <Head>
@@ -43,6 +46,7 @@ const Home = ({ t }) => {
               <Row>
                 <Col md={{span: 5, offset: 1}}>
                   <h1 className={classes.homeH1First}>
+                    {t('readMore')}
                     {t('home-heading-1-part-1')}
                   </h1>
                   <h1 className={classes.homeH1AfterH1}>
@@ -162,20 +166,4 @@ const Home = ({ t }) => {
   );
 };
 
-export async function getStaticPaths() {
-  const paths = ['/en', '/de']; //getAllLanguagePaths();
-  return {
-    paths,
-    fallback: false
-  };
-}
-
-export async function getStaticProps() {
-  return {
-    props: {
-      namespacesRequired: ['common']
-    }
-  };
-}
-
-export default withTranslation('common')(Home);
+export default withLocale(Home);

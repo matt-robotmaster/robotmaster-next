@@ -1,6 +1,4 @@
 import React from 'react';
-import App from 'next/app';
-import { appWithTranslation } from '../i18n';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //TODO: transform to use css modules
@@ -14,9 +12,4 @@ const RobotMasterApp = ({ Component, pageProps }) => {
   return <Component {...pageProps} />;
 };
 
-RobotMasterApp.getInitialProps = async (appContext) => {
-  const appProps = await App.getInitialProps(appContext)
-  return { ...appProps }
-}
-
-export default appWithTranslation(RobotMasterApp);
+export default RobotMasterApp;

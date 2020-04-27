@@ -1,8 +1,10 @@
 import React from "react";
 import {Navbar, Nav, Container} from "react-bootstrap";
-import { withTranslation } from 'next-i18next';
+import useTranslation from "../../../hooks/useTranslation";
+import withLocale from "../../../hocs/withLocale";
 
-const navbar = ({ t }) => {
+const navbar = () => {
+  const { t } = useTranslation();
   return (
       <Container>
         <Navbar bg="light" expand="lg">
@@ -29,8 +31,4 @@ const navbar = ({ t }) => {
   );
 };
 
-navbar.getInitialProps = async () => {
-  return { namespacesRequired: ['common'] };
-}
-
-export default withTranslation('common')(navbar);
+export default withLocale(navbar);

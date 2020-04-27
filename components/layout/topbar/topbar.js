@@ -1,8 +1,10 @@
 import React from 'react';
-import { withTranslation } from 'next-i18next';
 import {Dropdown, DropdownButton} from 'react-bootstrap';
+import useTranslation from "../../../hooks/useTranslation";
+import withLocale from "../../../hocs/withLocale";
 
-const topbar = ({ t, isTopbarFixed }) => {
+const topbar = ({ isTopbarFixed }) => {
+  const { t } = useTranslation();
   return (
       <div className={'topbar ' + (isTopbarFixed ? 'topbarFixed' : '')}>
         <div className="container">
@@ -40,8 +42,4 @@ const topbar = ({ t, isTopbarFixed }) => {
   );
 };
 
-topbar.getInitialProps = async () => {
-  return { namespacesRequired: ['common'] };
-}
-
-export default withTranslation('common')(topbar);
+export default withLocale(topbar);

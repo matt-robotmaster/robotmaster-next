@@ -1,9 +1,11 @@
 import React from "react";
-import { withTranslation } from 'next-i18next';
 
 import applications from '../../../applications.json';
+import useTranslation from "../../../hooks/useTranslation";
+import withLocale from "../../../hocs/withLocale";
 
-const footer = ({ t }) => {
+const footer = () => {
+  const { t } = useTranslation();
   const columns = [{
     title: t('footer-section-about'),
     list: [
@@ -127,8 +129,4 @@ const footer = ({ t }) => {
   );
 }
 
-footer.getInitialProps = async () => {
-  return { namespacesRequired: ['common'] };
-}
-
-export default withTranslation('common')(footer);
+export default withLocale(footer);

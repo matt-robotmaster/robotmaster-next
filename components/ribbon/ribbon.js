@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import {Container, Carousel, Row, Col} from 'react-bootstrap';
-import { withTranslation } from '../../i18n';
 
 import events from '../../data/events.json';
 import classes from './ribbon.module.css';
+import useTranslation from "../../hooks/useTranslation";
+import withLocale from "../../hocs/withLocale";
 
-const ribbon = ({ t }) => {
+const ribbon = () => {
+  const { t } = useTranslation();
   const [posts] = useState([]);
 
   // TODO: fix this
@@ -25,7 +27,7 @@ const ribbon = ({ t }) => {
     }
   };
 
-  //TODO: fix hrefs with next links
+  //TODO: fix hrefs
 
   return (
       <Container className={classes.ribbon}>
@@ -73,8 +75,4 @@ const ribbon = ({ t }) => {
   );
 };
 
-ribbon.getInitialProps = async () => {
-  return { namespacesRequired: ['common'] };
-}
-
-export default withTranslation('common')(ribbon);
+export default withLocale(ribbon);
