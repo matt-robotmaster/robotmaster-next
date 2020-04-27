@@ -13,6 +13,7 @@
     "i18next": "^19.4.3",
     "next": "9.3.5",
     "next-i18next": "^4.3.0",
+    "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "16.13.1",
