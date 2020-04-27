@@ -1,15 +1,15 @@
-.home hr {
+.homeHr {
   border-top: 1px solid #ccc;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.home div h1:first-child {
+.homeH1First {
   margin-bottom: 0;
 }
-.home h1 + h1 {
+.homeH1AfterH1 {
   margin-top: 0;
 }
-.home .revolution {
+.homeRevolution {
   border-top: 1px solid #ccc;
   background: #f3f3f3;
   padding-top: 125px;
@@ -17,42 +17,21 @@
   overflow: hidden;
   height: 624px;
 }
-.home .revolution .tagline {
+.homeRevolutionTagline {
   max-width: 500px;
   margin-bottom: 22px;
 }
-.home .revolution .robot-evolution {
+.homeRevolutionRobotEvolution {
   width: 100%;
   margin-top: -50px;
 }
-.home .revolution .background {
+.homeRevolutionBackground {
   width: 560px;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 0;
 }
-.home img.spacer {
+.homeImgSpacer {
   margin-bottom: 50px;
-}
-.flexslider {
-  margin: 0;
-  border: 0;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -o-box-shadow: none;
-  box-shadow: none;
-}
-.slide-caption {
-  position: absolute;
-  width: 100%;
-  height: 33px;
-  bottom: 0;
-  padding: 6px;
-  background: rgba(0, 0, 0, 0.65);
-  color: white;
-}
-
-.carousel-indicators li {
-  background-color: black;
 }

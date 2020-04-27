@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import { withTranslation } from '../../i18n';
 import Layout from '../../components/layout/layout';
-import {Carousel, Container} from 'react-bootstrap';
-//import classes from './index.module.css';
+import {Carousel, Col, Container, Row} from 'react-bootstrap';
+import classes from './index.module.css';
 import Ribbon from '../../components/ribbon/ribbon';
 
 const slides = [
@@ -23,7 +23,7 @@ const Home = ({ t }) => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Container>
-          <div className="home">
+          <div className={classes.home}>
             <Carousel>
               {slides.map(slide => {
                 return (
@@ -38,14 +38,14 @@ const Home = ({ t }) => {
               })}
             </Carousel>
             <Ribbon/>
-            <hr />
-            <div className="container">
-              <div className="row">
-                <div className="col-md-5 col-md-offset-1">
-                  <h1>
+            <hr className={classes.homeHr} />
+            <Container>
+              <Row>
+                <Col md={{span: 5, offset: 1}}>
+                  <h1 className={classes.homeH1First}>
                     {t('home-heading-1-part-1')}
                   </h1>
-                  <h1>
+                  <h1 className={classes.homeH1AfterH1}>
                     <strong>
                       {t('home-heading-1-part-2')}
                     </strong>
@@ -70,18 +70,18 @@ const Home = ({ t }) => {
                   <a href="products">
                     {t('general-learn-more-dotted')}
                   </a>
-                </div>
-                <div className="col-md-5">
+                </Col>
+                <Col md={5}>
                   <img className="img-responsive" src="/img/screenshot-1.png" />
-                </div>
-              </div>
+                </Col>
+              </Row>
               <hr />
-              <div className="row">
-                <div className="col-md-5 col-md-offset-1">
-                  <h1>
+              <Row>
+                <Col md={{span: 5, offset: 1}}>
+                  <h1 className={classes.homeH1First}>
                     {t('home-heading-2-part-1')}
                   </h1>
-                  <h1>
+                  <h1 className={classes.homeH1AfterH1}>
                     <strong>
                       {t('home-heading-2-part-2')}
                     </strong>
@@ -92,8 +92,8 @@ const Home = ({ t }) => {
                   <a href="why-robotmaster">
                     {t('general-learn-more-dotted')}
                   </a>
-                </div>
-                <div className="col-md-5">
+                </Col>
+                <Col md={5}>
                   <ul>
                     <li>
                       {t('home-section-2-listitem-1')}
@@ -111,12 +111,12 @@ const Home = ({ t }) => {
                       {t('home-section-2-listitem-5')}
                     </li>
                   </ul>
-                </div>
-              </div>
+                </Col>
+              </Row>
               <hr />
-              <div className="row">
-                <div className="col-md-5 col-md-offset-1">
-                  <h1>
+              <Row>
+                <Col md={{span: 5, offset: 1}}>
+                  <h1 className={classes.homeH1First}>
                     <strong>
                       {t('home-heading-3')}
                     </strong>
@@ -127,34 +127,34 @@ const Home = ({ t }) => {
                   <a href="applications">
                     {t('general-learn-more-dotted')}
                   </a>
-                </div>
-                <div className="col-md-5">
-                  <img className="spacer img-responsive" src="/img/screenshot-2.png" />
-                </div>
-              </div>
-            </div>
-            <div className="revolution">
-              <img className="background hidden-sm hidden-xs" src="/img/r.svg" />
-              <div className="container">
-                <div className="row">
-                  <div className="col-md-5 col-md-offset-1">
-                    <img className="tagline" src="/img/revolution.svg" />
-                  </div>
-                  <div className="col-md-5 hidden-sm hidden-xs">
-                    <img className="robot-evolution" src="/img/robot-evolution.png" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-md-10 col-md-offset-1">
+                </Col>
+                <Col md={{span: 5}}>
+                  <img className={[classes.homeImgSpacer, 'img-responsive']} src="/img/screenshot-2.png" />
+                </Col>
+              </Row>
+            </Container>
+            <div className={classes.homeRevolution}>
+              <img className={[classes.homeRevolutionBackground, 'hidden-sm', 'hidden-xs']} src="/img/r.svg" />
+              <Container>
+                <Row>
+                  <Col md={{span: 5, offset: 1}}>
+                    <img className={classes.homeRevolutionTagline} src="/img/revolution.svg" />
+                  </Col>
+                  <Col md={{span: 5}} className="hidden-sm hidden-xs">
+                    <img className={classes.homeRevolutionRobotEvolution} src="/img/robot-evolution.png" />
+                  </Col>
+                </Row>
+                <Row>
+                  <Col md={{span: 10, offset: 1}}>
                     <p>
                       {t('home-section-4-para')}
                     </p>
                     <a href="why-robotmaster">
                       {t('general-learn-more-dotted')}
                     </a>
-                  </div>
-                </div>
-              </div>
+                  </Col>
+                </Row>
+              </Container>
             </div>
           </div>
         </Container>
