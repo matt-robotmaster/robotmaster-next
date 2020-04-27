@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import { withTranslation } from '../../i18n';
 import Layout from '../../components/layout/layout';
 import {Carousel, Col, Container, Row} from 'react-bootstrap';
 import classes from './index.module.css';
 import Ribbon from '../../components/ribbon/ribbon';
+import { i18n, Link, withTranslation } from '../../i18n';
 
 const slides = [
   'slideshow-img-1',
@@ -15,7 +15,8 @@ const slides = [
   'slideshow-img-7',
 ];
 
-const Home = ({ t }) => {
+const Home = ({ t, lang }) => {
+  i18n.changeLanguage(lang);
   return (
       <Layout>
         <Head>
@@ -162,8 +163,21 @@ const Home = ({ t }) => {
   );
 };
 
-Home.getInitialProps = async () => {
-  return { namespacesRequired: ['common'] };
+export async function getStaticPaths() {
+  const paths = ['/en', '/de']; //getAllLanguagePaths();
+  return {
+    paths,
+    fallback: false
+  };
+}
+
+export async function getStaticProps({ params }) {
+  return {
+    props: {
+      namespacesRequired: ['common'],
+      lang: params.lang
+    }
+  };
 }
 
 export default withTranslation('common')(Home);
