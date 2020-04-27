@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import useTranslation from "../hooks/useTranslation";
-import withLocale from "../hocs/withLocale";
 
 const Error = ({ statusCode }) => {
   const { t } = useTranslation();
@@ -34,4 +33,4 @@ Error.propTypes = {
   statusCode: PropTypes.number,
 };
 
-export default withLocale(Error);
+export default Error;

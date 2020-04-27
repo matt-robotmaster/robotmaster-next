@@ -1,7 +1,6 @@
 import React from 'react';
 import {Dropdown, DropdownButton} from 'react-bootstrap';
 import useTranslation from "../../../hooks/useTranslation";
-import withLocale from "../../../hocs/withLocale";
 
 const topbar = ({ isTopbarFixed }) => {
   const { t } = useTranslation();
@@ -42,4 +41,4 @@ const topbar = ({ isTopbarFixed }) => {
   );
 };
 
-export default withLocale(topbar);
+export default topbar;

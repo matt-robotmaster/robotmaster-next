@@ -1,7 +1,6 @@
 import React from "react";
 import {Navbar, Nav, Container} from "react-bootstrap";
 import useTranslation from "../../../hooks/useTranslation";
-import withLocale from "../../../hocs/withLocale";
 
 const navbar = () => {
   const { t } = useTranslation();
@@ -31,4 +30,4 @@ const navbar = () => {
   );
 };
 
-export default withLocale(navbar);
+export default navbar;

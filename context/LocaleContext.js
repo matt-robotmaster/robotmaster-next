@@ -11,8 +11,6 @@ export const LocaleProvider = ({ lang, children }) => {
   const [locale, setLocale] = React.useState(lang);
   const { query } = useRouter();
 
-  console.log(locale);
-
   React.useEffect(() => {
     if (locale !== localStorage.getItem('locale')) {
       localStorage.setItem('locale', locale);

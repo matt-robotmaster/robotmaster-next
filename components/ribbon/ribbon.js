@@ -4,7 +4,6 @@ import {Container, Carousel, Row, Col} from 'react-bootstrap';
 import events from '../../data/events.json';
 import classes from './ribbon.module.css';
 import useTranslation from "../../hooks/useTranslation";
-import withLocale from "../../hocs/withLocale";
 
 const ribbon = () => {
   const { t } = useTranslation();
@@ -75,4 +74,4 @@ const ribbon = () => {
   );
 };
 
-export default withLocale(ribbon);
+export default ribbon;

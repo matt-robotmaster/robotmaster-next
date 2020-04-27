@@ -2,7 +2,6 @@ import React from "react";
 
 import applications from '../../../applications.json';
 import useTranslation from "../../../hooks/useTranslation";
-import withLocale from "../../../hocs/withLocale";
 
 const footer = () => {
   const { t } = useTranslation();
@@ -129,4 +128,4 @@ const footer = () => {
   );
 }
 
-export default withLocale(footer);
+export default footer;
