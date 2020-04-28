@@ -1,7 +1,6 @@
 import React from 'react';
 import useTranslation from "../../hooks/useTranslation";
 import withLocale from "../../hocs/withLocale";
-import Head from 'next/head';
 import Layout from '../../components/layout/layout';
 import {Carousel, Col, Container, Row} from 'react-bootstrap';
 import classes from './index.module.css';
@@ -21,10 +20,6 @@ const Home = () => {
   const { t } = useTranslation();
   return (
       <Layout>
-        <Head>
-          <title>Create Next App </title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
         <Container>
           <div className={classes.home}>
             <Carousel>
