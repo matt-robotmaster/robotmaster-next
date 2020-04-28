@@ -1,4 +1,6 @@
 import React, {Component} from "react";
+import {Col, Container, Row} from "react-bootstrap";
+import classes from './sidebar.module.css';
 
 export default class Sidebar extends Component {
   createMenu(item) {
@@ -13,22 +15,20 @@ export default class Sidebar extends Component {
 
   render() {
     return (
-        <div className="container">
-          <div className="row">
-            <div
-                className={this.props.menu ? 'col-md-9 col-sm-12' :
-                    'col-md-12'}>
+        <Container>
+          <Row>
+            <Col md={this.props.menu ? 9 : 12} sm={this.props.menu ? 12 : 0}>
               {this.props.children}
-            </div>
-            <div className="col-md-3 hidden-xs hidden-sm">
-              <div id="navbar" className="sidebar">
-                <ul className="nav">
+            </Col>
+            <Col md={3} className='hidden-xs hidden-sm'>
+              <div id='navbar' className={classes.sidebar}>
+                <ul className='nav'>
                   {this.props.menu.map(item => this.createMenu(item))}
                 </ul>
               </div>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
     )
   }
 }

@@ -1,9 +1,3 @@
-.ultraLightGrey {
-  color: #f3f3f3
-}
-.brandPrimary {
-  color: #e32726
-}
-.topbarWhiteText {
-  color: #fffefe
-}
+@value ultraLightGrey: #f3f3f3;
+@value brandPrimary: #e32726;
+@value topbarWhiteText: #fffefe;
