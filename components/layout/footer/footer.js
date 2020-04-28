@@ -3,9 +3,10 @@ import applications from '../../../applications.json';
 import useTranslation from "../../../hooks/useTranslation";
 import {Col, Container, Row} from "react-bootstrap";
 import classes from './footer.module.css'
+import Link from "next/link";
 
 const footer = () => {
-  const { t } = useTranslation();
+  const { locale, t } = useTranslation();
   const columns = [{
     title: t('footer-section-about'),
     list: [
@@ -85,25 +86,25 @@ const footer = () => {
           </Row>
           <Row className={classes.legal}>
             <p className={classes.legalPara}>
-              <a href='privacy'>
+              <Link href={`${locale}/privacy`}>
                 {t('privacy-page-caption')}
-              </a>
+              </Link>
               <span>
                 {' | '}
               </span>
-              <a href='disclaimer'>
+              <Link href={`${locale}/disclaimer`}>
                 {t('disclaimer-page-caption')}
-              </a>
+              </Link>
               <span>
                 {' | '}
               </span>
-              <a href='eula'>
+              <a href={`${locale}/eula`}>
                 {t('footer-terms-of-use')}
               </a>
               <span>
                 {' | '}
               </span>
-              <a href='gdpr'>
+              <a href={`${locale}/gdpr`}>
                 {t('footer-gdpr')}
               </a>
               <span>
