@@ -1,5 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import {Dropdown, DropdownButton} from 'react-bootstrap';
+import {
+  Container,
+  Dropdown,
+  DropdownButton,
+  Nav,
+  Navbar, NavDropdown
+} from 'react-bootstrap';
 import useTranslation from "../../../hooks/useTranslation";
 
 const topbar = () => {
@@ -19,7 +25,7 @@ const topbar = () => {
 
   return (
       <div className={'topbar ' + (isTopbarFixed ? 'topbarFixed' : '')}>
-        <div className="container">
+        <Container>
           <a
               className={'btn btn-primary navbar-cta navbar-cta-first ' +
               (isTopbarFixed ? 'navbar-cta-fixed' : '')}
@@ -32,24 +38,26 @@ const topbar = () => {
               href="contact/contact-me-request">
             {t('topbar-contact-me')}
           </a>
-          <a href="contact">
-            {t('contact-page-caption')}
-          </a>
-          <a href="newsroom">
-            {t('blog-page-caption')}
-          </a>
-          <a
-              href="https://robotmaster.atlassian.net/servicedesk/customer/portals"
-              rel='noreferrer noopener'
-              target="_blank">
-            {t('topbar-support')}
-          </a>
-          <DropdownButton id="dropdown-basic-button" title="Dropdown button">
-            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-          </DropdownButton>
-        </div>
+
+          <Navbar expand='lg'>
+            <Navbar.Toggle aria-controls='topbar-navbar-nav' />
+            <Navbar.Collapse id='topbar-navbar-nav'>
+              <Nav className='mr-auto'>
+                <Nav.Link href='contact'>{t('contact-page-caption')}</Nav.Link>
+                <Nav.Link href='newsroom'>{t('blog-page-caption')}</Nav.Link>
+                <Nav.Link href="https://robotmaster.atlassian.net/servicedesk/customer/portals"
+                          rel='noreferrer noopener'
+                          target="_blank">{t('topbar-support')}</Nav.Link>
+                <NavDropdown bg='light' id="topbar-nav-dropdown" title="Dropdown">
+                  <NavDropdown.Item href="#/action-1">Action</NavDropdown.Item>
+                  <NavDropdown.Item href="#/action-2">Another action</NavDropdown.Item>
+                  <NavDropdown.Item href="#/action-3">Something else</NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+
+        </Container>
       </div>
   );
 };
