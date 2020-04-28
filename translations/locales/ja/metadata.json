@@ -1,0 +1,150 @@
+{
+  "/": {
+    "title": "Robotmaster（オフラインティーチング）",
+    "description": "Robotmasterは、産業用ロボットによるものづくりに理想的なオフラインティーチングシステムです。3Dマシニング（切削）、トリミング、溶接、バリ取り、研磨、塗装など、各用途向けに迅速にエラーの起きないロボットプログラムを提供します。"
+  },
+  "/about": {
+    "title": "ロボット向けCAD/CAMシステム | 産業用ロボットのオフラインティーチング - robotmaster.co.jp",
+    "description": "産業用ロボットのためのオフラインティーチングシステム―ものづくりにおける、生産的なロボットソリューションを幅広く提供します。ぜひお問い合わせ下さい。"
+  },
+  "/products": {
+    "title": "ロボット向けCAD/CAMシステム | 産業用ロボットのオフラインティーチング - robotmaster.co.jp",
+    "description": "Robotmasterは、ロボットプログラム作成、シミュレーション、コード生成を滑らかにCAD/CAMエンジンに統合し、最適化されたロボットプログラムを迅速に生成します。"
+  },
+  "/partners": {
+    "title": "Robotmasterの対応/推奨パートナー - robotmaster.co.jp",
+    "description": "Robotmasterは、以下のロボットメーカーおよびインテグレーターと協業し、産業分野における迅速かつ容易なロボットソリューションを提供します。"
+  },
+  "/products/whats-new-in-v6": {
+    "title": "ロボットシミュレーション & ロボットティーチングソフトウェア For CAD/CAM",
+    "description": "Robotmaster V6 の独自の新機能は、Robotmasterのインタラクティブなシミュレーション環境を向上させ、ユーザー操作と自動化システムを最適に統合します。"
+  },
+  "/applications": {
+    "title": "産業用途・加工用途のためのロボットプログラム作成 - robotmaster.co.jp",
+    "description": "Robotmasterは、トリミング、3Dマシニング（切削）、バリ取り、研磨・研削、溶接、ディスペンシング（塗布）、塗装ほかのティーチング用途に最適です。"
+  },
+  "/applications/trimming": {
+    "title": "トリミング、木工、ウォータージェット、切断のためのロボットティーチング",
+    "description": "CADデータから自動的に、木工やウォータージェット、切断、レーザーカット、トーチ、プラズマ、ナイフによるトリミングなどのためのロボットの軌跡を作成、最適化します。"
+  },
+  "/applications/machining": {
+    "title": "ロボットによる切削（ミーリング）プログラム | CAD/CAM 切削（ミーリング） | 切削プログラム",
+    "description": "Robotmasterは、部品のシンプルさ/複雑さを問わず、ロボットによる切削（ミーリング）の自動化システムを実現します。切削用途におけるアドバンテージを体験下さい。"
+  },
+  "/applications/deburring": {
+    "title": "ロボットによるバリ取り | CAD/CAM プラグラム - robotmaster.co.jp",
+    "description": "Robotmasterは、粗削りなエッジ（縁）のバリを取るための、産業用ロボット向けのティーチングソリューションを提供します。CAD/CAMプログラムによる優位性を体験下さい。"
+  },
+  "/applications/welding": {
+    "title": "ロボットによる溶接プログラム | CADプログラミング - robotmaster.co.jp",
+    "description": "ロボット溶接のためのティーチングを体験下さい。CADモデルから自動的に生成され、溶接ビードのサイズや、パーツとの距離、トーチの傾きその他の調整のため最適化されます。"
+  },
+  "/applications/polishing": {
+    "title": "ロボットによる研磨・磨き | CAD/CAM for Robots - robotmaster.co.jp",
+    "description": "Robotmasterなら、ロボットによる研磨・磨きのためのプログラム作成を自動化できます。CAD/CAMプログラミングによるアドバンテージを体験下さい。"
+  },
+  "/applications/dispensing": {
+    "title": "ロボットディスペンシング（塗布） | CAD/CAMロボット - robotmaster.co.jp",
+    "description": "Robotmasterなら、ディスペンシング（塗布）のプログラム作成が可能です。幅広い用途で活用できる、生産的なロボットティーチングソリューションをお確かめ下さい。"
+  },
+  "/applications/deflashing": {
+    "title": "デフラッシングプログラム（薄バリ取り） | ロボットティーチング - robotmaster.co.jp",
+    "description": "Robotmasterは、CADモデルから自動的に、デフラッシング（薄バリ除去）やナイフによるトリミングのためのティーチングプログラムを作成します。今すぐお問い合せ下さい。"
+  },
+  "/applications/paint": {
+    "title": "自動化された塗装およびスプレーコーティングプログラムの作成 - robotmaster.co.jp",
+    "description": "Robotmasterは　濃度・密度を一定に保ち、ノズル口直径を正確に再現する、高品質を保証する塗装（ペインティング）プログラムを生成します。ロボットソフトウェアの利点をご確認下さい。"
+  },
+  "/applications/rail-rotary": {
+    "title": "レールおよび回転装置を活用したロボットティーチング & シミュレーション - robotmaster.co.jp",
+    "description": "Robotmasterは、リニアレールや回転装置、回転テーブルとロボットやパーツの組み合わせをプログラムする上でも、完全なシミュレーションの動作を提供します。"
+  },
+  "/applications/part-to-tool": {
+    "title": "ロボットにワークを持たせる加工（Part-to-Tool）- robotmaster.co.jp",
+    "description": "ワークを持たせる加工（Part to Tool）用途では、CADモデルから自動的にプログラムが生成され、カッターサイズやツール接触位置が調整されます。"
+  },
+  "/why-robotmaster": {
+    "title": "ロボットティーチング | ロボットソフトウェア | 産業用多関節ロボット ",
+    "description": "Robotmasterは、成熟したCAD/CAMシステムの技術を活用し、柔軟性とスピードに優れたロボットプログラム作成ソリューションです！Robotmasterによって、ロボットから最大限の価値を手に入れる方法を習得ください。"
+  },
+  "/why-robotmaster/evolution-chart": {
+    "title": "ロボットプログラミングの進化 | CAD/CAMデータの変換",
+    "description": "産業用ロボットオフラインティーチングシステムで、ロボットの力を最大化 - ロボットプログラミングの技術変革に、追いついていますか？"
+  },
+  "/why-robotmaster/benefits": {
+    "title": "ロボット教示 & ティーチングの障壁を解決 - robotmaster.co.jp",
+    "description": "CNC工作機械のようにロボットをプログラムしたいと奮闘していませんか？Robotmasterのエキスパート達は挑戦しています―Robotmasterなら、以下の問題を容易に解決します："
+  },
+  "/success-stories": {
+    "title": "Robotmaster 成功事例- robotmaster.co.jp",
+    "description": "Robotmasterの活用により、ロボットティーチングにおける問題を解決されたお客様のケーススタディです。"
+  },
+  "/success-stories/flow-automation": {
+    "title": "ロボティクスソフトウェア | ロボットティーチングシステム - robotmaster.co.jp",
+    "description": "Robotmasterが、いかにロボットの生産効率を改善・向上させるかを体験下さい。精緻な軌跡を生成する、最新のオフラインティーチングシステムをご習得下さい。"
+  },
+  "/contact": {
+    "title": "お問い合わせ | Robotmaster - Robotmaster.co.jp",
+    "description": "www.robotmaster.co.jp にアクセスの上、お気軽にご連絡ください。どのようなご質問にもお答えします。"
+  },
+  "/newsroom": {
+    "title": "Robotmaster ブログ（英文） - Robotmaster.co.jp",
+    "description": "Robotmasterの最新情報や世界のイベント情報をキャッチアップするため、ブログをブックマークして下さい。"
+  },
+  "/newsroom/robotmaster-at-automatica-2014": {
+    "title": "Robotmaster 出展ニュース - AUTOMATICA 2014 ",
+    "description": "Robotmasterは、「AUTOMATICA 2014」に出展します。"
+  },
+  "/newsroom/jabez-makes-cover-of-cio-review-magazine": {
+    "title": "10 Most Promising Engineering Solution Providers - Jabez Technologies",
+    "description": "Jabez Technologies (Robotmaster開発元) は、雑誌「CIO Review」の表紙を飾り、「最も有望なエンジニアリング・ソリューション提供企業10社」として紹介されました。"
+  },
+  "/newsroom/jabez-released-robotmaster-v6-1": {
+    "title": "Robotmaster V6.1 - 進化したロボット加工制御およびシミュレーション",
+    "description": "Robotmaster V6.1がリリースされました。"
+  },
+  "/newsroom/jabez-wins-game-changer-awards": {
+    "title": "Jabez Technologiesが、「Game Changer Awards」を受賞",
+    "description": "ROBOTMASTER V6は、ロボットプログラム作成、シミュレーション、CAM内のコード生成をシームレスに統合し、ロボットティーチングを迅速に行います。詳細は今すぐお問い合わせ下さい。"
+  },
+  "/newsroom/jabez-release-robotmaster-v6": {
+    "title": "Robotmaster V6 - 新しい、インタラクティブなシミュレーション環境",
+    "description": "新しく直感的なV6のインターフェイスは、Robotmasterを、前例のないユーザー体験をもたらす業界標準システムへと昇華させました。ロボットプログラマーのための、ダイナミックで一貫したツールです。"
+  },
+  "/newsroom/intuitive-robot-programming-for-aerospace-manufacturing": {
+    "title": "航空宇宙業界のためのロボットティーチング- robotmaster.com",
+    "description": "航空機の製造および組み立て（アセンブリ）のための柔軟なツールとして、産業用ロボットが航空宇宙業界を変えようとしています。詳細は、robotmaster.comで。"
+  },
+  "/newsroom/csf-robotics-becomes-a-robotmaster-reseller": {
+    "title": "「CSF Robotics」が、Robotmasterのリセラーになりました",
+    "description": "「CSF Robotics」が、Robotmasterのオーストラリアおよびアジア太平洋地区のリセラーの1社となったことを発表しました。"
+  },
+  "/newsroom/robotmaster-has-its-first-authorized-distributor-in-thailand": {
+    "title": "Robotmaster が、タイにおける初のディストリビューターを任命",
+    "description": "「Golden Robot」社が、Robotmasterのタイにおける初のディストリビューターとなったことを発表しました"
+  },
+  "/newsroom/amrc-lends-a-hand-to-sheffield-students-racing-team": {
+    "title": "AMRC | Advanced Manufacturing Research Centre - robotmaster.com",
+    "description": "英国シェフィールド大学の「AMRC」が、Robotmasterを活用し、学生レーシングチーム向けのレーシングカーを設計、製造しました。詳細は、robotmaster.comで。"
+  },
+  "/newsroom/robotmaster-asia-leads-the-robotic-revolution-at-beijing-essen-welding-&-cutting-2015": {
+    "title": "ロボット革命 | 北京展示会 Essen Welding - robotmaster.com",
+    "description": "Robotmasterは今年、北京で開催された「Beijing Essen Welding & Cuttingフェア」において、ロボット革命を主導しました。弊社の独自プログラミング技術がどのように貢献したかご覧ください。"
+  },
+  "/newsroom/robotmaster-now-supporting-nachi-brand-of-robot": {
+    "title": "NACHIロボット | Robotメーカー - robotmaster.com",
+    "description": "ロボットオフラインティーチングソフトのリーダーとして、RobotmasterはNACHIブランド（不二越）ロボットのサポートを開始しました。詳細は、robotmaster.comで。"
+  },
+  "/newsroom/composites-and-robotmaster": {
+    "title": "ロボットのコンポジット製造およびトリミング - robotmaster.com",
+    "description": "Robotmasterは、コンポジット製造のための、低コストかつ最先端のティーチングツールを提供します。詳細は、robotmaster.comで。"
+  },
+  "/newsroom/robotm-br-reinforces-the-growing-presence-of-robotmaster-in-latin-america-at-feimafe-2015": {
+    "title": "Feimafe | Robotmaster in Latin America- robotmaster.com",
+    "description": "Feimafeで、Robotmasterは世界における最先端の技術を展示しました。マシニング業界トップレベルのカンファレンスと展示会をご覧ください。"
+  },
+  "/newsroom/hypertherm-expands-robotic-capabilities-with-purchase-of-jabez-technologies": {
+    "title": "Hyperthermソフトウェア | ロボット向けソフトウェア - robotmaster.com",
+    "description": "Hyperthermは、Jabez Technologiesの買収により産業用ロボットの可能性を拡大させます。企業は、産業用ロボットをものづくりに活用しやすくなります。"
+  }
+}

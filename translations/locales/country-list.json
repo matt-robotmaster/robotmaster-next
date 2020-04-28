@@ -1,0 +1,1489 @@
+[
+  {
+    "countryCode": "AF",
+    "name": "Afghanistan",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "AX",
+    "name": "Aland Islands",
+    "email": "leads.emea@robotmaster.com"
+  },
+  {
+    "countryCode": "AL",
+    "name": "Albania",
+    "email": "leads.emea@robotmaster.com"
+  },
+  {
+    "countryCode": "DZ",
+    "name": "Algeria",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "AS",
+    "name": "American Samoa",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "AD",
+    "name": "Andorra",
+    "email": "leads.spain@robotmaster.com"
+  },
+  {
+    "countryCode": "AO",
+    "name": "Angola",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "AI",
+    "name": "Anguilla",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "AQ",
+    "name": "Antarctica",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "AG",
+    "name": "Antigua And Barbuda",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "AR",
+    "name": "Argentina",
+    "email": "Leads.sart@robotmaster.com"
+  },
+  {
+    "countryCode": "AM",
+    "name": "Armenia",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "AW",
+    "name": "Aruba",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "AU",
+    "name": "Australia",
+    "email": "leads.apac.oceania@robotmaster.com"
+  },
+  {
+    "countryCode": "AT",
+    "name": "Austria",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "AZ",
+    "name": "Azerbaijan",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "BS",
+    "name": "Bahamas",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "BH",
+    "name": "Bahrain",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "BD",
+    "name": "Bangladesh",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "BB",
+    "name": "Barbados",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "BY",
+    "name": "Belarus",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "BE",
+    "name": "Belgium",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "BZ",
+    "name": "Belize",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "BJ",
+    "name": "Benin",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "BM",
+    "name": "Bermuda",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "BT",
+    "name": "Bhutan",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "BO",
+    "name": "Bolivia",
+    "email": "Leads.sart@robotmaster.com"
+  },
+  {
+    "countryCode": "BA",
+    "name": "Bosnia and Herzegovina",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "BW",
+    "name": "Botswana",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "BV",
+    "name": "Bouvet Island",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "BR",
+    "name": "Brazil",
+    "email": "Leads.sart@robotmaster.com"
+  },
+  {
+    "countryCode": "VG",
+    "name": "British Virgin Islands",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "IO",
+    "name": "British Indian Ocean Territory",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "BN",
+    "name": "Brunei Darussalam",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "BG",
+    "name": "Bulgaria",
+    "email": "leads.emea@robotmaster.com"
+  },
+  {
+    "countryCode": "BF",
+    "name": "Burkina Faso",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "BI",
+    "name": "Burundi",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "KH",
+    "name": "Cambodia",
+    "email": "leads.apac.oceania@robotmaster.com"
+  },
+  {
+    "countryCode": "CM",
+    "name": "Cameroon",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "CA",
+    "name": "Canada",
+    "email": "leads.canada@robotmaster.com"
+  },
+  {
+    "countryCode": "CV",
+    "name": "Cape Verde",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "KY",
+    "name": "Cayman Islands",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "CF",
+    "name": "Central African Republic",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "TD",
+    "name": "Chad",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "CL",
+    "name": "Chile",
+    "email": "Leads.sart@robotmaster.com"
+  },
+  {
+    "countryCode": "CN",
+    "name": "China",
+    "email": "Leads.china@robotmaster.com"
+  },
+  {
+    "countryCode": "HK",
+    "name": "Hong Kong, SAR China",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "MO",
+    "name": "Macao, SAR China",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "CX",
+    "name": "Christmas Island",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "CC",
+    "name": "Cocos (Keeling) Islands",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "CO",
+    "name": "Colombia",
+    "email": "Leads.sart@robotmaster.com"
+  },
+  {
+    "countryCode": "KM",
+    "name": "Comoros",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "CG",
+    "name": "Congo",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "CD",
+    "name": "Congo, Democratic Republic",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "CK",
+    "name": "Cook Islands",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "CR",
+    "name": "Costa Rica",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "CI",
+    "name": "Cote D'Ivoire",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "HR",
+    "name": "Croatia",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "CU",
+    "name": "Cuba",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "CY",
+    "name": "Cyprus",
+    "email": "leads.emea@robotmaster.com"
+  },
+  {
+    "countryCode": "CZ",
+    "name": "Czech Republic",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "DK",
+    "name": "Denmark",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "DJ",
+    "name": "Djibouti",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "DM",
+    "name": "Dominica",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "DO",
+    "name": "Dominican Republic",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "EC",
+    "name": "Ecuador",
+    "email": "Leads.sart@robotmaster.com"
+  },
+  {
+    "countryCode": "EG",
+    "name": "Egypt",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "SV",
+    "name": "El Salvador",
+    "email": "leads.sart@robotmaster.com"
+  },
+  {
+    "countryCode": "GQ",
+    "name": "Equatorial Guinea",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "ER",
+    "name": "Eritrea",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "EE",
+    "name": "Estonia",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "ET",
+    "name": "Ethiopia",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "FK",
+    "name": "Falkland Islands (Malvinas)",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "FO",
+    "name": "Faroe Islands",
+    "email": "leads.emea@robotmaster.com"
+  },
+  {
+    "countryCode": "FJ",
+    "name": "Fiji",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "FI",
+    "name": "Finland",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "FR",
+    "name": "France",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "GF",
+    "name": "French Guiana",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "PF",
+    "name": "French Polynesia",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "TF",
+    "name": "French Southern Territories",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "GA",
+    "name": "Gabon",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "GM",
+    "name": "Gambia",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "GE",
+    "name": "Georgia",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "DE",
+    "name": "Germany",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "GH",
+    "name": "Ghana",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "GI",
+    "name": "Gibraltar",
+    "email": "leads.emea@robotmaster.com"
+  },
+  {
+    "countryCode": "GR",
+    "name": "Greece",
+    "email": "leads.emea@robotmaster.com"
+  },
+  {
+    "countryCode": "GL",
+    "name": "Greenland",
+    "email": "leads.emea@robotmaster.com"
+  },
+  {
+    "countryCode": "GD",
+    "name": "Grenada",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "GP",
+    "name": "Guadeloupe",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "GU",
+    "name": "Guam",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "GT",
+    "name": "Guatemala",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "GG",
+    "name": "Guernsey",
+    "email": "leads.uk@robotmaster.com"
+  },
+  {
+    "countryCode": "GN",
+    "name": "Guinea",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "GW",
+    "name": "Guinea-Bissau",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "GY",
+    "name": "Guyana",
+    "email": "Leads.sart@robotmaster.com"
+  },
+  {
+    "countryCode": "HT",
+    "name": "Haiti",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "HM",
+    "name": "Heard Island & Mcdonald Islands",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "VA",
+    "name": "Holy See (Vatican City State)",
+    "email": "leads.emea@robotmaster.com"
+  },
+  {
+    "countryCode": "HN",
+    "name": "Honduras",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "HU",
+    "name": "Hungary",
+    "email": "leads.emea@robotmaster.com"
+  },
+  {
+    "countryCode": "IS",
+    "name": "Iceland",
+    "email": "leads.uk@robotmaster.com"
+  },
+  {
+    "countryCode": "IN",
+    "name": "India",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "ID",
+    "name": "Indonesia",
+    "email": "leads.apac.oceania@robotmaster.com"
+  },
+  {
+    "countryCode": "IR",
+    "name": "Iran, Islamic Republic Of",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "IQ",
+    "name": "Iraq",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "IE",
+    "name": "Ireland",
+    "email": "leads.uk@robotmaster.com"
+  },
+  {
+    "countryCode": "IM",
+    "name": "Isle Of Man",
+    "email": "leads.uk@robotmaster.com"
+  },
+  {
+    "countryCode": "IL",
+    "name": "Israel",
+    "email": "leads.emea@robotmaster.com"
+  },
+  {
+    "countryCode": "IT",
+    "name": "Italy",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "JM",
+    "name": "Jamaica",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "JP",
+    "name": "Japan",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "JE",
+    "name": "Jersey",
+    "email": "leads.uk@robotmaster.com"
+  },
+  {
+    "countryCode": "JO",
+    "name": "Jordan",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "KZ",
+    "name": "Kazakhstan",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "KE",
+    "name": "Kenya",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "KI",
+    "name": "Kiribati",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "KP",
+    "name": "North Korea",
+    "email": "leads.korea@robotmaster.com"
+  },
+  {
+    "countryCode": "KR",
+    "name": "South Korea",
+    "email": "leads.korea@robotmaster.com"
+  },
+  {
+    "countryCode": "KW",
+    "name": "Kuwait",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "KG",
+    "name": "Kyrgyzstan",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "LA",
+    "name": "Lao People's Democratic Republic",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "LV",
+    "name": "Latvia",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "LB",
+    "name": "Lebanon",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "LS",
+    "name": "Lesotho",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "LR",
+    "name": "Liberia",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "LY",
+    "name": "Libyan Arab Jamahiriya",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "LI",
+    "name": "Liechtenstein",
+    "email": "leads.emea@robotmaster.com"
+  },
+  {
+    "countryCode": "LT",
+    "name": "Lithuania",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "LU",
+    "name": "Luxembourg",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "MK",
+    "name": "Macedonia",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "MG",
+    "name": "Madagascar",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "MW",
+    "name": "Malawi",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "MY",
+    "name": "Malaysia",
+    "email": "leads.apac.oceania@robotmaster.com"
+  },
+  {
+    "countryCode": "MV",
+    "name": "Maldives",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "ML",
+    "name": "Mali",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "MT",
+    "name": "Malta",
+    "email": "leads.emea@robotmaster.com"
+  },
+  {
+    "countryCode": "MH",
+    "name": "Marshall Islands",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "MQ",
+    "name": "Martinique",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "MR",
+    "name": "Mauritania",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "MU",
+    "name": "Mauritius",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "YT",
+    "name": "Mayotte",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "MX",
+    "name": "Mexico",
+    "email": "leads.mexico@robotmaster.com"
+  },
+  {
+    "countryCode": "FM",
+    "name": "Micronesia, Federated States Of",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "MD",
+    "name": "Moldova, Republic of",
+    "email": "leads.emea@robotmaster.com"
+  },
+  {
+    "countryCode": "MC",
+    "name": "Monaco",
+    "email": "leads.emea@robotmaster.com"
+  },
+  {
+    "countryCode": "MN",
+    "name": "Mongolia",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "ME",
+    "name": "Montenegro",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "MS",
+    "name": "Montserrat",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "MA",
+    "name": "Morocco",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "MZ",
+    "name": "Mozambique",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "MM",
+    "name": "Myanmar",
+    "email": "leads.apac.oceania@robotmaster.com"
+  },
+  {
+    "countryCode": "NA",
+    "name": "Namibia",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "NR",
+    "name": "Nauru",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "NP",
+    "name": "Nepal",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "NL",
+    "name": "Netherlands",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "AN",
+    "name": "Netherlands Antilles",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "NC",
+    "name": "New Caledonia",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "NZ",
+    "name": "New Zealand",
+    "email": "leads.apac.oceania@robotmaster.com"
+  },
+  {
+    "countryCode": "NI",
+    "name": "Nicaragua",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "NE",
+    "name": "Niger",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "NG",
+    "name": "Nigeria",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "NU",
+    "name": "Niue",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "NF",
+    "name": "Norfolk Island",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "MP",
+    "name": "Northern Mariana Islands",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "NO",
+    "name": "Norway",
+    "email": "leads.sweden.norway@robotmaster.com"
+  },
+  {
+    "countryCode": "OM",
+    "name": "Oman",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "PK",
+    "name": "Pakistan",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "PW",
+    "name": "Palau",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "PS",
+    "name": "Palestinian Territory, Occupied",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "PA",
+    "name": "Panama",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "PG",
+    "name": "Papua New Guinea",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "PY",
+    "name": "Paraguay",
+    "email": "Leads.sart@robotmaster.com"
+  },
+  {
+    "countryCode": "PE",
+    "name": "Peru",
+    "email": "Leads.sart@robotmaster.com"
+  },
+  {
+    "countryCode": "PH",
+    "name": "Philippines",
+    "email": "leads.apac.oceania@robotmaster.com"
+  },
+  {
+    "countryCode": "PN",
+    "name": "Pitcairn",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "PL",
+    "name": "Poland",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "PT",
+    "name": "Portugal",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "PR",
+    "name": "Puerto Rico",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "QA",
+    "name": "Qatar",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "RE",
+    "name": "Reunion",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "RO",
+    "name": "Romania",
+    "email": "leads.emea@robotmaster.com"
+  },
+  {
+    "countryCode": "RU",
+    "name": "Russian Federation",
+    "email": "leads.emea@robotmaster.com"
+  },
+  {
+    "countryCode": "RW",
+    "name": "Rwanda",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "BL",
+    "name": "Saint Barthelemy",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "SH",
+    "name": "Saint Helena",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "KN",
+    "name": "Saint Kitts And Nevis",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "LC",
+    "name": "Saint Lucia",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "MF",
+    "name": "Saint Martin",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "PM",
+    "name": "Saint Pierre And Miquelon",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "VC",
+    "name": "Saint Vincent And Grenadines",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "WS",
+    "name": "Samoa",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "SM",
+    "name": "San Marino",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "ST",
+    "name": "Sao Tome And Principe",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "SA",
+    "name": "Saudi Arabia",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "SN",
+    "name": "Senegal",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "RS",
+    "name": "Serbia",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "SC",
+    "name": "Seychelles",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "SL",
+    "name": "Sierra Leone",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "SG",
+    "name": "Singapore",
+    "email": "leads.apac.oceania@robotmaster.com"
+  },
+  {
+    "countryCode": "SK",
+    "name": "Slovakia",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "SI",
+    "name": "Slovenia",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "SB",
+    "name": "Solomon Islands",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "SO",
+    "name": "Somalia",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "ZA",
+    "name": "South Africa",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "GS",
+    "name": "South Georgia And Sandwich Isl.",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "SS",
+    "name": "South Sudan",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "ES",
+    "name": "Spain",
+    "email": "leads.spain@robotmaster.com"
+  },
+  {
+    "countryCode": "LK",
+    "name": "Sri Lanka",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "SD",
+    "name": "Sudan",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "SR",
+    "name": "Suriname",
+    "email": "Leads.sart@robotmaster.com"
+  },
+  {
+    "countryCode": "SJ",
+    "name": "Svalbard And Jan Mayen",
+    "email": "leads.emea@robotmaster.com"
+  },
+  {
+    "countryCode": "SZ",
+    "name": "Swaziland",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "SE",
+    "name": "Sweden",
+    "email": "leads.sweden.norway@robotmaster.com"
+  },
+  {
+    "countryCode": "CH",
+    "name": "Switzerland",
+    "email": "leads.europe@robotmaster.com"
+  },
+  {
+    "countryCode": "SY",
+    "name": "Syrian Arab Republic",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "TW",
+    "name": "Taiwan",
+    "email": "Leads.taiwan@robotmaster.com"
+  },
+  {
+    "countryCode": "TJ",
+    "name": "Tajikistan",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "TZ",
+    "name": "Tanzania",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "TH",
+    "name": "Thailand",
+    "email": "Leads.thailand@robotmaster.com"
+  },
+  {
+    "countryCode": "TL",
+    "name": "Timor-Leste",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "TG",
+    "name": "Togo",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "TK",
+    "name": "Tokelau",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "TO",
+    "name": "Tonga",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "TT",
+    "name": "Trinidad And Tobago",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "TN",
+    "name": "Tunisia",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "TR",
+    "name": "Turkey",
+    "email": "leads.emea@robotmaster.com"
+  },
+  {
+    "countryCode": "TM",
+    "name": "Turkmenistan",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "TC",
+    "name": "Turks And Caicos Islands",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "TV",
+    "name": "Tuvalu",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "UG",
+    "name": "Uganda",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "UA",
+    "name": "Ukraine",
+    "email": "leads.emea@robotmaster.com"
+  },
+  {
+    "countryCode": "AE",
+    "name": "United Arab Emirates",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "GB",
+    "name": "United Kingdom",
+    "email": "leads.uk@robotmaster.com"
+  },
+  {
+    "countryCode": "US",
+    "name": "United States",
+    "email": "leads.nart@robotmaster.com",
+    "states": [
+      {
+        "stateCode": "AL",
+        "stateName": "Alabama",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "AK",
+        "stateName": "Alaska",
+        "email": "leads.western@robotmaster.com"
+      },
+      {
+        "stateCode": "AZ",
+        "stateName": "Arizona",
+        "email": "leads.southern@robotmaster.com"
+      },
+      {
+        "stateCode": "AR",
+        "stateName": "Arkansas",
+        "email": "leads.southern@robotmaster.com"
+      },
+      {
+        "stateCode": "CA",
+        "stateName": "California",
+        "email": "leads.western@robotmaster.com"
+      },
+      {
+        "stateCode": "CO",
+        "stateName": "Colorado",
+        "email": "leads.western@robotmaster.com"
+      },
+      {
+        "stateCode": "CT",
+        "stateName": "Connecticut",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "DE",
+        "stateName": "Delaware",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "FL",
+        "stateName": "Florida",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "GA",
+        "stateName": "Georgia",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "HI",
+        "stateName": "Hawaii",
+        "email": "leads.southern@robotmaster.com"
+      },
+      {
+        "stateCode": "ID",
+        "stateName": "Idaho",
+        "email": "leads.western@robotmaster.com"
+      },
+      {
+        "stateCode": "IL",
+        "stateName": "Illinois",
+        "email": "leads.western@robotmaster.com"
+      },
+      {
+        "stateCode": "IN",
+        "stateName": "Indiana",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "IA",
+        "stateName": "Iowa",
+        "email": "leads.western@robotmaster.com"
+      },
+      {
+        "stateCode": "KS",
+        "stateName": "Kansas",
+        "email": "leads.western@robotmaster.com"
+      },
+      {
+        "stateCode": "KY",
+        "stateName": "Kentucky",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "LA",
+        "stateName": "Louisiana",
+        "email": "leads.southern@robotmaster.com"
+      },
+      {
+        "stateCode": "ME",
+        "stateName": "Maine",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "MD",
+        "stateName": "Maryland",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "MA",
+        "stateName": "Massachusetts",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "MI",
+        "stateName": "Michigan",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "MN",
+        "stateName": "Minnesota",
+        "email": "leads.western@robotmaster.com"
+      },
+      {
+        "stateCode": "MS",
+        "stateName": "Mississippi",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "MO",
+        "stateName": "Missouri",
+        "email": "leads.western@robotmaster.com"
+      },
+      {
+        "stateCode": "MT",
+        "stateName": "Montana",
+        "email": "leads.western@robotmaster.com"
+      },
+      {
+        "stateCode": "NE",
+        "stateName": "Nebraska",
+        "email": "leads.western@robotmaster.com"
+      },
+      {
+        "stateCode": "NV",
+        "stateName": "Nevada",
+        "email": "leads.western@robotmaster.com"
+      },
+      {
+        "stateCode": "NH",
+        "stateName": "New Hampshire",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "NJ",
+        "stateName": "New Jersey",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "NM",
+        "stateName": "New Mexico",
+        "email": "leads.southern@robotmaster.com"
+      },
+      {
+        "stateCode": "NY",
+        "stateName": "New York",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "NC",
+        "stateName": "North Carolina",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "ND",
+        "stateName": "North Dakota",
+        "email": "leads.western@robotmaster.com"
+      },
+      {
+        "stateCode": "OH",
+        "stateName": "Ohio",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "OK",
+        "stateName": "Oklahoma",
+        "email": "leads.southern@robotmaster.com"
+      },
+      {
+        "stateCode": "OR",
+        "stateName": "Oregon",
+        "email": "leads.western@robotmaster.com"
+      },
+      {
+        "stateCode": "PA",
+        "stateName": "Pennsylvania",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "RI",
+        "stateName": "Rhode Island",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "SC",
+        "stateName": "South Carolina",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "SD",
+        "stateName": "South Dakota",
+        "email": "leads.western@robotmaster.com"
+      },
+      {
+        "stateCode": "TN",
+        "stateName": "Tennessee",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "TX",
+        "stateName": "Texas",
+        "email": "leads.southern@robotmaster.com"
+      },
+      {
+        "stateCode": "UT",
+        "stateName": "Utah",
+        "email": "leads.western@robotmaster.com"
+      },
+      {
+        "stateCode": "VT",
+        "stateName": "Vermont",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "VA",
+        "stateName": "Virginia",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "WA",
+        "stateName": "Washington",
+        "email": "leads.western@robotmaster.com"
+      },
+      {
+        "stateCode": "WV",
+        "stateName": "West Virginia",
+        "email": "leads.eastern@robotmaster.com"
+      },
+      {
+        "stateCode": "WI",
+        "stateName": "Wisconsin",
+        "email": "leads.western@robotmaster.com"
+      },
+      {
+        "stateCode": "WY",
+        "stateName": "Wyoming",
+        "email": "leads.western@robotmaster.com"
+      }
+    ]
+  },
+  {
+    "countryCode": "UM",
+    "name": "United States Outlying Islands",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "UY",
+    "name": "Uruguay",
+    "email": "Leads.sart@robotmaster.com"
+  },
+  {
+    "countryCode": "UZ",
+    "name": "Uzbekistan",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "VU",
+    "name": "Vanuatu",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "VE",
+    "name": "Venezuela",
+    "email": "Leads.sart@robotmaster.com"
+  },
+  {
+    "countryCode": "VN",
+    "name": "Vietnam",
+    "email": "leads.apac.oceania@robotmaster.com"
+  },
+  {
+    "countryCode": "VI",
+    "name": "Virgin Islands, U.S.",
+    "email": "leads.nart@robotmaster.com"
+  },
+  {
+    "countryCode": "WF",
+    "name": "Wallis And Futuna",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "EH",
+    "name": "Western Sahara",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "YE",
+    "name": "Yemen",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "ZM",
+    "name": "Zambia",
+    "email": "sales@robotmaster.com"
+  },
+  {
+    "countryCode": "ZW",
+    "name": "Zimbabwe",
+    "email": "sales@robotmaster.com"
+  }
+]

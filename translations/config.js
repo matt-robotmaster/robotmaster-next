@@ -1,9 +1,16 @@
 export const defaultLocale = 'en';
 
-export const locales = ['en', 'fr', 'pl'];
+export const locales = ['cs', 'de', 'en', 'es', 'fi', 'fr', 'ja', 'pt', 'tr', 'zh'];
 
 export const languageNames = {
-  en: 'English',
-  fr: 'français',
-  pl: 'polski'
+  'cs': '',
+  'de': 'Deutsch',
+  'en': 'English',
+  'es': 'Spanish',
+  'fi': '',
+  'fr': 'French',
+  'ja': '日本語',
+  'pt': 'Portuguese',
+  'tr': '',
+  'zh': '中文'
 };

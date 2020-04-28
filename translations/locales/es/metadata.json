@@ -1,0 +1,150 @@
+{
+  "/": {
+    "title": "Robotmaster CAD/CAM para robots (Programación Off-Line)",
+    "description": "Robotmaster es la solución CAD/CAM ideal para programación off-line, generando programas libres de errores para robots industriales en aplicaciones de mecanizado 3D, desbarbado, soldadura, encolado."
+  },
+  "/about": {
+    "title": "Software CAD/CAM | Programación de Robot Industriales - robotmaster.com",
+    "description": "Proporcionamos tecnologías de programación para robots industriales que permiten soluciones robóticas versátiles y rentables para la industria. Contáctenos hoy."
+  },
+  "/products": {
+    "title": "Programación CAD/CAM para robots - robotmaster.com",
+    "description": "Robotmaster integra de forma rápida y eficiente programación de robots industriales, simulación y generación de código con un motor CAD/CAM."
+  },
+  "/partners": {
+    "title": "Robotmaster Soporte Preferencial - robotmaster.com",
+    "description": "Robotmaster colabora con los siguientes fabricantes e integradores de robots industriales que ofrecen soluciones llave en mano para aplicaciones industriales."
+  },
+  "/products/whats-new-in-v6": {
+    "title": "Software CAD/CAM para Simulación y Programación Robótica",
+    "description": "ROBOTMASTER V6 presenta RISE, el nuevo Entorno Interactivo de Simulación de Robotmaster, que proporciona una integración única del control e intervención del usuario."
+  },
+  "/applications": {
+    "title": "Programación Robótica para Aplicaciones Industriales - robotmaster.com",
+    "description": "Robotmaster es la solución CAD/CAM ideal para programación de tareas como corte, mecanizado 3D, desbarbado, pulido, soldadura, encolado, pintado y muchas más."
+  },
+  "/applications/trimming": {
+    "title": "Programación Robótica para Corte y Chorro de Agua",
+    "description": "Trayectorias robóticas de corte, corte con chorro de agua, láser, antorcha, plasma o cuchillo generadas automáticamente a partir de modelos CAD y fácilmente optimizadas."
+  },
+  "/applications/machining": {
+    "title": "Fresado Robótico | Fresado CAD/CAM | Programación de Fresado",
+    "description": "La programación CAD/CAM de Robotmaster utiliza sistemas automatizados para fresado robótico de piezas simples o complejas. Descubra las ventajas de las aplicaciones de fresado."
+  },
+  "/applications/deburring": {
+    "title": "Desbarbado Robótico | Programación CAD/CAM - robotmaster.com",
+    "description": "Robotmaster proporciona soluciones de programación de robots industriales que se pueden utilizar para desbarbado de aristas. Descubra las ventajas de nuestra programación CAD/CAM."
+  },
+  "/applications/welding": {
+    "title": "Programación de Soldadura Robótica | Programación CAD  - robotmaster.com",
+    "description": "Descubra la programación robótica para soldadura generada automáticamente a partir de modelos CAD, optimizada para ajustar el tamaño del cordón de soldadura, distancia a la pieza, inclinación y rotación de la antorcha."
+  },
+  "/applications/polishing": {
+    "title": "Pulido Robótico | CAD/CAM para Robots - robotmaster.com",
+    "description": "Robotmaster puede utilizarse para programar la automatización de aplicaciones de lijado y pulido robótico. Descubra las ventajas de nuestra programación CAD/CAM."
+  },
+  "/applications/dispensing": {
+    "title": "Encolado Robótico | CAD/CAM Robótico - robotmaster.com",
+    "description": "El software CAD/CAM Robotmaster puede utilizarse para aplicaciones de encolado. Descubra soluciones de programación de robots versátiles y rentables."
+  },
+  "/applications/deflashing": {
+    "title": "Programando Desbarbado | Programación Robótica - robotmaster.com",
+    "description": "Robotmaster puede utilizarse para programar robots en aplicaciones de desbarbado y corte con cuchillo, con trayectorias generadas automáticamente a partir de modelos CAD. Contacta con nosotros hoy."
+  },
+  "/applications/paint": {
+    "title": "Programación Robótica de Pintura & Revestimiento por Spray - robotmaster.com",
+    "description": "Robotmaster puede generar programas robóticos optimizados para asegurar la consistencia del spray, diámetro del inyector y mucho más. Descubra las ventajas del software robótico."
+  },
+  "/applications/rail-rotary": {
+    "title": "Programación y Simulación Robótica de Raíles Lineales y Mesas Rotativas - robotmaster.com",
+    "description": "Robotmaster puede utilizarse para programar robots equipados con ejes lineales y piezas montadas en mesas rotativas, ya sea de forma indexada o con movimiento simultáneo."
+  },
+  "/applications/part-to-tool": {
+    "title": "Programación de Aplicaciones Pieza-a-Herramienta para Robots Industriales - robotmaster.com",
+    "description": "Para aplicaciones Pieza-a-Herramienta los programas se pueden generar automáticamente a partir del modelo CAD, ajustados a las dimensiones de la herramienta de corte y al punto de contacto de la herramienta"
+  },
+  "/why-robotmaster": {
+    "title": "Programación Robótica | Software para Robots | Robótica Industrial ",
+    "description": "Robotmaster utiliza tecnologías maduras de software CAD/CAM para programar robots de forma rápida y flexible! Aprenda cómo obtener el máximo rendimiento de robots industriales con Robotmaster."
+  },
+  "/why-robotmaster/evolution-chart": {
+    "title": "Evolución de la Programación Robótica | Convertidor de Puntos CAD/CAM",
+    "description": "Aprovecha los robots al máximo utilizando Programación de Robots Industriales – ¿dónde estás en la evolución de la tecnología de programación robótica?"
+  },
+  "/why-robotmaster/benefits": {
+    "title": "Programar un Robot y Resolver los Desafíos de la Programación Robótica - robotmaster.com",
+    "description": "¿Sufriendo para programar un robot tal y como lo harías con una máquina herramienta CNC? Los expertos de Robotmaster están a la altura del desafío. Robotmaster resuelve fácilmente los siguientes problemas:"
+  },
+  "/success-stories": {
+    "title": "Historias de Éxito con Robotmaster - robotmaster.com",
+    "description": "Casos reales de clientes que han resuelto con éxito sus retos de programación robótica gracias a Robotmaster."
+  },
+  "/success-stories/flow-automation": {
+    "title": "Software Robótico | Software de Programación de Robots - robotmaster.com",
+    "description": "Descubra cómo el software robótico Robotmaster ayuda a mejorar la eficiencia de los robots. Infórmese acerca del software de programación robótica off-line y sensible a la trayectoria."
+  },
+  "/contact": {
+    "title": "Contáctenos | Robotmaster - Robotmaster.com",
+    "description": "Visítenos en www.robotmaster.com o no dude en llamarnos hoy. Estamos aquí para responder cualquier pregunta que pueda tener. Gracias!"
+  },
+  "/newsroom": {
+    "title": "Robotmaster Blog - Robotmaster.com",
+    "description": "¿Quiere estar al día de todas nuestras noticias y eventos? Agregue un marcador a nuestro blog para conocer lo último y mejor de Robotmaster. Visítenos en nuestro blog o llámenos hoy!"
+  },
+  "/newsroom/robotmaster-at-automatica-2014": {
+    "title": "Robotmaster en la Feria AUTOMATICA 2014",
+    "description": "Robotmaster estará exhibiendo at AUTOMATICA, la Feria Internacional de Automatización y Mecatrónica que durará del 3 al 6 de junio de 2014 en Munich (Alemania)."
+  },
+  "/newsroom/jabez-makes-cover-of-cio-review-magazine": {
+    "title": "Los 10 Proveedores de Soluciones de Ingeniería más Prometedores - Jabez Technologies",
+    "description": "Jabez Technologies (desarrolladores de Robotmaster) aparecen en la portada de la CIO Review Magazine y son reconocidos como uno de los 10 Proveedores de Soluciones de Ingeniería más Prometedoras de 2014."
+  },
+  "/newsroom/jabez-released-robotmaster-v6-1": {
+    "title": "Robotmaster V6.1 - Mejoras en el Control y Simulación de Procesos Robóticos",
+    "description": "Jabez Technologies acaba de lanzar Robotmaster V6.1. Basado en el Entorno Interactivo de Simulación de Robotmaster introducido en 2013, V6.1. Llame ahora para obtener más información."
+  },
+  "/newsroom/jabez-wins-game-changer-awards": {
+    "title": "Jabez Technologies Gana el Game Changer Awards - robotmaster.com",
+    "description": "ROBOTMASTER V6 integra perfectamente la programación de robots, simulación y generación de código dentro del software CAM, proporcionando una programación robótica más rápida. Llame ahora para obtener más información."
+  },
+  "/newsroom/jabez-release-robotmaster-v6": {
+    "title": "Robotmaster V6 - El Nuevo Entorno Interactivo de Simulación",
+    "description": "La nueva e intuitiva interfaz de V6 eleva a Robotmaster a un nivel de experiencia de usuario sin precedentes, proporcionando a los programadores de robots una herramienta coherente y dinámica."
+  },
+  "/newsroom/intuitive-robot-programming-for-aerospace-manufacturing": {
+    "title": "Programación Robótica para la Industria Aeroespacial - robotmaster.com",
+    "description": "Al tratarse de herramientas flexibles para la fabricación y ensamblaje de aeronaves, los robots transformarán la industria aeroespacial. Leer más en robotmaster.com"
+  },
+  "/newsroom/csf-robotics-becomes-a-robotmaster-reseller": {
+    "title": "CSF Robotics se convierte en revendor de Robotmaster",
+    "description": "Estamos orgullosos de anunciar que CSF Robotics se convierte en revendedor de Robotmaster para Australia y la región Asia-Pacífico."
+  },
+  "/newsroom/robotmaster-has-its-first-authorized-distributor-in-thailand": {
+    "title": "Robotmaster presenta su primer distribuidor autorizado en Tailandia",
+    "description": "Estamos orgullosos de anunciar que Golden Robot se ha convertido en el primer distribuidor autorizado de Robotmaster en Tailandia"
+  },
+  "/newsroom/amrc-lends-a-hand-to-sheffield-students-racing-team": {
+    "title": "AMRC | Advanced Manufacturing Research Centre - robotmaster.com",
+    "description": "El centro AMRC de la Universidad de Sheffield ha utilizado Robotmaster para diseñar y fabricar un coche de carreras destinado al equipo de competición de estudiantes. Leer más en robotmaster.com"
+  },
+  "/newsroom/robotmaster-asia-leads-the-robotic-revolution-at-beijing-essen-welding-&-cutting-2015": {
+    "title": "Revolución Robótica | Beijing Essen Welding - robotmaster.com",
+    "description": "Robotmaster lidera la revolución robótica en la feria Beijing Essen Welding & Cutting de este año. Aprenda cómo contribuyeron a ello nuestras tecnologías únicas de programación."
+  },
+  "/newsroom/robotmaster-now-supporting-nachi-brand-of-robot": {
+    "title": "Robots NACHI | Fabricante de robots - robotmaster.com",
+    "description": "Como líder en softwares de programación offline para robótica, Robotmaster ya incluye soporte a la marca japonesa de robots NACHI. Leer más en robotmaster.com"
+  },
+  "/newsroom/composites-and-robotmaster": {
+    "title": "Fabricación y Corte Robótico de Materiales Compuestos - robotmaster.com",
+    "description": "Robotmaster muestra herramientas de programación rentables y de vanguardia para fabricación de materiales compuestos. Leer más en robotmaster.com"
+  },
+  "/newsroom/robotm-br-reinforces-the-growing-presence-of-robotmaster-in-latin-america-at-feimafe-2015": {
+    "title": "Feimafe | Robotmaster en Latinoamérica- robotmaster.com",
+    "description": "Feimafe permitió a Robotmaster formar parte de la tecnología de vanguardia a nivel global. Infórmese sobre la conferencia principal y la feria de mecanizado."
+  },
+  "/newsroom/hypertherm-expands-robotic-capabilities-with-purchase-of-jabez-technologies": {
+    "title": "Hypertherm Software | Software Robótico - robotmaster.com",
+    "description": "Hypertherm amplía sus capacidades robóticas con la compra de Jabez Technologies, facilitando a las empresas utilizar robots para fabricación. Leer más."
+  }
+}

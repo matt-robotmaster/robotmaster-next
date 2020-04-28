@@ -1,0 +1,150 @@
+{
+  "/": {
+    "title": "Robotmaster CAD/CAM机器人编程 (离线编程)",
+    "description": "Robotmaster是完美的离线机器人CAD/CAM编程工具，可针对3D机械加工、修边、焊接和点胶快速地提出无误的机器人控制程序"
+  },
+  "/about": {
+    "title": " CAD/CAM 软件 | 工业机器人编程- robotmaster.com ",
+    "description": "我们致力于提供先进的工业机器人编程技术，为工业制造提供多样化、可盈利的机器人解决方案"
+  },
+  "/products": {
+    "title": " CAD/CAM 机器人编程- robotmaster.com ",
+    "description": " Robotmaster在流线型CAD/CAM引擎中无缝集成了机器人编程、仿真及代码生成，，提高并优化了机器人编程速度"
+  },
+  "/partners": {
+    "title": "Robotmaster支持优选合作伙伴- robotmaster.com ",
+    "description": "Robotmaster与下列机器人制造商和集成商展开合作，为工业应用提供成套的机器人解决方案。"
+  },
+  "/products/whats-new-in-v6": {
+    "title": " CAD/CAM 机器人仿真&编程软件",
+    "description": " ROBOTMASTER V6是基于RISE的交互仿真环境，特有的集成了用户控制和干预功能。"
+  },
+  "/applications": {
+    "title": "工业应用机器人编程- robotmaster.com ",
+    "description": "Robotmaster是以下行业应用的理想选择：修整、3D加工、去毛刺、抛光、点胶、研磨、喷漆等"
+  },
+  "/applications/trimming": {
+    "title": "修整、打槽、水切割机器人编程",
+    "description": "基于CAD模型可自动生成并轻松优化打槽、水切割、激光、火焰、等离子或随动刀具轨迹。"
+  },
+  "/applications/machining": {
+    "title": "机器人加工 | CAD/CAM 研磨编程",
+    "description": "Robotmaster CAD/CAM 编程可利用自动化系统对简单或复杂部件进行机械研磨。研磨应用优势"
+  },
+  "/applications/deburring": {
+    "title": "去毛刺| CAD/CAM编程- robotmaster.com | ",
+    "description": "基于Robotmaster提出的工业机器人编程解决方案可用于毛边去毛刺。CAD/CAM编程优势 "
+  },
+  "/applications/welding": {
+    "title": "焊接编程 | 编程 - robotmaster.com",
+    "description": "机器人焊接编程，CAD模型自动生成，可针对焊珠大小、零件距离、焊枪倾斜度等进行优化调节"
+  },
+  "/applications/polishing": {
+    "title": "抛光| CAD/CAM for Robots - robotmaster.com ",
+    "description": "Robotmaster可用于机器人打磨和抛光应用编程。CAD/CAM 编程优势。"
+  },
+  "/applications/dispensing": {
+    "title": "机器人点胶 | CAD/CAM Robotics - robotmaster.com",
+    "description": " Robotmaster CAD/CAM 软件可用于点胶编程，提供多样化、可盈利的机器人解决方案。"
+  },
+  "/applications/deflashing": {
+    "title": " 修边 | 机器人编程 - robotmaster.com",
+    "description": "Robotmaster可用于对修边及刀具裁剪应用进行编程，基于CAD模型自动生成。联系我们。"
+  },
+  "/applications/paint": {
+    "title": "自动涂漆&喷漆机器人编程 - robotmaster.com ",
+    "description": "Robotmaster可生成优化的机器人涂漆程序，确保喷漆的一致性、喷嘴直径及其他。Robotmaster软件优势。"
+  },
+  "/applications/rail-rotary": {
+    "title": "导轨式&旋转式机器人编程&仿真 - robotmaster.com",
+    "description": "Robotmaster可用于编写直线导轨型机器人和回转台型零件的程序。可以作为分度器使用导轨和回转台，也可以让导轨或回转台完全同步运动。"
+  },
+  "/applications/part-to-tool": {
+    "title": "Robotmaster编写零件至刀具应用程序 - robotmaster.com ",
+    "description": "针对零件至刀具应用，基于CAD模型自动编程，并根据刀具尺寸或工具接触位置进行调节。"
+  },
+  "/why-robotmaster": {
+    "title": "机器人编程 | 机器人软件 | 工业机器人 ",
+    "description": "Robotmaster利用成熟的CAD/CAM软件技术灵活快速地编写机器人程序。"
+  },
+  "/why-robotmaster/evolution-chart": {
+    "title": "机器人编程的发展| CAD/CAM点转换器",
+    "description": "充分发挥工业机器人的潜力--您处于机器人编程技术发展的哪个阶段？"
+  },
+  "/why-robotmaster/benefits": {
+    "title": "机器人编程 &解决机器人编程难题  - robotmaster.com ",
+    "description": "还在苦苦寻找同数控机床一样的机器人编程方法？不妨用Robotmaster解决难题：Robotmaster可轻松解决以下难题："
+  },
+  "/success-stories": {
+    "title": "Robotmaster成功案例- robotmaster.com ",
+    "description": "客户采用Robotmaster成功解决机器人编程难题的案例"
+  },
+  "/success-stories/flow-automation": {
+    "title": "Robotics Software |机器人编程软件 - robotmaster.com",
+    "description": "发现Robotmaster机器人编程软件是如何提供机器人效率的。了解敏感路径，离线机器人编程软件。"
+  },
+  "/contact": {
+    "title": "联系我们 | Robotmaster - Robotmaster.com",
+    "description": "在线访问我们请点击www.robotmaster.com或随时来电咨询任何问题。谢谢！"
+  },
+  "/newsroom": {
+    "title": "Robotmaster日志 - Robotmaster.com",
+    "description": "请关注Robotmaster的博客，了解公司的新闻和活动。欢迎访问公司网站或拨打公司电话！"
+  },
+  "/newsroom/robotmaster-at-automatica-2014": {
+    "title": " AUTOMATICA 2014 Robotmaster展览",
+    "description": " Robotmaster将在AUTOMATICA上展出，该自动化和机电一体化国际交易会将于2014年6月3日到6日在德国慕尼黑召开。"
+  },
+  "/newsroom/jabez-makes-cover-of-cio-review-magazine": {
+    "title": " 十大最有前途的工程设计解决方案供应商 – Jabez科技",
+    "description": " Robotmaster的开发单位Jabez科技登上《信息总监评论》杂志封面，入选2014年度“十大最具潜力的工程解决方案供应商”。 "
+  },
+  "/newsroom/jabez-released-robotmaster-v6-1": {
+    "title": "Robotmaster V6.1 - 增强的机器人程序控制和仿真",
+    "description": " Jabez科技刚刚发布了建立在2013年推出的Robotmaster交互式仿真环境之上的Robotmaster6.1版。欲知详情，请致电本公司。"
+  },
+  "/newsroom/jabez-wins-game-changer-awards": {
+    "title": "Jabez科技赢得创变者奖",
+    "description": "ROBOTMASTER V6在CAM软件中无缝集成了机器人编程、仿真和代码生成，进一步提高了机器人编程速度。来电咨询更多信息。"
+  },
+  "/newsroom/jabez-release-robotmaster-v6": {
+    "title": "Robotmaster V6 -新型交互仿真环境",
+    "description": "V6为机器人编程员提供了统一动态工具，其全新、直观的界面使Robotmaster的用户体验达到前所未有的高度。"
+  },
+  "/newsroom/intuitive-robot-programming-for-aerospace-manufacturing": {
+    "title": "航天制造业机器人编程- robotmaster.com ",
+    "description": "机器人是非常灵活的飞机制造和装配工具，极有可能改变航空航天行业的格局。详情参见本公司网站：robotmaster.com。"
+  },
+  "/newsroom/csf-robotics-becomes-a-robotmaster-reseller": {
+    "title": "CSF成为Robotmaster 代理商",
+    "description": "我们很自豪地宣布CSF成为Robotmaster澳大利亚和亚太地区代理商。"
+  },
+  "/newsroom/robotmaster-has-its-first-authorized-distributor-in-thailand": {
+    "title": "Robotmaster首次在泰国授权经销商",
+    "description": "我们很自豪地宣布Golden Robot成为Robotmaster在泰国的第一个授权经销商。 "
+  },
+  "/newsroom/amrc-lends-a-hand-to-sheffield-students-racing-team": {
+    "title": "先进制造研究中心 - robotmaster.com",
+    "description": "谢菲尔德大学先进制造研究中心采用Robotmaster为学生车队设计并制造出赛车。获取更多资讯请访问robotmaster.com "
+  },
+  "/newsroom/robotmaster-asia-leads-the-robotic-revolution-at-beijing-essen-welding-&-cutting-2015": {
+    "title": "机器人革命| 北京·埃森焊接- robotmaster.com",
+    "description": "Robotmaster在今年的北京·埃森焊接 &切割博览会上一领机器人革命。了解我们独特的编程技术是如何做出贡献的。"
+  },
+  "/newsroom/robotmaster-now-supporting-nachi-brand-of-robot": {
+    "title": "NACHI 机器人 | 机器人制造商 - robotmaster.com",
+    "description": "作为机器人离线编程软件行业的领头羊，Robotmaster为日本的NACHI 机器人品牌提供强力支持。获取更多信息请访问robotmaster.com "
+  },
+  "/newsroom/composites-and-robotmaster": {
+    "title": "机器人复合材料制造 & 修边- robotmaster.com",
+    "description": "Robotmaster为成本效益高、前沿的编程工具可用于复合材料制造行业。获取更多信息请访问robotmaster.com"
+  },
+  "/newsroom/robotm-br-reinforces-the-growing-presence-of-robotmaster-in-latin-america-at-feimafe-2015": {
+    "title": "Feimafe | Robotmaster在拉丁美洲 - robotmaster.com",
+    "description": "Feimafe允许Robotmaster成为全球前沿科技的一部分。获取更多机械加工会议和贸易展览信息 "
+  },
+  "/newsroom/hypertherm-expands-robotic-capabilities-with-purchase-of-jabez-technologies": {
+    "title": "人工发热机软件 | 机器人软件 - robotmaster.com",
+    "description": "通过购买Jabez技术，人工发热机扩展了机器人功能，使得用户更易于利用机器人进行加工制造。"
+  }
+}
