@@ -1,0 +1,38 @@
+.navbarDefault {
+  border: 0;
+  margin-bottom: 0;
+}
+.navbarBrand {
+  padding: 0;
+  margin-left: 10px;
+  height: 100px;
+  position: relative;
+  display: inline-block;
+}
+.logo {
+  height: 100%;
+  background-image: url('/img/logo.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  width: 250px;
+}
+@media (min-width: 1200px) {
+  .logo {
+    width: 290px;
+  }
+}
+.navbarNav {
+  margin-top: 38px;
+}
+@media (max-width: 992px) {
+  .navbarNav {
+    margin-top: 0;
+  }
+}
+.navbarNavLiA {
+  font-weight: bold;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 5px solid transparent;
+}

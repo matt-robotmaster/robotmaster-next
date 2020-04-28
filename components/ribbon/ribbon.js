@@ -34,7 +34,7 @@ const ribbon = () => {
           <Col md={6} sm={12} className={classes.bannerSlideElement}>
             <a href="newsroom" className={classes.ribbonA} >
               <div className={classes.imgContainer}>
-                <img alt='Latest News' className={[classes.fixedImageImg, classes.imgContainerImg]} src={getLatestNewsroomImgSrc()} />
+                <img alt='Latest News' className={`${classes.fixedImageImg} ${classes.imgContainerImg}`} src={getLatestNewsroomImgSrc()} />
               </div>
             </a>
             <h2 className={classes.ribbonH2}>
@@ -52,7 +52,7 @@ const ribbon = () => {
                     return (
                         <Carousel.Item>
                           <img
-                              className={[classes.imgContainerImg, "d-block", "w-100"]}
+                              className={`${classes.imgContainerImg} d-block w-100`}
                               src={event.img}
                               alt="slide"
                           />

@@ -1,7 +1,8 @@
 import React from "react";
-
 import applications from '../../../applications.json';
 import useTranslation from "../../../hooks/useTranslation";
+import {Col, Container, Row} from "react-bootstrap";
+import classes from './footer.module.css'
 
 const footer = () => {
   const { t } = useTranslation();
@@ -44,10 +45,8 @@ const footer = () => {
 
   const createColumn = (column, index) => {
     return (
-        <div
-            className={'col-xs-6 col-sm-4 col-md-4 col-lg-2' + (index === 0 ?
-                ' col-lg-offset-1' : '')}
-            key={column.title}>
+        <Col xs={6} sm={4} md={4} lg={{span: 2, offset: index === 0 ? 1 : 0}}
+             key={column.title}>
           <h5>
             {column.title}
           </h5>
@@ -62,53 +61,55 @@ const footer = () => {
               );
             })}
           </ul>
-        </div>
+        </Col>
     );
   };
 
   const createIcon = (icon, url) => {
     return (
-        <span className="icon">
-        <a href={url} rel='noreferrer noopener' target="_blank">
-          <i className={'fa fa-' + icon} />
-        </a>
-      </span>
+        <span className={classes.icon}>
+          <a href={url} rel='noreferrer noopener' target='_blank'>
+            <i className={'fa fa-' + icon} />
+          </a>
+        </span>
     );
   };
 
+  //TODO fix hrefs
+
   return (
-      <div className="footer">
-        <div className="container">
-          <div className="row">
+      <div className={classes.footer}>
+        <Container>
+          <Row>
             {columns.map(column => createColumn(column))}
-          </div>
-          <div className="row legal">
-            <p className='legalPara'>
-              <a href="privacy">
+          </Row>
+          <Row className={classes.legal}>
+            <p className={classes.legalPara}>
+              <a href='privacy'>
                 {t('privacy-page-caption')}
               </a>
               <span>
                 {' | '}
               </span>
-              <a href="disclaimer">
+              <a href='disclaimer'>
                 {t('disclaimer-page-caption')}
               </a>
               <span>
                 {' | '}
               </span>
-              <a href="eula">
+              <a href='eula'>
                 {t('footer-terms-of-use')}
               </a>
               <span>
                 {' | '}
               </span>
-              <a href="gdpr">
+              <a href='gdpr'>
                 {t('footer-gdpr')}
               </a>
               <span>
                 {' | '}
               </span>
-              <span className="copyright">
+              <span className={classes.copyright}>
                 {t('footer-copyright')}
               </span>
               {createIcon('facebook-square',
@@ -122,8 +123,8 @@ const footer = () => {
               {createIcon('instagram',
                   'https://www.instagram.com/robotmaster')}
             </p>
-          </div>
-        </div>
+          </Row>
+        </Container>
       </div>
   );
 }
