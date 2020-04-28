@@ -46,7 +46,6 @@ const Home = () => {
               <Row>
                 <Col md={{span: 5, offset: 1}}>
                   <h1 className={classes.homeH1First}>
-                    {t('readMore')}
                     {t('home-heading-1-part-1')}
                   </h1>
                   <h1 className={classes.homeH1AfterH1}>
