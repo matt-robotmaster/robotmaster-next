@@ -1,9 +1,22 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {Dropdown, DropdownButton} from 'react-bootstrap';
 import useTranslation from "../../../hooks/useTranslation";
 
-const topbar = ({ isTopbarFixed }) => {
+const topbar = () => {
   const { t } = useTranslation();
+  const [isTopbarFixed, setIsTopbarFixed] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  });
+
+  const handleScroll = () => {
+    const isScrolledFromTop = window.scrollY > 0;
+    if (isScrolledFromTop !== isTopbarFixed) {
+      setIsTopbarFixed(isScrolledFromTop);
+    }
+  }
+
   return (
       <div className={'topbar ' + (isTopbarFixed ? 'topbarFixed' : '')}>
         <div className="container">
