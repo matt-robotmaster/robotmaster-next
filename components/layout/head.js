@@ -11,7 +11,6 @@ const head = () => {
   const mainPage = router.asPath.split('/')[2] ? '/' + router.asPath.split('/')[2] : '/';
   const subPage = router.asPath.split('/')[3] ? '/' + router.asPath.split('/')[3] : '';
 
-  console.log();
   return (
       <Head>
         <title>{metadata[locale][mainPage + subPage].title}</title>

@@ -50,6 +50,7 @@
   cursor: pointer;
   background-color: #454545;
   font-weight: bold;
+  margin-top: 20px;
 }
 #language-chooser:hover, #language-chooser.open {
   color: #fffefe;
@@ -57,7 +58,24 @@
 #language-chooser i {
   margin-left: 20px;
 }
-
+.dropdown-menu {
+  top: 47px;
+  left: -27px;
+  border-radius: 1px;
+  background-color: #000;
+}
+.dropdown-menu li a {
+  color: #fffefe;
+}
+.dropdown a {
+  margin: 0;
+  text-decoration: none;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+}
 .topbarMenu {
   position: fixed;
   top: 50px;
