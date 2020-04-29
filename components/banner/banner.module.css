@@ -1,0 +1,21 @@
+.banner {
+  overflow: hidden;
+}
+.bannerImgContainer {
+  height: 227px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: unset;
+  background-size: cover;
+}
+.caption {
+  position: absolute;
+  top: 256px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: inline;
+  padding: 12px 64px;
+  color: white;
+  font-size: 36px;
+}

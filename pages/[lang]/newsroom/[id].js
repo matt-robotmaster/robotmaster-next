@@ -3,6 +3,7 @@ import Layout from '../../../components/layout/layout';
 import { getAllPostPaths, getPostData } from "../../../lib/posts";
 import Head from "next/head";
 import {Col, Container, Row} from "react-bootstrap";
+import Banner from '../../../components/banner/banner';
 
 const post = ({ postData }) => {
   return (
@@ -10,6 +11,7 @@ const post = ({ postData }) => {
         <Head>
           <title>{postData.title}</title>
         </Head>
+        <Banner caption={'blog-page-caption'}/>
         <Container>
           <Row>
             <Col md={12}>
