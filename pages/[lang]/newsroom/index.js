@@ -36,6 +36,7 @@ const newsroom = ({posts}) => {
                 </Link>
               </div>
           ) : null)}
+          <hr className={classes.blogPostSummaryHr} />
         </Container>
       </Layout>
   );
