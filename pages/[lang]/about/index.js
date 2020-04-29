@@ -2,7 +2,7 @@ import React from 'react';
 import withLocale from "../../../hocs/withLocale";
 import Layout from '../../../components/layout/layout';
 
-const Home = () => {
+const about = () => {
   return (
       <Layout>
         About!
@@ -10,4 +10,4 @@ const Home = () => {
   );
 };
 
-export default withLocale(Home);
+export default withLocale(about);
