@@ -17,14 +17,14 @@ export default (WrappedPage) => {
   };
 
   WithLocale.getInitialProps = async ctx => {
-    let pageProps = {}
+    let pageProps = {};
     if (WrappedPage.getInitialProps) {
-      pageProps = await WrappedPage.getInitialProps(ctx)
+      pageProps = await WrappedPage.getInitialProps(ctx);
     }
     if (typeof ctx.query.lang !== 'string' || !isLocale(ctx.query.lang)) {
-      return { ...pageProps, locale: undefined }
+      return { ...pageProps, locale: undefined };
     }
-    return { ...pageProps, locale: ctx.query.lang }
+    return { ...pageProps, locale: ctx.query.lang };
   };
 
   WithLocale.displayName = `withLang(${getDisplayName(WrappedPage)})`;
