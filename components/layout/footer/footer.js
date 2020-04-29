@@ -86,25 +86,25 @@ const footer = () => {
           </Row>
           <Row className={classes.legal}>
             <p className={classes.legalPara}>
-              <Link href={`${locale}/privacy`}>
+              <Link href={`/${locale}/privacy`}>
                 {t('privacy-page-caption')}
               </Link>
               <span>
                 {' | '}
               </span>
-              <Link href={`${locale}/disclaimer`}>
+              <Link href={`/${locale}/disclaimer`}>
                 {t('disclaimer-page-caption')}
               </Link>
               <span>
                 {' | '}
               </span>
-              <a href={`${locale}/eula`}>
+              <a href={`/${locale}/eula`}>
                 {t('footer-terms-of-use')}
               </a>
               <span>
                 {' | '}
               </span>
-              <a href={`${locale}/gdpr`}>
+              <a href={`/${locale}/gdpr`}>
                 {t('footer-gdpr')}
               </a>
               <span>

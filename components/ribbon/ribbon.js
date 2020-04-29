@@ -30,7 +30,7 @@ const ribbon = () => {
       <Container className={classes.ribbon}>
         <Row>
           <Col md={6} sm={12} className={classes.bannerSlideElement}>
-            <Link href={`${locale}/newsroom`} passHref>
+            <Link href={`/${locale}/newsroom`} passHref>
               <a className={classes.ribbonA} >
                 <div className={classes.imgContainer}>
                   <img alt='Latest News' className={`${classes.fixedImageImg} ${classes.imgContainerImg}`} src={getLatestNewsroomImgSrc()} />
@@ -40,14 +40,14 @@ const ribbon = () => {
             <h2 className={classes.ribbonH2}>
               {t('ribbon-heading-3')}
             </h2>
-            <Link href={`${locale}/newsroom`} passHref>
+            <Link href={`/${locale}/newsroom`} passHref>
               <a className={classes.ribbonA} >
                 {t('ribbon-desc-2')}
               </a>
             </Link>
           </Col>
           <Col md={6} sm={12} className={classes.bannerSlideElement}>
-            <Link href={`${locale}/events`} passHref>
+            <Link href={`/${locale}/events`} passHref>
               <a className={classes.ribbonA} >
                 <div className={classes.imgContainer}>
                   <Carousel indicators={false}>
@@ -69,7 +69,7 @@ const ribbon = () => {
             <h2 className={classes.ribbonH2}>
               {t('ribbon-heading-1')}
             </h2>
-            <Link href={`${locale}/events`} passHref>
+            <Link href={`/${locale}/events`} passHref>
               <a className={classes.ribbonA} >
                 {t('ribbon-desc-1')}
               </a>

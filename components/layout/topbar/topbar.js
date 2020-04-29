@@ -26,14 +26,14 @@ const topbar = () => {
   return (
       <div className={'topbar ' + (isTopbarFixed ? 'topbarFixed' : '')}>
         <Container>
-          <Link href={`${locale}/contact/live-demo-request`} passHref>
+          <Link href={`/${locale}/contact/live-demo-request`} passHref>
             <a
                 className={'btn btn-primary navbar-cta navbar-cta-first ' +
                 (isTopbarFixed ? 'navbar-cta-fixed' : '')}>
               {t('topbar-live-demo')}
             </a>
           </Link>
-          <Link href={`${locale}/contact/contact-me-request`} passHref>
+          <Link href={`/${locale}/contact/contact-me-request`} passHref>
             <a
                 className={'btn btn-primary navbar-cta ' +
                 (isTopbarFixed ? 'navbar-cta-fixed' : '')}>
@@ -44,10 +44,10 @@ const topbar = () => {
             <Navbar.Toggle aria-controls='topbar-navbar-nav' />
             <Navbar.Collapse id='topbar-navbar-nav'>
               <Nav className='mr-auto'>
-                <Link href={`${locale}/contact`} passHref>
+                <Link href={`/${locale}/contact`} passHref>
                   <Nav.Link>{t('contact-page-caption')}</Nav.Link>
                 </Link>
-                <Link href={`${locale}/newsroom`} passHref>
+                <Link href={`/${locale}/newsroom`} passHref>
                   <Nav.Link>{t('blog-page-caption')}</Nav.Link>
                 </Link>
                 <Nav.Link href="https://robotmaster.atlassian.net/servicedesk/customer/portals"

@@ -66,7 +66,7 @@ const Home = () => {
                       {t('home-section-1-listitem-4')}
                     </li>
                   </ul>
-                  <Link href={`${locale}/products`} passHref>
+                  <Link href={`/${locale}/products`} passHref>
                     {t('general-learn-more-dotted')}
                   </Link>
                 </Col>
@@ -88,7 +88,7 @@ const Home = () => {
                   <p>
                     {t('home-section-2-para')}
                   </p>
-                  <Link href={`${locale}/why-robotmaster`}>
+                  <Link href={`/${locale}/why-robotmaster`}>
                     {t('general-learn-more-dotted')}
                   </Link>
                 </Col>
@@ -123,7 +123,7 @@ const Home = () => {
                   <p>
                     {t('home-section-3-para')}
                   </p>
-                  <Link href={`${locale}/applications`}>
+                  <Link href={`/${locale}/applications`}>
                     {t('general-learn-more-dotted')}
                   </Link>
                 </Col>
@@ -148,7 +148,7 @@ const Home = () => {
                     <p>
                       {t('home-section-4-para')}
                     </p>
-                    <Link href={`${locale}/why-robotmaster`}>
+                    <Link href={`/${locale}/why-robotmaster`}>
                       {t('general-learn-more-dotted')}
                     </Link>
                   </Col>
