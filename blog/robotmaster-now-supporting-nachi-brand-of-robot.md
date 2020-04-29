@@ -1,3 +1,12 @@
+---
+link: "robotmaster-now-supporting-nachi-brand-of-robot"
+title: "Robotmaster now supporting Nachi brand of robots"
+description: ""
+publishDate: "2015-06-02"
+preview: "/img/blog/Nachi.jpg"
+home: ""
+summary: "Robotmaster (Jabez Technologies), a leader in offline programming software for robotics, today announced that it is now supporting Nachi-Fujikoshi Corporation’s NACHI robots."
+---
 **Montreal, CANADA, June 2, 2015** – Robotmaster (Jabez Technologies), a leader in offline programming software for robotics, today announced that it is now supporting Nachi-Fujikoshi Corporation’s NACHI robots.   Robotmaster is thankful to its Japanese Distributor, Genetec, who helped in carrying out testing with Nachi in Japan.  The two companies have come together to leverage on their technological excellence and innovative strength to accurately respond to market demands.
 
 <div style="font-size:80%; text-align: center; float:left;margin-right: 1em;color:grey;"><img src="/img/blog/Nachi.jpg" alt="alternate text" style="width:300px; display: block;margin-bottom: 0.2em;"></div>

@@ -1,3 +1,12 @@
+---
+link: "robotmaster-dramatically-changing-construction-timber-industry"
+title: "Robotmaster Dramatically Changing Construction Timber Industry"
+description: ""
+publishDate: "2015-12-18"
+preview: "/img/blog/bbc-4.png"
+home: "/img/blog/bbc-5.png"
+summary: "**Montreal, QC—Dec. 17, 2015** - The BBC showed how Robotmaster is dramatically simplifying the complex milling processes that architecture students need to turn firewood quality timber into high quality construction timber."
+---
 <div style="font-size:80%; text-align: center; float:center;margin-bottom: 1em;color:grey;"><img src="/img/blog/bbc-3.png" alt="alternate text" style="width:500px; display: block;margin-bottom: 0.2em; margin-left: auto; margin-right: auto;">Courtesy of Architectural Association School of Architecture</div>
 
 **Montreal, QC—Dec. 17, 2015** - Dorset, England is known for their large woodlands, and Hooke Park- being 50 acres of woodland, is Dorset’s biggest one yet. Located just north west of Dorchester, Hooke Park’s woodlands mainly consist of 2 species of trees that were planted from the 1950s. Their plan is to have over 15 species that are durable and strong in 50 to 60 years so they can provide a product for the future. 

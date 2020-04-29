@@ -1,3 +1,12 @@
+---
+link: "robotmaster-at-cmts-2019"
+title: "Robotmaster Exhibiting at CMTS 2019"
+description: ""
+publishDate: "2019-09-13"
+preview: "/img/blog/cmts-logo.png"
+home: "/img/blog/v7-article-homepage.jpg"
+summary: "Robotmaster will be exhibiting at CMTS 2019 this year from September 30 - October 3 at The International Centre in Toronto, Canada."
+---
 **Montreal, CANADA, September 25, 2019** – Hypertherm's Robotic Software team, developers of Robotmaster, will be exhibiting at <a href="https://cmts.ca">CMTS 2019</a> which will be held from September 30 - October 3 at The International Centre in Toronto, Canada. Located in booth 1010, passerby's and visitors of the booth will get an opportunity to see a preview of the world's most advanced CAD/CAM based offline robot programming software.
 
 <div style="font-size:80%; text-align: center; float:center;margin-bottom: 1em;color:grey;"><img src="/img/blog/waterjet-cutting.png" alt="alternate text" style="max-width:70%; display: block;margin-bottom: 0.2em; margin-left: auto; margin-right: auto;"></div>

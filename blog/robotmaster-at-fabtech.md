@@ -1,3 +1,12 @@
+---
+link: "robotmaster-at-fabtech-2016"
+title: "Robotmaster at FABTECH 2016"
+description: ""
+publishDate: "2016-11-14"
+preview: "/img/blog/fabtech-logo.png"
+home: "/img/blog/fabtech-logo-home.png"
+summary: "Robotmaster will be exhibiting at Fabtech 2016 which will be held November 16-18 at the Las Vegas Convention Center in Las Vegas Nevada."
+---
 **Montreal, CANADA, November 14, 2016** –  Hypertherm Robotic Software will be exhibiting at Fabtech 2016 which will be held November 16-18 at the Las Vegas Convention Center in Las Vegas Nevada.  Come visit us in the North Hall at our main Booth N3724 for a preview of our revolutionary next generation technologies, further enabling the economic implementation of robots to fabrication companies of all sizes. Our latest software tools provide robot programmers an easy way to optimize their cutting and welding processes radically saving time and money.
 
 You will also have the opportunity to see two live robotic demo stations performing cutting and welding as well as a demo of the unparalleled ease-of-use to successfully program robotic applications for metal fabrication. Robotmaster will also be displayed in the Central Hall at the main Hypertherm booth (C27069) including a live robotic plasma cutting demonstration.

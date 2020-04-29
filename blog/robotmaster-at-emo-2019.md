@@ -1,3 +1,12 @@
+---
+link: "robotmaster-at-emo-2019"
+title: "Robotmaster Exhibiting at EMO 2019"
+description: ""
+publishDate: "2019-09-13"
+preview: "/img/blog/emo-logo-2019.jpg"
+home: "/img/blog/v7-article-homepage.jpg"
+summary: "Robotmaster will be displaying its latest revolutionary technology this year at EMO 2019 in Hannover, Germany."
+---
 <div style="font-size:80%; text-align: center; float:left;margin-right: 1em;color:grey;"><img src="/img/blog/emo-logo-2019.jpg" alt="alternate text" style="width:300px; display: block;margin-bottom: 0.2em;"></div>  <br />
 
 **Montreal, CANADA, September 13, 2019** – Intercam SA- the distributor of Robotmaster in Europe, will be exhibiting at EMO 2019 from September 16 to the 21st at the Hannover Messe in Hannover, Germany. Visit them in hall 9 booth B23 for a preview of the world's leading CAD/CAM based offline robot programming software. 

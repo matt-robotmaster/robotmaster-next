@@ -1,3 +1,12 @@
+---
+link: "robotmaster-asia-leads-the-robotic-revolution-at-beijing-essen-welding-&-cutting-2015"
+title: "Robotmaster Asia Leads The Robotic Revolution at Beijing Essen Welding & Cutting 2015"
+description: ""
+publishDate: "2015-07-04"
+preview: "/img/blog/Assinatura_Beijing.png"
+home: ""
+summary: "Montreal, CANADA and Shanghai, CHINA, July 2, 2015 – From June 16th – 19th, Robotmaster impressively underpinned its visionary position at the Beijing Essen Welding & Cutting Fair (BEW)."
+---
 **Montreal, CANADA and Shanghai, CHINA, July 2, 2015** – From June 16th – 19th, Robotmaster impressively underpinned its visionary position at the Beijing Essen Welding & Cutting Fair (BEW). In its 19th year, BEW is the premier welding exhibition within the robotics landscape in China and was a solid platform for Robotmaster to showcase its robot programming technologies. With 40,000+ attendees, visitors had the opportunity to see why Robotmaster’s CAD/CAM solution is at the forefront of the robotic revolution. The solution tackles manufacturing challenges and enables manufacturers to adopt robotics and deliver better products.
 
 Providing seamless integration between CAD/CAM and robots, Robotmaster’s programming technologies are unique in enabling a multitude of robot capabilities for a diverse set of industries (i.e. aerospace, high technology, machinery and manufacturing).

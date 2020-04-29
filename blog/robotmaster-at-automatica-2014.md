@@ -1,3 +1,12 @@
+---
+link: "robotmaster-at-automatica-2014"
+title: "Robotmaster at AUTOMATICA 2014"
+description: ""
+publishDate: "2014-05-30"
+preview: "/img/blog/automatica-booth.png"
+home: ""
+summary: "Robotmaster will be exhibiting at AUTOMATICA, the International Trade Fair for Automation and Mechatronics that runs from June 3 to 6 2014 in Munich (Germany).  Come visit us at Hall B4, Stand 307 and ask for a demo of Robotmaster."
+---
 ![Alt text](/img/blog/Automatica+Booth.png)
 Robotmaster will be exhibiting at AUTOMATICA, the International Trade Fair for Automation and Mechatronics that runs from June 3 to 6 2014 in Munich (Germany).  Come visit us at Hall B4, Stand 307 and ask for a demo of Robotmaster.  Discover the revolutionary software that has enabled the economic implementation of robots to companies of all sizes, from small local shops to large global manufacturing conglomerates.  New Robotmaster features will be unveiled that continue to break the programing cost/complexity barrier.
 

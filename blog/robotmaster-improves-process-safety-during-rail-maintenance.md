@@ -1,3 +1,12 @@
+---
+link: "robotmaster-improves-process-safety-during-rail-maintenance"
+title: "Robotmaster Improves Process Safety During Rail Maintenance"
+description: ""
+publishDate: "2017-06-12"
+preview: "/img/blog/nsi-1.jpg"
+home: "/img/blog/v7-article-homepage.jpg"
+summary: "When two kilometers per hour is a high speed."
+---
 #### *When two kilometers per hour is a high speed*
 <br>
 

@@ -1,3 +1,12 @@
+---
+link: "robotmaster-hosting-webinar"
+title: "Webinar on the Revolution of Robotic Offline Programming"
+description: ""
+publishDate: "2019-09-27"
+preview: "/img/blog/ria-logo.jpg"
+home: "/img/blog/v7-article-homepage.jpg"
+summary: "The Robotic Industry Association (RIA) will be hosting a webinar given by associates from Hypertherm Robotic Software, Robotmaster on Tuesday, October 1, 2019 from 12pm - 1pm EST. Register for free!"
+---
 **Montreal, CANADA, September 27, 2019** – The <a href="https://www.robotics.org/">Robotic Industry Association</a> (RIA) will be hosting a <a href="http://bit.ly/2nQcS1b">webinar</a> on robotic offline programming on Tuesday, October 1, 2019 from 12pm - 1pm EST. The webinar will be hosted by two of the Senior Software Sales Managers of leading CAD/CAM-based offline robotic programming software, Robotmaster. 
 
 With manufacturers and job shops with high-mix, low-volume production often struggling to justify the time and expertise required to program robotic cells, mass customization, shorter production runs and smaller lot sizes challenge traditional automation methods. Manufacturing is changing and technology must keep pace. Today, the implementation of automated manufacturing processes must be as dynamic as the market and robot programming must be equally agile.

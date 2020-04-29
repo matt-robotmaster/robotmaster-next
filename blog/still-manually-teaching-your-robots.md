@@ -1,3 +1,12 @@
+---
+link: "why-are-you-still-manually-teaching-your-robots"
+title: "ARE YOU STILL MANUALLY TEACHING YOUR ROBOT(S)?"
+description: ""
+publishDate: "2020-02-11"
+preview: "/img/blog/still-manually-teaching-article.jpeg"
+home: "/img/blog/v7-article-homepage.jpg"
+summary: "Say goodbye to headaches caused by using simulation software that doesn't take any and all robotic errors into account before you run the simulation!"
+---
 Say goodbye to headaches caused by using simulation software that doesn't take any and all robotic errors into account before you run the simulation!
 
 How? Robotmaster has been designed to put the user in complete control of the entire process. Simply import the CAD model of your part and create your path with a ‘click’. 

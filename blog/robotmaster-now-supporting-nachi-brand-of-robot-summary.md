@@ -1,1 +1,0 @@
-Robotmaster (Jabez Technologies), a leader in offline programming software for robotics, today announced that it is now supporting Nachi-Fujikoshi Corporation’s NACHI robots.

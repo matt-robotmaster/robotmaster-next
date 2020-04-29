@@ -1,1 +1,0 @@
-Montreal, CANADA and Shanghai, CHINA, July 2, 2015 – From June 16th – 19th, Robotmaster impressively underpinned its visionary position at the Beijing Essen Welding & Cutting Fair (BEW).

@@ -1,1 +1,0 @@
-The latest article from the Robotic Industries Association entitled Robotics in 2015 and Beyond, features a section about 3D-printing robots and a discussion with president of Robotmaster (Jabez Technologies), Chahe Bakmazjian.

@@ -1,3 +1,12 @@
+---
+link: "robotmaster-reduces-outsourcing-increases-production-and-profitability"
+title: "Robotmaster Reduces Outsourcing Increases Production and Profitability"
+description: ""
+publishDate: "2015-11-11"
+preview: "/img/blog/gravel-case-study-cover.jpg"
+home: ""
+summary: "Adding a robotic system enabled Groupe Gravel, a metal fabricator, to profitably automate cutting and welding for high-mix short-batch production. Robotmaster's tools enabled automatic path creation from CAD models drastically improved programming time."
+---
 #### *Adding a robotic system enabled Groupe Gravel, a metal fabricator, to profitably automate cutting and welding for high-mix short-batch production. Robotmaster's tools enabled automatic path creation from CAD models drastically improved programming time.*
 <br>
 

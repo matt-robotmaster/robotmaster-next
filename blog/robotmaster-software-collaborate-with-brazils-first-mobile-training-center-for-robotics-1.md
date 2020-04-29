@@ -1,3 +1,12 @@
+---
+link: "robotmaster-software-collaborate-with-brazils-first-mobile-training-center-for-robotics-1"
+title: "Robotmaster Collaborates with Brazil's First Mobile Training Center for Robotics"
+description: ""
+publishDate: "2016-07-06"
+preview: "/img/blog/constantini-2.jpg"
+home: "/img/blog/constantini-home-image.jpg"
+summary: "**MONTREAL, July  5, 2016** – Hypertherm Inc., developer of Robotmaster programming software, together with its Brazilian distributor, RobotM-Br, is collaborating with the Instituto Avançado de Robótica (I.A.R.) in a pioneering initiative to take robotics training on the road in Brazil."
+---
 <div style="font-size:80%; text-align: center; float:center;margin-bottom: 1em;color:grey;"><img src="/img/blog/constantini-1.jpg" alt="alternate text" style="width:500px; display: block;margin-bottom: 0.2em; margin-left: auto; margin-right: auto;">I.A.R. robotics training mobile unit</div>
 
 **MONTREAL, July  7, 2016** – Hypertherm Inc., developer of Robotmaster programming software, together with its Brazilian distributor, RobotM-Br, is collaborating with the Instituto Avançado de Robótica (I.A.R.) in a pioneering initiative to take robotics training on the road in Brazil. 

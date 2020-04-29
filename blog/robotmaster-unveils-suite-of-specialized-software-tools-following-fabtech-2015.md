@@ -1,3 +1,12 @@
+---
+link: "robotmaster-unveils-suite-of-specialized-software-tools-following-fabtech-2015"
+title: "Robotmaster unveils suite of specialized software tools following FABTECH 2015"
+description: ""
+publishDate: "2015-11-25"
+preview: "/img/blog/press-release-main-photo.png"
+home: "/img/blog/fabtech-pr-pic.jpg"
+summary: "Hypertherm’s Robotic Software Team is fielding a record number of inquiries for its Robotmaster offline programing software following this month’s FABTECH trade show in Chicago."
+---
 <div style="font-size:80%; text-align: center; float:left;margin-right: 1em;color:grey;"><img src="/img/blog/robotmaster-logo.png" alt="alternate text" style="width:300px; display: block;margin-bottom: 0.2em;"></div>  <br />
 
 **HANOVER, N.H.—Nov. 25, 2015** — Hypertherm’s Robotic Software Team is fielding a record number of inquiries for its Robotmaster offline programing software following this month’s FABTECH trade show in Chicago. 

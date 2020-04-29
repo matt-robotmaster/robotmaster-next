@@ -1,3 +1,12 @@
+---
+link: "robotm-br-reinforces-the-growing-presence-of-robotmaster-in-latin-america-at-feimafe-2015"
+title: "RobotM-Br Reinforces the Growing Presence of Robotmaster in Latin America at Feimafe 2015"
+description: ""
+publishDate: "2015-06-10"
+preview: "/img/blog/10929188_872400349476511_3046509256860227717_n.jpg"
+home: ""
+summary: "Thousands of people attended Feimafe 2015 at the Anhembi Exhibition Pavilion from May 18 – 23 to gain insight, best practices, and key learning’s into the world of machine tooling and manufacturing."
+---
 **Montreal, CANADA and São Paulo, BRAZIL, June 9, 2015** – Thousands of people attended Feimafe 2015 at the Anhembi Exhibition Pavilion from May 18 – 23 to gain insight, best practices, and key learning’s into the world of machine tooling and manufacturing. As the premier conference and trade show for machining, Feimafe was the perfect platform for Robotmaster to be a part of cutting-edge technology from across the globe. More than 70,000+ visitors from close to 60 countries attended the show – all with one goal – to get the latest product and service information in the machine tool and quality control market. 
 
 At several booths, visitors had the opportunity to see what Robotmaster’s CAD/CAM programming solution is capable of and get a notion of how their work can be simplified with a high-performance software. With Robotmaster’s recent support of Nachi robots, visitors were also treated to a Nachi MZ07 robot demonstrating the milling process. To view the video, please visit the Robotmaster Facebook page: https://www.facebook.com/RobotmasterOLP 

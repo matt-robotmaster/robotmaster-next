@@ -1,3 +1,12 @@
+---
+link: "robotmaster-has-its-first-authorized-distributor-in-thailand"
+title: "Robotmaster is proud to announce that Golden Robot has become the first authorized distributor of Robotmaster in Thailand"
+description: ""
+publishDate: "2015-01-19"
+preview: "/img/blog/golden-robot.png"
+home: ""
+summary: "Jabez Technologies is pleased to announce that Golden Robot has become the first authorised distributor of Robotmaster in Thailand."
+---
 <div style="font-size:80%; text-align: center; float:left;margin-right: 1em; color:grey;"><img src="/img/blog/Golden+Robot.png" alt="Golden_Robot" style="width:auto; display: block;margin-bottom: 0.2em;"></div>
 
 Montreal (QC) – Jabez Technologies is pleased to announce that Golden Robot has become the first authorised distributor of Robotmaster in Thailand.  Golden Robot, a recent startup and a fast growing system integrator, is located in Rayong Thailand. Golden Robot is a member of the Rouam Charoen Group (RC-Group). RC-Group is a group of 15 companies with more than 500 employees who is a major distributor of industrial equipment throughout Thailand for over 30 years being an authorized distributor for brands including: Dewalt, Stanley, Kobelco, Daito, Atlas and Copco.  

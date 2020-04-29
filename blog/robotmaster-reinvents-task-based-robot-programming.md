@@ -1,3 +1,12 @@
+---
+link: "robotmaster-v7-reinvents-task-based-robot-programming"
+title: "New Robotmaster V7 Reinvents Task Based Robot Programming"
+description: ""
+publishDate: "2017-06-12"
+preview: "/img/blog/2018-evolution-chart.jpg"
+home: "/img/blog/v7-article-homepage.jpg"
+summary: "Revolutionary Architecture Delivers Error-Free Paths with One Simple Click"
+---
 #### *Revolutionary Architecture Delivers Error-Free Paths with One Simple Click*
 <br>
 
