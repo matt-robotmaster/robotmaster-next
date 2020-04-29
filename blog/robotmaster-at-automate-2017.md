@@ -1,3 +1,11 @@
+link: "robotmaster-at-automate-2017"
+title: "Robotmaster at Automate 2017"
+description: ""
+publishDate: "2017-03-31"
+preview: "/img/blog/automate_2017_logo_800.png"
+home: "/img/blog/automate-logo.jpg"
+summary: "Hypertherm Inc. will be exhibiting at Automate 2017 which will be held April 3-6 at The McCormick Place in Chicago Illinois."
+---
 **Hanover, New Hampshire, March 31, 2017-** Hypertherm Inc. will be exhibiting at Automate 2017 which will be held April 3-6 at The McCormick Place in Chicago Illinois. We will be in the North Hall at booth 2037 and showcasing our next generation technology that’s enabling the economic implementation of robots to companies of all sizes. 
 
 <div style="font-size:80%; text-align: center; float:center;margin-bottom: 1em;color:grey;"><img src="/img/blog/automate-2017.png" alt="alternate text" style="width:700px; display: block;margin-bottom: 0.2em; margin-left: auto; margin-right: auto;"></div>
