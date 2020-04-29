@@ -13,9 +13,9 @@ const head = () => {
 
   return (
       <Head>
-        <title>{metadata[locale][mainPage + subPage].title}</title>
+        <title>{(metadata[locale][mainPage + subPage]) ? metadata[locale][mainPage + subPage].title : ''}</title>
         <link rel='icon' href='/favicon.ico' />
-        <meta name='description' content={metadata[locale][mainPage + subPage].description}/>
+        <meta name='description' content={(metadata[locale][mainPage + subPage]) ? metadata[locale][mainPage + subPage].description : ''}/>
       </Head>
   );
 };
