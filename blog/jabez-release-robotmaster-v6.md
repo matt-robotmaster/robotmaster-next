@@ -1,0 +1,8 @@
+![Alt text](/img/blog/robotmasterV6.jpg "Robotmaster release v6") <br>
+Jabez Technologies has just released Robotmaster V6 providing a unique integration of user control, speed and flexibility to Robotmaster's renowned automation and optimization tools. The new and intuitive V6 interface elevates Robotmaster to an unprecedented standard of user experience by giving robot programmers a coherent and dynamic tool that radically saves time and money.
+
+With V6, we are excited to introduce RISE- The new ROBOTMASTER INTERACTIVE SIMULATIONS ENVIRONMENT. The new and unique RISE environment provides easy and intuitive control of your robots unparalleled by any other CAD/CAM system. You can easily modify the robot's positions and trajectories, manually or automatically, by simple mouse interaction. Robotmaster V6 is the perfect marriage of the user's manufacturing knowledge, powerful CAD/CAM programming tools and our unique robot specific optimization. Robotmaster creates perfect robot trajectories quickly without costly and tedious iterations.
+
+V6 revolutionizes the user experience with its intuitive and dynamic interface eliminating trial-and-error entry of settings. Users can quickly achieve desired orientations and program success through instant visualization of the impact of any changes in the path, workspace, reach, interference or collisions. In addition, the new custom process definition can be used to fully integrate, customize and control your process with the required parameters seamlessly into Robotmaster.
+
+Robotmaster is ideally suited to program robots for such tasks as trimming, 3D machining, cutting, de-burring, polishing, welding, dispensing, grinding and painting, and supports most industrial robot models.

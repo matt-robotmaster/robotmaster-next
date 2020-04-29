@@ -1,0 +1,1 @@
+Robotmaster (Jabez Technologies) today announced the launch of the latest version of its leading robotic programming software, offering enhanced design and usability along with several new feature sets.

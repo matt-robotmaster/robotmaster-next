@@ -1,0 +1,1 @@
+Adding a robotic system enabled Groupe Gravel, a metal fabricator, to profitably automate cutting and welding for high-mix short-batch production. Robotmaster's tools enabled automatic path creation from CAD models drastically improved programming time. 

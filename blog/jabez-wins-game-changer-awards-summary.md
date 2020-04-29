@@ -1,0 +1,1 @@
+ROBOTMASTER V6 seamlessly integrates robot programming, simulation and code generation inside CAM software, delivering quicker robot programming. Unlike existing solutions that depend on either manual point-by-point programming or sub-optimal, hit-or-miss automation, ROBOTMASTER leverages mature CAD/CAM techniques to automate generation of optimized trajectories.

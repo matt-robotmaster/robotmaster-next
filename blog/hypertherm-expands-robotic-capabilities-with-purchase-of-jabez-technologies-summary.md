@@ -1,0 +1,1 @@
+**HANOVER, N.H.—July 30, 2015—** Jabez Technologies, creators of software to simplify complex robotic programming, is joining Hypertherm, a U.S. based manufacturer of plasma, waterjet, and laser cutting systems, to make it easier for companies to utilize robots for manufacturing applications.

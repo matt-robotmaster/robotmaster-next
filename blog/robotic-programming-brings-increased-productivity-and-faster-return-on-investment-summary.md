@@ -1,0 +1,1 @@
+Robotic automation solutions help manufacturers increase their productivity, through a reduction of inputs like energy requirements or production errors, while improving production output, produce quality and consistency. An article entitled, “Robotic programming brings increased productivity and faster return on investment”, was put together thanks to our distributor in Brazil.

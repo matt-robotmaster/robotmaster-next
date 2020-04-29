@@ -1,0 +1,1 @@
+Jabez Technologies (developers of Robotmaster) is featured in the April 2015 issue of CIO Review. The company was also recognized as one of the 20 Most Promising Robotics Solutions Providers for 2015. Jabez Technologies was selected for companies that are the forefront of providing robotics technology solutions and impacting the marketplace signature.

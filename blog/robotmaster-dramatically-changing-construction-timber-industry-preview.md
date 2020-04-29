@@ -1,0 +1,1 @@
+**Montreal, QC—Dec. 17, 2015** - The BBC showed how Robotmaster is dramatically simplifying the complex milling processes that architecture students need to turn firewood quality timber into high quality construction timber.

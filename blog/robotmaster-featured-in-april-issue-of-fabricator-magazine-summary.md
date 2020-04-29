@@ -1,0 +1,1 @@
+Robotmaster was the centre of attention in an article writen by Senior Editor at The Fabricator Tim Heston. A case study featuring our customer Groupe Gravel, this is a must-read article that analyzes how a small shop with zero robotic experience  

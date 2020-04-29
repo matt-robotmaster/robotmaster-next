@@ -1,0 +1,1 @@
+A plastic fabricator needed a robot programming software to handle part variety and complexity for sanding, trimming and spraying with different robot brands. After an exhaustive study of major suppliers, only one platform rose above the rest – Robotmaster offline programming software. See the new case study!

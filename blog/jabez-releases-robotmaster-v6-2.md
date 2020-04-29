@@ -1,0 +1,11 @@
+<div style="font-size:80%; text-align: center; float:left;margin-right: 1em; color:grey;"><img src="/img/blog/2015-05-12_9-08-49.png" alt="alternate text" style="width:400px; display: block;margin-bottom: 0.2em;"> Version 6.2 will be at least three times faster than previous versions </div>
+
+**Montreal, CANADA, May 12, 2015** – Robotmaster (Jabez Technologies) today announced the launch of the latest version of its leading robotic programming software, offering enhanced design and usability along with several new feature sets. By considering the various ways in which one would want to program an industrial robot, the workflow has been redesigned and will be at a minimum three times and up to ten times faster than previous versions. 
+
+Expanding on previous optimization tools, Robotmaster V6.2 sets a new standard for robotic programming. In addition to core technology enhancement, V6.2 has been designed to further elevate programming productivity, adding a synchronization feature which will allow simulations to synchronize any CAD/CAM path modifications. What’s unique about this enhancement is the integration of optimization and simulation allowing users to rapidly check for collisions and errors visually prior to running a full simulation. Together, these capabilities result in solutions that help make various industrial manufacturing applications more intuitive and collaborative while delivering quick and error-free robot programs. 
+
+“The functionality of Robotmaster continues to expand at a rapid pace”, says Chahe Bakmazjian, President at Jabez Technologies. “With this latest version, we are once again building on the capabilities of Robotmaster, while at the same time incorporating many new features requested by our fast-growing customer base.”
+
+Aside from providing faster calculations in real time, the new version will have a quicker workflow which will be less iterative. As a result, this will allow for easier and visual programming for ultimate productivity. 
+
+Robotmaster continues to enhance the robot programming experience with its intuitive and dynamic user-experience. V6.2 is a testament to rapidly achieving desired robot control and program success through an ever expanding arsenal of easy-to-use features and a growing variety of applications and robot brands.

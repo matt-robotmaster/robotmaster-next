@@ -1,0 +1,1 @@
+Jabez Technologies has just released Robotmaster V6.1.  Building on the Robotmaster Interactive Simulations Environment introduced in 2013, V6.1 provides exciting new features and enhancements developed specifically for high-mix low-volume robotic applications.

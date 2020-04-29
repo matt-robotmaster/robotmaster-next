@@ -1,0 +1,1 @@
+President, Chahe Bakmazjian, discusses the emergence of robots and how Robotmaster enables manufacturers within the aerospace industry seeking to automate their manufacturing processes.

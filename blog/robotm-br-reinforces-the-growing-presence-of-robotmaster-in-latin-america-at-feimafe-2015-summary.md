@@ -1,0 +1,1 @@
+Thousands of people attended Feimafe 2015 at the Anhembi Exhibition Pavilion from May 18 – 23 to gain insight, best practices, and key learning’s into the world of machine tooling and manufacturing.

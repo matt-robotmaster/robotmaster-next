@@ -1,0 +1,1 @@
+New Robotmaster version 6.2 software will be at least three times faster than previous models.

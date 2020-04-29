@@ -1,0 +1,1 @@
+Jabez Technologies is pleased to announce that Golden Robot has become the first authorised distributor of Robotmaster in Thailand.

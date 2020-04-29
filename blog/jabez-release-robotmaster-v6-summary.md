@@ -1,0 +1,1 @@
+Jabez Technologies has just released Robotmaster V6 providing a unique integration of user control, speed and flexibility to Robotmaster's renowned automation and optimization tools. The new and intuitive V6 interface elevates Robotmaster to an unprecedented standard of user experience by giving robot programmers a coherent and dynamic tool that radically saves time and money.

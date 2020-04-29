@@ -1,0 +1,1 @@
+Robots are proving to be flexible tools for aircraft manufacturing and assembly. Their full potential, however, can be limited by the challenges of programming a robot in a CAD/CAM environment. Software that integrates offline programming, simulation, code generation, and path optimization makes the process seamless and error-free.

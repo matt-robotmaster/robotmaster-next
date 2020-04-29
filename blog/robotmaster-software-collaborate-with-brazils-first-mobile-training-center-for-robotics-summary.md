@@ -1,0 +1,1 @@
+**MONTREAL, July  5, 2016** – Hypertherm Inc., developer of Robotmaster programming software, together with its Brazilian distributor, RobotM-Br, is collaborating with the Instituto Avançado de Robótica (I.A.R.) in a pioneering initiative to take robotics training on the road in Brazil.

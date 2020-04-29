@@ -1,0 +1,1 @@
+The company’s President, Mr. Chahe Bakmazjian, discusses the emergence of robots and how Robotmaster enables manufacturers, within the aerospace industry, that are seeking to automate their manufacturing processes. Many thanks to Global Business Reports for their time and efforts.
