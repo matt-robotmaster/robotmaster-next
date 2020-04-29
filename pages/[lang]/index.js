@@ -5,6 +5,7 @@ import Layout from '../../components/layout/layout';
 import {Carousel, Col, Container, Row} from 'react-bootstrap';
 import classes from './index.module.css';
 import Ribbon from '../../components/ribbon/ribbon';
+import Link from "next/link";
 
 const slides = [
   'slideshow-img-1',
@@ -17,7 +18,7 @@ const slides = [
 ];
 
 const Home = () => {
-  const { t } = useTranslation();
+  const { locale, t } = useTranslation();
   return (
       <Layout>
         <Container>
@@ -65,9 +66,9 @@ const Home = () => {
                       {t('home-section-1-listitem-4')}
                     </li>
                   </ul>
-                  <a href="products">
+                  <Link href={`${locale}/products`} passHref>
                     {t('general-learn-more-dotted')}
-                  </a>
+                  </Link>
                 </Col>
                 <Col md={5}>
                   <img className="img-responsive" src="/img/screenshot-1.png" />
@@ -87,9 +88,9 @@ const Home = () => {
                   <p>
                     {t('home-section-2-para')}
                   </p>
-                  <a href="why-robotmaster">
+                  <Link href={`${locale}/why-robotmaster`}>
                     {t('general-learn-more-dotted')}
-                  </a>
+                  </Link>
                 </Col>
                 <Col md={5}>
                   <ul>
@@ -122,9 +123,9 @@ const Home = () => {
                   <p>
                     {t('home-section-3-para')}
                   </p>
-                  <a href="applications">
+                  <Link href={`${locale}/applications`}>
                     {t('general-learn-more-dotted')}
-                  </a>
+                  </Link>
                 </Col>
                 <Col md={{span: 5}}>
                   <img className={[classes.homeImgSpacer, 'img-responsive']} src="/img/screenshot-2.png" />
@@ -147,9 +148,9 @@ const Home = () => {
                     <p>
                       {t('home-section-4-para')}
                     </p>
-                    <a href="why-robotmaster">
+                    <Link href={`${locale}/why-robotmaster`}>
                       {t('general-learn-more-dotted')}
-                    </a>
+                    </Link>
                   </Col>
                 </Row>
               </Container>
