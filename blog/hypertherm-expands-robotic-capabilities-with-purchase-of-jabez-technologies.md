@@ -1,3 +1,12 @@
+---
+link: "hypertherm-expands-robotic-capabilities-with-purchase-of-jabez-technologies"
+title: "Hypertherm expands robotic capabilities with purchase of Jabez Technologies, creators of Robotmaster Software"
+description: ""
+publishDate: "2015-07-31"
+preview: "/img/blog/hypertherm-front-page-copy.jpg"
+home: ""
+summary: "**HANOVER, N.H.—July 30, 2015—** Jabez Technologies, creators of software to simplify complex robotic programming, is joining Hypertherm, a U.S. based manufacturer of plasma, waterjet, and laser cutting systems, to make it easier for companies to utilize robots for manufacturing applications."
+---
 <div style="font-size:80%; text-align: center; float:left;margin-right: 1em;color:grey;"><img src="/img/blog/Hypertherm_blog_small.jpg" alt="alternate text" style="width:300px; display: block;margin-bottom: 0.2em;"></div>  <br />
 
 **HANOVER, N.H.—July 30, 2015—** Jabez Technologies, creators of software to simplify complex robotic programming, is joining Hypertherm, a U.S. based manufacturer of plasma, waterjet, and laser cutting systems, to make it easier for companies to utilize robots for manufacturing applications.

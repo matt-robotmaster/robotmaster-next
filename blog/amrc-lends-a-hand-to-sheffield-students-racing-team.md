@@ -1,3 +1,12 @@
+---
+link: "amrc-lends-a-hand-to-sheffield-students-racing-team"
+title: "University of Sheffield’s Advanced Manufacturing Research Centre (AMRC) using Robotmaster to help students’ racing team"
+description: ""
+publishDate: "2015-07-15"
+preview: "/img/blog/machining11-header.png"
+home: ""
+summary: "The latest article from the Advanced Manufacturing Research Centre (AMRC) entitled, “AMRC lends a hand to Sheffield students’ racing team.”"
+---
 <div style="font-size:80%; text-align: center; float:left;margin-right: 1em;color:grey;"><img src="/img/blog/SFR-car-launch-at-AMRC.png" alt="alternate text" style="width:400px; display: block;margin-bottom: 0.2em;" class="img-responsive"></div>
 
 The University of Sheffield Advanced Manufacturing Research Centre (AMRC) with Boeing lent a hand to 35 students designing and manufacturing a single seat-racing car capable of accelerating from 0-60 mph in under five seconds.

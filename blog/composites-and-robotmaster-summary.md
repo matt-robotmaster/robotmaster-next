@@ -1,1 +1,0 @@
-Singularity, calibration, collisions, reach limitations, and motion granularity are uniquely complex to robotic systems and can make programming particularly cumbersome.

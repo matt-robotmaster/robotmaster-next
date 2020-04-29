@@ -1,3 +1,12 @@
+---
+link: "jabez-makes-cover-of-cio-review-magazine"
+title: "Jabez Technologies makes the cover of CIO Review Magazine"
+description: ""
+publishDate: "2014-05-14"
+preview: "/img/blog/CIO_COVER.png"
+home: ""
+summary: "Jabez Technologies (developers of Robotmaster) makes the cover of CIO Review Magazine and gets recognized as one of the 10 Most Promising Engineering Solution Providers for 2014. Jabez Technologies was selected for successful implementation of CAD/CAM software for elevating the performance of the robotics industry allowing manufacturers to seamlessly interact with robots through a new intuitive programming interface."
+---
 <img src="/img/blog/CIO_COVER.png" alt="Cover page of CIO Reviews Magazine" style="width:250px; float:left; margin-right:20px; margin-bottom: 5px">
 
 Jabez Technologies (developers of Robotmaster) makes the cover of CIO Review Magazine and gets recognized as one of the 10 Most Promising Engineering Solution Providers for 2014. Jabez Technologies was selected for successful implementation of CAD/CAM software for elevating the performance of the robotics industry allowing manufacturers to seamlessly interact with robots through a new intuitive programming interface.  What differentiates Robotmaster from classic off-line programming is that robot paths are calculated automatically and no point-by-point intervention is required. Robot errors and limitations are identified and fixed automatically. Tasks that would require meticulous and skilled intervention can now be successfully programmed in minutes by a newbie to robotics using Robotmaster

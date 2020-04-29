@@ -1,3 +1,12 @@
+---
+link: "injecting-flexibility-into-robots"
+title: "Robotmaster (Jabez Technologies) recognized as 20 Most Promising Robotics Solutions Providers for 2015!"
+description: ""
+publishDate: "2015-04-13"
+preview: "/img/blog/Robotics-logo1.jpg"
+home: ""
+summary: "Jabez Technologies (developers of Robotmaster) is featured in the April 2015 issue of CIO Review. The company was also recognized as one of the 20 Most Promising Robotics Solutions Providers for 2015. Jabez Technologies was selected for companies that are the forefront of providing robotics technology solutions and impacting the marketplace signature."
+---
 <div style="font-size:80%; text-align: center; float:center;margin-right: 1em; color:grey;"><img src="/img/blog/Robotmaster-(Jabez-Technologies)1.jpg" alt="aircraft" style="width:700px; display: block;margin-bottom: 0.2em;"></div>
 
 <br>

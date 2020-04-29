@@ -1,1 +1,0 @@
-The latest article from the Advanced Manufacturing Research Centre (AMRC) entitled, “AMRC lends a hand to Sheffield students’ racing team.”

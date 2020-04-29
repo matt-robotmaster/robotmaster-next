@@ -1,3 +1,12 @@
+---
+link: "composites-and-robotmaster"
+title: "Robotic Composite Manufacturing & Trimming"
+description: ""
+publishDate: "2015-05-25"
+preview: "/img/blog/Jabez-Robotmaster-Aerospace-article-Aquitaine-fuselage_SMALL.jpg"
+home: ""
+summary: "Singularity, calibration, collisions, reach limitations, and motion granularity are uniquely complex to robotic systems and can make programming particularly cumbersome."
+---
 For the past few years, Robotmaster (Jabez Technologies) has been responding to the growing demand for the robotic composite manufacturing. The Aerospace, Defense, Automotive and Ship Manufacturing industries are all witnessing a strong demand for the use of composites. According to a study by market research firm Lucintel, the global aerospace composites market is expected to reach $112 billion annually by 2017, with a compound annual growth rate of 5.3 percent (source:  <a href="https://www.compositesworld.com/articles/the-markets-aerospace-2012" target="_blank">CompositesWorld</a>).  This is where Robotmaster steps in.  Jabez Technologies and its partners continue to demonstrate cost-effective and cutting-edge programming tools required for composite trimming, drilling, riveting and certain types of material layup.  
 
 Singularity, calibration, collisions, reach limitations, and motion granularity are uniquely complex to robotic systems and can make programming particularly cumbersome. Navigating around the errors can be time-consuming. The powerful Robotmaster Interactive Simulation Environment (RISE) provides a unique tool for programming, visualizing and optimizing processes/events quickly and easily. 

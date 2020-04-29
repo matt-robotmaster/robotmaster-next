@@ -1,3 +1,12 @@
+---
+link: "another-leap-forward-in-revolution-of-robotic-programming"
+title: "Another Leap Forward in the Revolution of Robotic Programming"
+description: ""
+publishDate: "2019-08-13"
+preview: "/img/blog/v71image.png"
+home: "/img/blog/v7-article-homepage.jpg"
+summary: "Robotmaster has released the latest major software update, Robotmaster Version 7.1!"
+---
 #### *Robotmaster Version 7.1 is now out!*
 <br>
 

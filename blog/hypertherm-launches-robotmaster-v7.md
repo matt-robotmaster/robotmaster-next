@@ -1,3 +1,12 @@
+---
+link: "hypertherm-launches-robotmaster-v7"
+title: "Hypertherm Launches Robotmaster V7"
+description: ""
+publishDate: "2017-06-12"
+preview: "/img/blog/robotmaster-v7-launch-preview.jpg"
+home: "/img/blog/v7-article-homepage.jpg"
+summary: "New Software Rewrites the Future of Robot Programming"
+---
 #### *New Software Rewrites the Future of Robot Programming*
 <br>
 

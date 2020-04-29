@@ -1,3 +1,12 @@
+---
+link: "intuitive-robot-programming-for-aerospace-manufacturing"
+title: "Intuitive Robot Programming for Flexible Aerospace Manufacturing"
+description: ""
+publishDate: "2014-12-08"
+preview: "/img/blog/shutterstock_205760866.jpg"
+home: ""
+summary: "Robots are proving to be flexible tools for aircraft manufacturing and assembly. Their full potential, however, can be limited by the challenges of programming a robot in a CAD/CAM environment. Software that integrates offline programming, simulation, code generation, and path optimization makes the process seamless and error-free."
+---
 *Robots are proving to be flexible tools for aircraft manufacturing and assembly. Their full potential, however, can be limited by the challenges of programming a robot in a CAD/CAM environment. Software that integrates offline programming, simulation, code generation, and path optimization makes the process seamless and error-free.*
 <br>
 

@@ -1,3 +1,12 @@
+---
+link: "automation-revolutionizing-aerospace"
+title: "Robotmaster featured in Global Business Report editorial, Automation: Revolutionizing Aerospace"
+description: ""
+publishDate: "2015-07-24"
+preview: "/img/blog/Aerospace-2015.png"
+home: ""
+summary: "President, Chahe Bakmazjian, discusses the emergence of robots and how Robotmaster enables manufacturers within the aerospace industry seeking to automate their manufacturing processes."
+---
 <div style="font-size:80%; text-align: center; float:left;margin-right: 1em;color:grey;"><img src="/img/blog/Aerospace-2015.png" alt="alternate text" style="width:400px; display: block;margin-bottom: 0.2em;"></div>
 
 As aircraft manufacturers across the world continue to experience strong order backlogs, a message is being sent down the supply chain: suppliers need to expand their production capacities and improve their manufacturing efficiencies in order to satisfy growing demand. Competitive pressures from abroad are also encouraging Quebec suppliers to optimize their operations. Automation can help level the playing field by reducing disparities in labor costs and improving throughput, and many opportunities exist both locally and internationally for suppliers seeking to automate their manufacturing processes. 
