@@ -1,5 +1,5 @@
 ---
-link: "robotmaster-asia-leads-the-robotic-revolution-at-beijing-essen-welding-&-cutting-2015"
+link: "robotmaster-asia-leads-the-robotic-revolution-at-beijing-essen-welding-and-cutting-2015"
 title: "Robotmaster Asia Leads The Robotic Revolution at Beijing Essen Welding & Cutting 2015"
 description: ""
 publishDate: "2015-07-04"

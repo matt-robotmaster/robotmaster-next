@@ -10,9 +10,6 @@ import {Container} from "react-bootstrap";
 const newsroom = ({posts}) => {
   const { locale, t } = useTranslation();
 
-  const post = posts[10];
-  console.log(post);
-
   return (
       <Layout>
         <Container>
