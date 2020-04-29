@@ -1,3 +1,12 @@
+---
+link: "jabez-releases-robotmaster-v6-2"
+title: "Robotmaster Enhances Integrated Workflow Capabilities with New Features for Robotics Users"
+description: ""
+publishDate: "2015-05-12"
+preview: "/img/blog/2015-05-12_9-08-49.png"
+home: ""
+summary: "Robotmaster (Jabez Technologies) today announced the launch of the latest version of its leading robotic programming software, offering enhanced design and usability along with several new feature sets."
+---
 <div style="font-size:80%; text-align: center; float:left;margin-right: 1em; color:grey;"><img src="/img/blog/2015-05-12_9-08-49.png" alt="alternate text" style="width:400px; display: block;margin-bottom: 0.2em;"> Version 6.2 will be at least three times faster than previous versions </div>
 
 **Montreal, CANADA, May 12, 2015** – Robotmaster (Jabez Technologies) today announced the launch of the latest version of its leading robotic programming software, offering enhanced design and usability along with several new feature sets. By considering the various ways in which one would want to program an industrial robot, the workflow has been redesigned and will be at a minimum three times and up to ten times faster than previous versions. 

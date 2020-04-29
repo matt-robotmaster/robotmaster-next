@@ -1,3 +1,12 @@
+---
+link: "jabez-wins-game-changer-awards"
+title: "Jabez Technologies wins Game Changer Awards"
+description: ""
+publishDate: "2013-10-24"
+preview: "/img/blog/gamechanger-winner.png"
+home: ""
+summary: "ROBOTMASTER V6 seamlessly integrates robot programming, simulation and code generation inside CAM software, delivering quicker robot programming. Unlike existing solutions that depend on either manual point-by-point programming or sub-optimal, hit-or-miss automation, ROBOTMASTER leverages mature CAD/CAM techniques to automate generation of optimized trajectories."
+---
 <a href="https://www.roboticsbusinessreview.com/article/jabez_technologies_robotmaster_v6/" target="_blank"><img src="/img/blog/gamechanger-winner.png" alt="Jabez win game changer award"/></a> <br>
 ROBOTMASTER V6 seamlessly integrates robot programming, simulation and code generation inside CAM software, delivering quicker robot programming. Unlike existing solutions that depend on either manual point-by-point programming or sub-optimal, hit-or-miss automation, ROBOTMASTER leverages mature CAD/CAM techniques to automate generation of optimized trajectories and combines this with a visual, interactive environment that provides the flexibility of quick editing. Instead of tedious point-by-point interaction, the user can bend and shape a path curve by quick-and-drag action, simultaneously modifying a multitude of points - the ideal combination of human and machine intelligence.
 

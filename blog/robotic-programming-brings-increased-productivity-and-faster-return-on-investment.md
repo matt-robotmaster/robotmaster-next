@@ -1,3 +1,12 @@
+---
+link: "robotic-programming-brings-increased-productivity-and-faster-return-on-investment"
+title: "Robotic programming brings increased productivity and faster return on investment"
+description: ""
+publishDate: "2015-03-17"
+preview: "/img/blog/maxresdefault3.jpg"
+home: ""
+summary: "Robotic automation solutions help manufacturers increase their productivity, through a reduction of inputs like energy requirements or production errors, while improving production output, produce quality and consistency. An article entitled, “Robotic programming brings increased productivity and faster return on investment”, was put together thanks to our distributor in Brazil."
+---
 <div style="font-size:80%; text-align: center; float:right;margin-left: 1em; color:grey;"><img src="/img/blog/maxresdefault3.jpg" alt="aircraft" style="width:400px; display: block;margin-bottom: 0.2em;"></div>
 
 Imagine a sculptural replication for a new car model prototype or technical component for the automotive industry. This process can entail months of manual building and modification and be rather painstaking. Presently, a high-tech solution exists and is rapidly gaining widespread acceptance as a major breakthrough for automotive car modeling with emphasis on using robots and automatic programming. Carried out through a regular process for automotive prototype production, a model starts off in 3D design software where it is then passed to a sculptor to model the clay in the form of a car.  Instead, the clay prototype is machined using robots. The robotic software allows for simulation, validation and optimization to robotic motion by turning a virtual car model into reality.

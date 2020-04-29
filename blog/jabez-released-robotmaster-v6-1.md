@@ -1,3 +1,12 @@
+---
+link: "jabez-released-robotmaster-v6-1"
+title: "Jabez Technologies has just released Robotmaster V6.1"
+description: ""
+publishDate: "2014-04-07"
+preview: "/img/blog/robotmaster-v6-1.jpg"
+home: ""
+summary: "Jabez Technologies has just released Robotmaster V6.1.  Building on the Robotmaster Interactive Simulations Environment introduced in 2013, V6.1 provides exciting new features and enhancements developed specifically for high-mix low-volume robotic applications."
+---
 <img src="/img/blog/robotmaster-v6-1.jpg" alt="Jabez release Robotmaster 6.1" />
 
 Jabez Technologies has just released Robotmaster V6.1.  Building on the Robotmaster Interactive Simulations Environment introduced in 2013, V6.1 provides exciting new features and enhancements developed specifically for high-mix low-volume robotic applications. V6.1 has been designed to further elevate programming productivity, supporting an ever increasing array of robot brands and applications.

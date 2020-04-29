@@ -1,3 +1,12 @@
+---
+link: "promens-robotic-programming-case-study"
+title: "Robot Programming Platform Conquers Complex Parts Outperforms the Competition"
+description: ""
+publishDate: "2020-01-21"
+preview: "/img/blog/promens-case-study-1.png"
+home: "/img/blog/v7-article-homepage.jpg"
+summary: "A plastic fabricator needed a robot programming software to handle part variety and complexity for sanding, trimming and spraying with different robot brands. After an exhaustive study of major suppliers, only one platform rose above the rest – Robotmaster offline programming software. See the new case study!"
+---
 <br/>
 **Montreal, CANADA, January 22, 2020 –** Promens a.s., Berry Bramlage, is a global plastic fabrication company with a very large product portfolio. One of their European divisions needed a robot programming solution that could handle part variety, complexity and process variability, especially with different robot brands for sanding, spraying and trimming processes. Only after an exhaustive study of the major offline programming software packages on the market, did one solution prove its staying power.
  

@@ -1,3 +1,12 @@
+---
+link: "jabez-release-robotmaster-v6"
+title: "Jabez Technologies has just released Robotmaster V6"
+description: ""
+publishDate: "2013-05-24"
+preview: "/img/blog/robotmasterV6.jpg"
+home: ""
+summary: "Jabez Technologies has just released Robotmaster V6 providing a unique integration of user control, speed and flexibility to Robotmaster's renowned automation and optimization tools. The new and intuitive V6 interface elevates Robotmaster to an unprecedented standard of user experience by giving robot programmers a coherent and dynamic tool that radically saves time and money."
+---
 ![Alt text](/img/blog/robotmasterV6.jpg "Robotmaster release v6") <br>
 Jabez Technologies has just released Robotmaster V6 providing a unique integration of user control, speed and flexibility to Robotmaster's renowned automation and optimization tools. The new and intuitive V6 interface elevates Robotmaster to an unprecedented standard of user experience by giving robot programmers a coherent and dynamic tool that radically saves time and money.
 
