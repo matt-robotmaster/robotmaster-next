@@ -1,0 +1,84 @@
+.application {
+  font-size: 18px;
+}
+.application h3 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.application ul {
+  padding-left: 20px;
+}
+.application ul.pushed-in {
+  margin-left: 100px;
+}
+.row .app {
+  height: 400px;
+}
+.row .app p {
+  text-align: justify;
+}
+.application-category {
+  text-align: center;
+  margin-bottom: 40px;
+  height: 270px;
+}
+.application-category .category-img {
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
+}
+.application-category p {
+  font-weight: bold;
+  font-size: 16px;
+}
+.application-category p.more {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #e32726;
+}
+.application-category p.more i {
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.application-category .category-img:hover {
+  -webkit-filter: brightness(70%);
+  filter: brightness(70%);
+}
+.app-video {
+  position: relative;
+  margin-bottom: 30px;
+  height: 170px;
+}
+.app-video .vid-img {
+  width: 160px;
+  float: left;
+  cursor: pointer;
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
+}
+.app-video .vid-img img {
+  width: 160px;
+}
+.app-video .text {
+  width: calc(100% - 160px);
+  height: 160px;
+  float: left;
+  padding-left: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.app-video .vid-img:hover {
+  -webkit-filter: brightness(70%);
+  filter: brightness(70%);
+}
+@media (max-width: 500px) {
+  .app-video .vid-img, .app-video .text {
+    width: 100%;
+  }
+  .app-video .text {
+    height: auto;
+    margin-top: 20px;
+    padding-left: 0;
+  }
+}
