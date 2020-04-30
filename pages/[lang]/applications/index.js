@@ -5,15 +5,18 @@ import Layout from '../../../components/layout/layout';
 import {Col, Container, Row} from 'react-bootstrap';
 import Banner from '../../../components/banner/banner';
 import applicationData from '../../../data/applications.json';
+import classes from './index.module.css';
+import Link from "next/link";
+// import {FaChevronRight} from "react-icons/all";
 
 const applications = () => {
-  const { t } = useTranslation();
+  const { locale, t } = useTranslation();
 
   return (
       <Layout>
         <Banner caption={t('application-page-caption')}/>
-        <Container>
-          <h2 id='core-of-your-process' className='subtitle'>
+        <Container className={classes.application}>
+          <h2 id='core-of-your-process' className={classes.applicationSubtitle}>
             {t('application-title-1')}
           </h2>
           <Row className='bigger-page-text'>
@@ -27,22 +30,26 @@ const applications = () => {
             {applicationData.map(function(app) {
               return (
                   <Col xs={12} sm={6} md={4} lg={4}
-                      className='application-category'
+                      className={classes.applicationCategory}
                       key={app.id}>
-                    <p>
+                    <p className={classes.applicationCategoryP}>
                       {t('application-' + app.id)}
                     </p>
-                    <a href={'applications/' + app.path}>
-                      <img
-                          className='category-img'
-                          src={'/img/application/' + app.path + '.png'}
-                          style={{maxWidth: '90%', maxHeight: '160px'}} />
-                    </a>
-                    <p className='more'>
-                      <a href={'applications/' + app.path}>
-                        {t('application-learn-more')}
-                        <i className='fa fa-chevron-right' />
+                    <Link href={`/${locale}/applications/${app.path}`} passHref>
+                      <a>
+                        <img
+                            className={classes.applicationCategoryCategoryImg}
+                            src={'/img/application/' + app.path + '.png'}
+                            style={{maxWidth: '90%', maxHeight: '160px'}} />
                       </a>
+                    </Link>
+                    <p className={classes.applicationCategoryPMore}>
+                      <Link href={`/${locale}/applications/${app.path}`} passHref>
+                        <a>
+                          {t('application-learn-more')}
+                          {/*<FaChevronRight className={classes.applicationCategoryPMoreI}/>*/}
+                        </a>
+                      </Link>
                     </p>
                   </Col>
               );
