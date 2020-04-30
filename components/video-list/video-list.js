@@ -13,23 +13,28 @@ const videoList = ({id}) => {
     const videos = [];
 
     for (let i = 1; i <= appData.videos; i++) {
+      const modalId = `app-vid-id-${i}`;
+      const vidImgSrc = `/img/application/${page}/vid-${i}.png`;
+      const vidTextId = `app-${page}-vid-${i}-text`;
+      const videoUrl = `https://www.youtube.com/embed/${t(`app-${page}-vid-${i}`).split('v=')[1]}`;
       videos.push(
           <Col xs={12} sm={6} md={6} lg={6} key={'vid-' + i}>
             <div className={`${classes.appVideo} clearfix`}>
               <div
                   className={`${classes.appVideoVidImg} flex-center-img`}
                   data-toggle='modal'
-                  data-target={'#app-vid-id-' + i}>
-                <img className={classes.appVideoVidImgImg} src={'/img/application/' + page + '/vid-' + i + '.png'} />
+                  data-target={`#${modalId}`}
+                  href='#'>
+                <img className={classes.appVideoVidImgImg} src={vidImgSrc} />
               </div>
               <div className={classes.appVideoText}>
                 <p>
-                  {t('app-' + page + '-vid-' + i + '-text')}
+                  {t(vidTextId)}
                 </p>
               </div>
             </div>
-            <Modal videoId={`app-vid-id-${i}`} videoTitle={`app-${page}-vid-${i}-text`}
-                   videoUrl={`https://www.youtube.com/embed/${t(`app-${page}-vid-${i}`).split('v=')[1]}`}/>
+            <Modal videoId={modalId} videoTitle={vidTextId}
+                   videoUrl={videoUrl}/>
           </Col>
       );
     }

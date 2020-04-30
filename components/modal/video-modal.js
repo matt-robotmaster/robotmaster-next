@@ -8,7 +8,7 @@ const modal = (props) => {
             id={props.videoId}
             tabIndex={-1}
             role="dialog"
-            aria-hidden={true}>
+            ariaHidden={true}>
           <div
               className="modal-dialog"
               style={{
@@ -23,7 +23,7 @@ const modal = (props) => {
                   padding: '1%',
                 }}>
               <div className="modal-header">
-                <button type="button" className="close" data-dismiss="modal" aria-hidden={true}>
+                <button type="button" className="close" data-dismiss="modal" ariaHidden={true}>
                   X
                 </button>
                 <strong className="modal-title" id={'label' + props.videoId}>
