@@ -1,30 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import {Container, Carousel, Row, Col} from 'react-bootstrap';
 import events from '../../data/events.json';
 import classes from './ribbon.module.css';
 import useTranslation from "../../hooks/useTranslation";
 import Link from "next/link";
 
-const ribbon = () => {
+const ribbon = ({latestPost}) => {
   const { locale, t } = useTranslation();
-  const [posts] = useState([]);
-
-  // TODO: fix this
-  const getLatestNewsroomImgSrc = () => {
-    if (posts) {
-      if (typeof posts[0] !== 'undefined' &&
-          typeof posts[0].home !== 'undefined' &&
-          posts[0].home !== '') {
-        return posts[0].home;
-      } else if (typeof posts[0] !== 'undefined' &&
-          typeof posts[0].preview !== 'undefined' &&
-          posts[0].preview !== '') {
-        return posts[0].preview;
-      } else {
-        return '';
-      }
-    }
-  };
 
   return (
       <Container className={classes.ribbon}>
@@ -33,7 +15,7 @@ const ribbon = () => {
             <Link href={`/${locale}/newsroom`} passHref>
               <a className={classes.ribbonA} >
                 <div className={classes.imgContainer}>
-                  <img alt='Latest News' className={`${classes.fixedImageImg} ${classes.imgContainerImg}`} src={getLatestNewsroomImgSrc()} />
+                  <img alt='Latest News' className={`${classes.fixedImageImg} ${classes.imgContainerImg}`} src={latestPost.preview} />
                 </div>
               </a>
             </Link>

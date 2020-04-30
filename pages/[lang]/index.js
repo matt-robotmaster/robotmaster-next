@@ -6,6 +6,7 @@ import {Carousel, Col, Container, Row} from 'react-bootstrap';
 import classes from './index.module.css';
 import Ribbon from '../../components/ribbon/ribbon';
 import Link from "next/link";
+import {getLatestPostData} from "../../lib/posts";
 
 const slides = [
   'slideshow-img-1',
@@ -17,8 +18,9 @@ const slides = [
   'slideshow-img-7',
 ];
 
-const Home = () => {
+const Home = ({latestPost}) => {
   const { locale, t } = useTranslation();
+  console.log(latestPost);
   return (
       <Layout>
         <Container>
@@ -36,7 +38,7 @@ const Home = () => {
                 )
               })}
             </Carousel>
-            <Ribbon/>
+            <Ribbon latestPost={latestPost}/>
             <hr className={classes.homeHr} />
             <Container>
               <Row>
@@ -159,6 +161,13 @@ const Home = () => {
         </Container>
       </Layout>
   );
+};
+
+Home.getInitialProps = async () => {
+  const latestPost = await getLatestPostData();
+  return {
+    latestPost
+  };
 };
 
 export default withLocale(Home);
