@@ -20,7 +20,7 @@ const slides = [
 
 const Home = ({latestPost}) => {
   const { locale, t } = useTranslation();
-  console.log(latestPost);
+
   return (
       <Layout>
         <Container>
