@@ -4,16 +4,43 @@ import Navbar from "./navbar/navbar";
 import Footer from "./footer/footer";
 import SocialPages from "./social-actions/social-actions";
 import Head from "./head";
+import {Col, Container, Row} from "react-bootstrap";
+import classes from "./layout.module.css";
 
-export default function ({children}) {
+export default function ({children, menu}) {
+  const createMenuItem = (item) => {
     return (
-        <div className={'layout'}>
-          <Head/>
-          <Topbar/>
-          <Navbar/>
-          {children}
-          <Footer/>
-          <SocialPages/>
-        </div>
+        <li key={item.url}>
+          <a href={item.url}>
+            {item.caption}
+          </a>
+        </li>
     );
+  };
+  return (
+      <div className={'layout'}>
+        <Head/>
+        <Topbar/>
+        <Navbar/>
+        <Container>
+          <Row>
+            <Col md={menu ? 9 : 12} sm={menu ? 12 : 0}>
+              {children}
+            </Col>
+            {menu ? (
+                <Col md={3} className='hidden-xs hidden-sm'>
+                  <div id='navbar' className={classes.sidebar}>
+                    <ul className='nav'>
+                      {menu.map(item => createMenuItem(item))}
+                    </ul>
+                  </div>
+                </Col>
+            ) : null
+            }
+          </Row>
+        </Container>
+        <Footer/>
+        <SocialPages/>
+      </div>
+  );
 }
