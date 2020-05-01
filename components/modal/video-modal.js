@@ -1,59 +1,44 @@
-import React from "react";
+import React, {useState} from "react";
+import Modal from 'react-bootstrap/Modal';
+import useTranslation from "../../hooks/useTranslation";
 
 const modal = (props) => {
+  const [show, setShow] = useState(false);
+  const { t } = useTranslation();
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
-      <div className="video-modal">
-        <div
-            className="modal fade"
-            id={props.videoId}
-            tabIndex={-1}
-            role="dialog"
-            ariaHidden={true}>
-          <div
-              className="modal-dialog"
-              style={{
-                position: 'relative',
-                top: '50%',
-                transform: 'translateY(-50%)',
-                width: '60%',
-              }}>
-            <div
-                className="modal-content"
+      <>
+        <img src={props.imgSrc} onClick={handleShow} alt='Application Image'/>
+
+        <Modal
+            size='lg'
+            aria-labelledby='contained-modal-title-vcenter'
+            centered
+            show={show}
+            onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>{t(props.title)}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body style={{
+            padding: '10px',
+            height: '500px'}}>
+            <iframe
+                width="auto"
+                height="auto"
+                src={props.url}
                 style={{
-                  padding: '1%',
-                }}>
-              <div className="modal-header">
-                <button type="button" className="close" data-dismiss="modal" ariaHidden={true}>
-                  X
-                </button>
-                <strong className="modal-title" id={'label' + props.videoId}>
-                  {props.videoTitle}
-                </strong>
-              </div>
-              <div
-                  className="modal-body text-center"
-                  style={{
-                    position: 'relative',
-                    width: '100%',
-                    height: 0,
-                    paddingBottom: '56.25%',
-                  }}>
-                <iframe
-                    width="100%"
-                    height="auto"
-                    src={props.videoUrl}
-                    style={{
-                      position: 'absolute',
-                      top: 0,
-                      left: 0,
-                      width: '100%',
-                      height: '100%',
-                    }} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%',
+                }} />
+          </Modal.Body>
+        </Modal>
+      </>
   );
 };
 
