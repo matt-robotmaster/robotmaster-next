@@ -1,5 +1,7 @@
 .banner {
   overflow: hidden;
+  padding-right: 0;
+  padding-left: 0;
 }
 .bannerImgContainer {
   height: 227px;
