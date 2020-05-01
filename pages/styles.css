@@ -19,6 +19,15 @@ body {
   }
 }
 
+.subtitle {
+  display: inline-block;
+  background-color: #353637;
+  color: #fff;
+  padding: 8px 20px;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
 .nav > li > a {
   color: #999;
   border-left: 2px solid transparent;
@@ -44,8 +53,8 @@ body {
 .nav .nav > .active > a, .nav .nav > .active:hover > a, .nav .nav > .active:focus > a {
   font-weight: 500;
 }
-.nav ul.nav {
-  display: none;
+.nav {
+  display: block;
 }
 .nav > .active > ul.nav {
   display: block;
