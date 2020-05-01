@@ -29,7 +29,7 @@ export default function ({children, menu, banner}) {
                 imageSrc={banner.imageSrc}
             />
         ): null}
-        <Container>
+        <Container className={classes.content}>
           <Row>
             <Col md={menu ? 9 : 12} sm={menu ? 12 : 0}>
               {children}
