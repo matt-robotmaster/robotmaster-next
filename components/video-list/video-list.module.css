@@ -26,6 +26,9 @@
   -webkit-filter: brightness(70%);
   filter: brightness(70%);
 }
+.appVideoVidImg img {
+  width: 160px;
+}
 @media (max-width: 500px) {
   .appVideoVidImg, .appVideoText {
     width: 100%;
