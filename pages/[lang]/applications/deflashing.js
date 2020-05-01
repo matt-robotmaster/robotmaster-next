@@ -14,6 +14,7 @@ const deflashing = () => {
       <Layout>
         <Banner
             caption={t('application-page-caption')}
+            imageSrc='/img/application/deflashing/banner.jpg'
         />
         <Container className={classes.application}>
           <Row>

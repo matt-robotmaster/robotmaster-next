@@ -14,6 +14,7 @@ const addman = () => {
       <Layout>
         <Banner
             caption={t('application-page-caption')}
+            imageSrc='/img/application/adman/banner.jpg'
         />
         <Container className={classes.application}>
           <Row>

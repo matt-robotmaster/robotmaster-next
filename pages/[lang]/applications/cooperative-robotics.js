@@ -14,6 +14,7 @@ const coop = () => {
       <Layout>
         <Banner
             caption={t('application-page-caption')}
+            imageSrc='/img/application/coop/banner.jpg'
         />
         <Container className={classes.application}>
           <Row>
