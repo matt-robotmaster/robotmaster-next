@@ -2,7 +2,6 @@ import React from 'react';
 import useTranslation from "../../../hooks/useTranslation";
 import withLocale from '../../../hocs/withLocale';
 import Layout from '../../../components/layout/layout';
-import Banner from '../../../components/banner/banner';
 import classes from './index.module.css';
 import {Col, Container, Row} from "react-bootstrap";
 import VideoList from '../../../components/video-list/video-list';
@@ -11,11 +10,10 @@ const deflashing = () => {
   const { t } = useTranslation();
 
   return (
-      <Layout>
-        <Banner
-            caption={t('application-page-caption')}
-            imageSrc='/img/application/deflashing/banner.jpg'
-        />
+      <Layout banner={{
+        caption: t('application-page-caption'),
+        imageSrc: '/img/application/deflashing/banner.jpg'
+      }}>
         <Container className={classes.application}>
           <Row>
             <Col md={12}>

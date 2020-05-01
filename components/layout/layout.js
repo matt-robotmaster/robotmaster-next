@@ -6,8 +6,9 @@ import SocialPages from "./social-actions/social-actions";
 import Head from "./head";
 import {Col, Container, Row} from "react-bootstrap";
 import classes from "./layout.module.css";
+import Banner from '../banner/banner';
 
-export default function ({children, menu}) {
+export default function ({children, menu, banner}) {
   const createMenuItem = (item) => {
     return (
         <li key={item.url}>
@@ -22,6 +23,12 @@ export default function ({children, menu}) {
         <Head/>
         <Topbar/>
         <Navbar/>
+        {banner ? (
+            <Banner
+                caption={banner.caption}
+                imageSrc={banner.imageSrc}
+            />
+        ): null}
         <Container>
           <Row>
             <Col md={menu ? 9 : 12} sm={menu ? 12 : 0}>

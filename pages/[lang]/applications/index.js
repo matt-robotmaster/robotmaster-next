@@ -3,7 +3,6 @@ import withLocale from '../../../hocs/withLocale';
 import useTranslation from '../../../hooks/useTranslation';
 import Layout from '../../../components/layout/layout';
 import {Col, Container, Row} from 'react-bootstrap';
-import Banner from '../../../components/banner/banner';
 import applicationData from '../../../data/applications.json';
 import classes from './index.module.css';
 import Link from "next/link";
@@ -13,8 +12,9 @@ const applications = () => {
   const { locale, t } = useTranslation();
 
   return (
-      <Layout>
-        <Banner caption={t('application-page-caption')}/>
+      <Layout banner={{
+        caption: t('application-page-caption')
+      }}>
         <Container className={classes.application}>
           <h2 id='core-of-your-process' className={classes.applicationSubtitle}>
             {t('application-title-1')}

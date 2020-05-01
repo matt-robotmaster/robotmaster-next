@@ -3,7 +3,6 @@ import withLocale from '../../../hocs/withLocale';
 import Layout from '../../../components/layout/layout';
 import useTranslation from '../../../hooks/useTranslation';
 import {Container, Row, Col} from "react-bootstrap";
-import Banner from "../../../components/banner/banner";
 import eventsData from '../../../data/events.json';
 import classes from './index.module.css';
 
@@ -11,8 +10,9 @@ const events = () => {
   const { t } = useTranslation();
 
   return (
-      <Layout>
-        <Banner caption={'events-page-caption'}/>
+      <Layout banner={{
+        caption: t('application-page-caption')
+      }}>
         <Container>
           <Row>
             <Col md={12}>

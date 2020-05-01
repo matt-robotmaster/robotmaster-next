@@ -11,11 +11,10 @@ const deburring = () => {
   const { t } = useTranslation();
 
   return (
-      <Layout>
-        <Banner
-            caption={t('application-page-caption')}
-            imageSrc='/img/application/deburring/banner.jpg'
-        />
+      <Layout banner={{
+              caption: t('application-page-caption'),
+              imageSrc: '/img/application/deburring/banner.jpg'
+            }}>
         <Container className={classes.application}>
           <Row>
             <Col md={12}>
