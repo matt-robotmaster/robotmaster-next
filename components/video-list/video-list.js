@@ -8,7 +8,7 @@ import useTranslation from "../../hooks/useTranslation";
 const videoList = ({id}) => {
   const { t } = useTranslation();
   const createVideoList = (id) => {
-    const appData = applicationData.find(app => app.path === id);
+    const appData = applicationData.find(app => app.id === id);
     const page = appData.id;
     const videos = [];
 
