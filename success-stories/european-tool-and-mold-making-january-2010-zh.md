@@ -1,0 +1,15 @@
+---
+link: ""
+title: "《欧洲刀具模具制造》杂志，2010年1月"
+description: ""
+publishDate: ""
+preview: ""
+home: ""
+summary: "力求以时间和金钱成本更低的解决方案代替数控机床的制造企业瞄准加工机器人，加工机器人逐渐走俏市场。六轴机器人编程用Robotmaster软件在CAD/CAM环境中完美地集成了工具编程、仿真和代码生成，灵活性和速度堪比数控机床编程软件。"
+application: ""
+industry: ""
+article: "机器人软件实现数控机床般的机器人编程"
+articleImagePath: "/assets/images/success/etmm_jan2010.jpg"
+articleUrl: "https://www.robotmaster.com/assets/data/pdf/ETMM_janFeb10p28.pdf"
+language: "zh"
+---

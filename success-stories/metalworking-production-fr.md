@@ -1,0 +1,15 @@
+---
+link: ""
+title: "Production intégrant le travail des métaux"
+description: ""
+publishDate: ""
+preview: ""
+home: ""
+summary: "À mesure que les robots deviennent plus populaires pour les travaux qui nécessitaient auparavant des machines CNC, des logiciels destinés à satisfaire le besoin d’accroître le contrôle et l’efficacité voient le jour."
+application: ""
+industry: ""
+article: "CAO/FAO pour robots"
+articleImagePath: "/assets/images/success/mpw.jpg"
+articleUrl: "https://www.robotmaster.com/assets/data/pdf/MPW_jul2009.pdf"
+language: "fr"
+---
