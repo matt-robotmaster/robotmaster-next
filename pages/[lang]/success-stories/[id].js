@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../../../components/layout/layout';
-import {getSuccessStoryData} from "../../../lib/success-stories";
+import { getSuccessStoryData } from "../../../lib/success-stories";
 import Head from "next/head";
 import {Col, Container, Row} from "react-bootstrap";
 import useTranslation from "../../../hooks/useTranslation";
@@ -45,4 +45,5 @@ successStory.getInitialProps = async (ctx) => {
   };
 };
 
+//TODO: solve static rendering with HOC, withLocale is needed to translate to other languages
 export default withLocale(successStory);

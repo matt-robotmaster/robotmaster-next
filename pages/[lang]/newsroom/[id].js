@@ -1,9 +1,10 @@
 import React from 'react';
 import Layout from '../../../components/layout/layout';
-import { getAllPostPaths, getPostData } from "../../../lib/posts";
+import { getPostData } from "../../../lib/posts";
 import Head from "next/head";
 import {Col, Container, Row} from "react-bootstrap";
 import useTranslation from "../../../hooks/useTranslation";
+import withLocale from '../../../hocs/withLocale';
 
 const post = ({ postData }) => {
   const { t } = useTranslation();
@@ -30,21 +31,17 @@ const post = ({ postData }) => {
   );
 };
 
-export async function getStaticPaths() {
-  const paths = getAllPostPaths();
+post.getInitialProps = async (ctx) => {
+  let postData = {};
+  try {
+    postData = await getPostData(ctx.query.id);
+  } catch {
+    ctx.res.statusCode = 404;
+  }
   return {
-    paths,
-    fallback: false
+    postData
   };
-}
+};
 
-export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id);
-  return {
-    props: {
-      postData
-    }
-  };
-}
-
-export default post;
+//TODO: solve static rendering with HOC, withLocale is needed to translate to other languages
+export default withLocale(post);
