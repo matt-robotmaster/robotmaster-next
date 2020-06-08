@@ -5,8 +5,13 @@ import Head from "next/head";
 import {Col, Container, Row} from "react-bootstrap";
 import useTranslation from "../../../hooks/useTranslation";
 import withLocale from '../../../hocs/withLocale';
+import Custom404 from '../../404';
 
 const successStory = ({ successStoryData }) => {
+  if (Object.keys(successStoryData).length === 0 && successStoryData.constructor === Object) {
+    return <Custom404/>;
+  }
+
   const { t } = useTranslation();
   return (
       <Layout banner={{
@@ -29,8 +34,12 @@ const successStory = ({ successStoryData }) => {
 };
 
 successStory.getInitialProps = async (ctx) => {
-  console.log(ctx.query);
-  const successStoryData = await getSuccessStoryData(ctx.query.lang, ctx.query.id);
+  let successStoryData = {};
+  try {
+    successStoryData = await getSuccessStoryData(ctx.query.lang, ctx.query.id);
+  } catch {
+    ctx.res.statusCode = 404;
+  }
   return {
       successStoryData
   };
