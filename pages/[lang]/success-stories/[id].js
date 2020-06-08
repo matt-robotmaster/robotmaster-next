@@ -19,9 +19,6 @@ const successStory = ({ successStoryData }) => {
           <Row>
             <Col md={12}>
               <div className="blog-post">
-                <h1>
-                  {successStoryData.title}
-                </h1>
                 <div dangerouslySetInnerHTML={{ __html: successStoryData.contentHtml }} />
               </div>
             </Col>
