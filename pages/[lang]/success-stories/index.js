@@ -3,14 +3,14 @@ import withLocale from '../../../hocs/withLocale';
 import Layout from '../../../components/layout/layout';
 import useTranslation from '../../../hooks/useTranslation';
 import classes from './index.module.css';
-import {getSuccessStoriesData} from "../../../lib/success-stories";
+import {getSuccessStoriesDataByLocales} from "../../../lib/success-stories";
 import Link from "next/link";
 import {Container} from "react-bootstrap";
 
 const successStories = ({successStories}) => {
   const { locale, t } = useTranslation();
-  const customerStories = successStories.filter(story => !story.article);
-  const mediaStories = successStories.filter(story => story.article);
+  const customerStories = successStories[locale].filter(story => !story.article);
+  const mediaStories = successStories[locale].filter(story => story.article);
 
   return (
       <Layout>
@@ -57,7 +57,7 @@ const successStories = ({successStories}) => {
                        __html: story.summary,
                      }} ></div>
                 <div className={classes.successStoriesSummaryDiv}>
-                  <img src={story.articleImagePath}/>
+                  <img src={story.articleImagePath} alt={story.title}/>
                 </div>
                 <Link href={`${story.articleUrl}`}>
                   {t('general-read-full')}
@@ -71,7 +71,7 @@ const successStories = ({successStories}) => {
 };
 
 successStories.getInitialProps = async () => {
-  const successStories = await getSuccessStoriesData();
+  const successStories = await getSuccessStoriesDataByLocales();
   return {
     successStories
   };
