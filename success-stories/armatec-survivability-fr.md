@@ -1,5 +1,5 @@
 ---
-link: "armatec-survivability-fr"
+link: "armatec-survivability"
 title: "Armatec Survivability/Ottobock Healthcare"
 description: ""
 publishDate: ""

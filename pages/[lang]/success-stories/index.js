@@ -13,7 +13,9 @@ const successStories = ({successStories}) => {
   const mediaStories = successStories[locale].filter(story => story.article);
 
   return (
-      <Layout>
+      <Layout banner={{
+        caption: t('success-page-caption')
+      }}>
         <Container>
           <h1 id='customer'>
             {t('success-section-1-title')}
