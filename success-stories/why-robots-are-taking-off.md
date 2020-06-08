@@ -1,0 +1,14 @@
+---
+link: ""
+title: "Robotics Industry Association of America, November 2013"
+description: ""
+publishDate: ""
+preview: ""
+home: ""
+summary: "Never ones to shy away from attention, robots are striking a formidable pose on the material removal stage. Robots are taking it off, stripping it down and smoothing it out. Whether machining or finishing, robotic material removal is being used to cut, grind, deburr and polish all sorts of materials, from food to wood to jet engine components. Recent technological advances have helped bridge the gap between traditional CNC machining and robotic material removal. Some would even say that robotic finishing is a maturing segment. Robotic machining still has a ways to go before it joins the mainstream ranks. In a 2008 white paper, the authors noted two major challenges to widespread adoption of robotic machining. One barrier was the lack of rigidity in the robot arm. The second was the inability to easily translate CAD programming into robot paths. The robotics industry has worked hard to shed these barriers. Most of the major robot manufacturers offer robots specifically designed for greater rigidity. Robot OEMs and other software developers offer simulation and CAD-to-path software that make programming more seamless and precise. Plus a host of specialized end-of-arm tooling (EOAT), force control technology, and other accuracy tools are raising the game."
+application: ""
+industry: ""
+article: "Why Robots Are Taking It Off"
+articleImagePath: "/assets/images/success/WhyRobotsAreTakingItOff.jpg"
+articleUrl: "https://www.robotmaster.com/assets/data/pdf/Robotics_WhyRobotsAreTakingItOff.pdf"
+---
