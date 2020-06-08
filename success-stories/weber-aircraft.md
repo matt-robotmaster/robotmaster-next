@@ -9,6 +9,7 @@ summary: "Weber Aircraft is one of the leading manufacturers of commercial aircr
 application: "Trimming/Milling"
 industry: "Aerospace"
 article: ""
+language: "en"
 ---
 # Robot software is first class for weber aircraft
 

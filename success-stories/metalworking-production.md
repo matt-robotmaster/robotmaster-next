@@ -11,4 +11,5 @@ industry: ""
 article: "CAD CAM for Robots"
 articleImagePath: "/assets/images/success/mpw.jpg"
 articleUrl: "https://www.robotmaster.com/assets/data/pdf/MPW_jul2009.pdf"
+language: "en"
 ---

@@ -11,4 +11,5 @@ industry: ""
 article: "Robotics Software Allows a Machining Robot to be Programmed Just Like a CNC Machine Tool"
 articleImagePath: "/assets/images/success/etmm_jan2010.jpg"
 articleUrl: "https://www.robotmaster.com/assets/data/pdf/ETMM_janFeb10p28.pdf"
+language: "en"
 ---

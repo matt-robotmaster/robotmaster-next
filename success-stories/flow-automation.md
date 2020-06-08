@@ -9,6 +9,7 @@ summary: "Flow Applications manufactures and integrates six-axis robot systems i
 application: "Trimming/Milling"
 industry: "Automotive"
 article: ""
+language: "en"
 ---
 # Path-intensive robotics software speeds off-line robot programming
 

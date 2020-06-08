@@ -11,4 +11,5 @@ industry: ""
 article: "CAD/CAM Software Specialized for Robot Programming Supports Shop-Floor Integration of Robots"
 articleImagePath: "/assets/images/success/etmm_dec2010.jpg"
 articleUrl: "https://www.robotmaster.com/assets/data/pdf/ETMM_dec2010.pdf"
+language: "en"
 ---

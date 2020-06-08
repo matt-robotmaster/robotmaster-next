@@ -9,6 +9,7 @@ summary: "Carnegie Mellon University School of Architecture in Pittsburgh has co
 application: "Architectural Manufacturing"
 industry: "Academic Research"
 article: ""
+language: "en"
 ---
 # Carnegie Mellon successfully exploiting manufacturing robots
 

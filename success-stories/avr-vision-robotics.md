@@ -9,6 +9,7 @@ summary: "The de-burring of combustion chambers for aircraft engines is about as
 application: "Deburring"
 industry: "Aircraft Engines"
 article: ""
+language: "en"
 ---
 # Robot programming software addresses complex material removal application
 

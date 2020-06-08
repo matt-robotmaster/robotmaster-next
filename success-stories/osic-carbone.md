@@ -9,6 +9,7 @@ summary: "In 2008, ORTHOPEDIE BONTOUX, a company that has specialised in the man
 application: "Orthopedic Milling"
 industry: "Prosthetics/Orthotics"
 article: ""
+language: "en"
 ---
 # Robotmaster software is used to create an automated way of producing custom orthotics using milling robots
 

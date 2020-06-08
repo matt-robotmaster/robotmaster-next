@@ -9,6 +9,7 @@ summary: "The latest robotic technology, state of the art processing equipment a
 application: "Stone Milling"
 industry: "Architecture"
 article: ""
+language: "en"
 ---
 # Machining robots bring stone mason's skills into the 21st century
 

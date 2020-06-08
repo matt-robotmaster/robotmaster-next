@@ -9,6 +9,7 @@ summary: "General Atomics had acquired an impressive waterjet robotic work cell 
 application: "Carbon Composite Trimming"
 industry: "Military"
 article: ""
+language: "en"
 ---
 # 7-Axis robot programming solution for trimming of composite parts
 

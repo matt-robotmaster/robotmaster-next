@@ -11,4 +11,5 @@ industry: ""
 article: "Why Robots Are Taking It Off"
 articleImagePath: "/assets/images/success/WhyRobotsAreTakingItOff.jpg"
 articleUrl: "https://www.robotmaster.com/assets/data/pdf/Robotics_WhyRobotsAreTakingItOff.pdf"
+language: "en"
 ---
