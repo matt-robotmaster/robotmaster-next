@@ -42,7 +42,6 @@ const successStories = ({successStories}) => {
 
 successStories.getInitialProps = async () => {
   const successStories = await getSuccessStoriesData();
-  console.log(successStories);
   return {
     successStories
   };
