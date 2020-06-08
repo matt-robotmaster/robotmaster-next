@@ -5,8 +5,13 @@ import Head from "next/head";
 import {Col, Container, Row} from "react-bootstrap";
 import useTranslation from "../../../hooks/useTranslation";
 import withLocale from '../../../hocs/withLocale';
+import Custom404 from "../../404";
 
 const post = ({ postData }) => {
+  if (Object.keys(postData).length === 0 && postData.constructor === Object) {
+    return <Custom404/>;
+  }
+
   const { t } = useTranslation();
   return (
       <Layout banner={{
