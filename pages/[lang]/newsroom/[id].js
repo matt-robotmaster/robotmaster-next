@@ -3,8 +3,10 @@ import Layout from '../../../components/layout/layout';
 import { getAllPostPaths, getPostData } from "../../../lib/posts";
 import Head from "next/head";
 import {Col, Container, Row} from "react-bootstrap";
+import useTranslation from "../../../hooks/useTranslation";
 
 const post = ({ postData }) => {
+  const { t } = useTranslation();
   return (
       <Layout banner={{
         caption: t('blog-page-caption')

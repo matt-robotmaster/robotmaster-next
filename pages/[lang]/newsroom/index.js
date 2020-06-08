@@ -11,7 +11,9 @@ const newsroom = ({posts}) => {
   const { locale, t } = useTranslation();
 
   return (
-      <Layout>
+      <Layout banner={{
+        caption: t('blog-page-caption')
+      }}>
         <Container>
           {posts.map(post => post.link ? (
               <div className={classes.blogPostSummary} key={post.altLink || post.link}>
