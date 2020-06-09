@@ -4,6 +4,7 @@ import useTranslation from '../../../hooks/useTranslation';
 import Layout from '../../../components/layout/layout';
 import {Col, Container, Row} from 'react-bootstrap';
 import classes from './index.module.css';
+import ContactForm from './../../../components/form/contact-form';
 
 const contact = () => {
   const { t } = useTranslation();
@@ -57,6 +58,7 @@ const contact = () => {
           </h2>
 
           {/*TODO: add contactForm, gaEventName: '/contact-page-request-form-submitted', requestingPage: 'contact-page',*/}
+          <ContactForm/>
 
           <hr />
           <Row>
