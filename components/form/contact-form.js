@@ -3,6 +3,7 @@ import {Form, Button, FormGroup, Col, Row} from "react-bootstrap";
 
 import countryList from '../../translations/locales/country-list.json';
 import useTranslation from "../../hooks/useTranslation";
+import { logEvent } from '../../lib/analytics';
 
 const getInputs = (t) => [
   {
@@ -139,7 +140,7 @@ const createSimpleInput = (input) => (
     </FormGroup>
 );
 
-const handleSubmit = (e, t, locale, requestingPage) => {
+const handleSubmit = (e, t, locale, props) => {
   e.preventDefault();
 
   //TODO: handle robotWarning
@@ -174,7 +175,7 @@ const handleSubmit = (e, t, locale, requestingPage) => {
         phone: e.target.C5IPhone1.value.trim(),
         info: e.target.U6I30.value.trim(),
         robot: e.target.robot.value.trim(),
-        requestingPage: requestingPage,
+        requestingPage: props.requestingPage,
         language: locale,
       };
 
@@ -200,12 +201,11 @@ const handleSubmit = (e, t, locale, requestingPage) => {
             'Content-Type': 'application/json'
           }
         }).then(() => {
-      window.location.href = 'contact/information-request-success';
+          window.location.href = `/${locale}/contact/information-request-success`;
     });
 
-    //TODO: scroll to top
-    //TODO: ga send pageview this.props.gaEventName
-
+    window.scrollTo(0, 0);
+    logEvent('form', props.gaEvent);
   })
   .catch(err => console.error("Error:", err));
 
@@ -222,7 +222,7 @@ const contactForm = (props) => {
 
         {/*TODO: show messages here*/}
 
-        <Form horizontal name='form' onSubmit={(e) => handleSubmit(e, t, locale, props.requestingPage)}>
+        <Form horizontal name='form' onSubmit={(e) => handleSubmit(e, t, locale, props)}>
           {inputs.map(input => createFormInput(input, isCountryUS, setIsCountryUS))}
           <FormGroup>
             <Col sm={{span: 4, offset: 2}}>

@@ -16,10 +16,9 @@ const informationRequest = () => {
           <h1>
             {t('inforeq-page-caption')}
           </h1>
-          {/*TODO:
-          gaEventName: '/information-request-form-submitted',
-          requestingPage: 'information-request',*/}
-          <ContactForm/>
+          <ContactForm
+              requestingPage='information-request'
+              gaEvent='information-request-form-submitted'/>
         </Container>
       </Layout>
   );
