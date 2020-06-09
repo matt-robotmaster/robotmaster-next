@@ -173,7 +173,7 @@ const handleSubmit = (e, t) => {
     method: 'POST',
     body: bodyToFetch,
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
     }
   })
   .then(() => {
