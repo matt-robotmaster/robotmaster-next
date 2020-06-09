@@ -13,9 +13,16 @@ const successStories = ({successStories}) => {
   const mediaStories = successStories[locale].filter(story => story.article);
 
   return (
-      <Layout banner={{
-        caption: t('success-page-caption')
-      }}>
+      <Layout
+          banner={{caption: t('success-page-caption')}}
+          menu={[{
+            caption: t('success-section-1-title'),
+            url: 'success-stories#customer',
+          }, {
+            caption: t('success-section-2-title'),
+            url: 'success-stories#media',
+          }]}
+      >
         <Container>
           <h1 id='customer'>
             {t('success-section-1-title')}
@@ -57,7 +64,7 @@ const successStories = ({successStories}) => {
                 <div className={classes.successStoriesSummaryDiv}
                      dangerouslySetInnerHTML={{
                        __html: story.summary,
-                     }} ></div>
+                     }} />
                 <div className={classes.successStoriesSummaryDiv}>
                   <img src={story.articleImagePath} alt={story.title}/>
                 </div>

@@ -12,9 +12,13 @@ const applications = () => {
   const { locale, t } = useTranslation();
 
   return (
-      <Layout banner={{
-        caption: t('application-page-caption')
-      }}>
+      <Layout
+          banner={{caption: t('application-page-caption')}}
+          menu={[{
+            caption: t('application-title-1'),
+            url: 'applications#core-of-your-process',
+          }]}
+      >
         <Container className={classes.application}>
           <h2 id='core-of-your-process' className={classes.applicationSubtitle}>
             {t('application-title-1')}
@@ -40,7 +44,9 @@ const applications = () => {
                         <img
                             className={classes.applicationCategoryCategoryImg}
                             src={'/img/application/' + app.path + '.png'}
-                            style={{maxWidth: '90%', maxHeight: '160px'}} />
+                            style={{maxWidth: '90%', maxHeight: '160px'}}
+                            alt={app.path}
+                        />
                       </a>
                     </Link>
                     <p className={classes.applicationCategoryPMore}>
