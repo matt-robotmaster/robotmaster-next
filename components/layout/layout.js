@@ -3,7 +3,7 @@ import Topbar from "./topbar/topbar";
 import Navbar from "./navbar/navbar";
 import Footer from "./footer/footer";
 import SocialPages from "./social-actions/social-actions";
-import Head from "./head";
+import CustomHead from "./head";
 import {Col, Container, Row} from "react-bootstrap";
 import classes from "./layout.module.css";
 import Banner from '../banner/banner';
@@ -20,7 +20,7 @@ export default function ({children, menu, banner}) {
   };
   return (
       <div className={'layout'}>
-        <Head/>
+        <CustomHead/>
         <Topbar/>
         <Navbar/>
         {banner ? (

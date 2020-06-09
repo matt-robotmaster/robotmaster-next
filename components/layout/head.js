@@ -1,12 +1,21 @@
+import React, { useEffect } from "react";
 import Head from "next/head";
 import metadata from "../../translations/metas";
-import React from "react";
 import useTranslation from "../../hooks/useTranslation";
 import {useRouter} from "next/router";
+import { initGA, logPageView } from "../../lib/analytics";
 
 const head = () => {
   const { locale } = useTranslation();
   const router = useRouter();
+
+  useEffect(() => {
+    if (!window.GA_INITIALIZED) {
+      initGA();
+      window.GA_INITIALIZED = true;
+    }
+    logPageView();
+  });
 
   const mainPage = router.asPath.split('/')[2] ? '/' + router.asPath.split('/')[2] : '/';
   const subPage = router.asPath.split('/')[3] ? '/' + router.asPath.split('/')[3] : '';
