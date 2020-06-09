@@ -14,13 +14,13 @@ const Custom404 = () => {
         <Container>
           <Row>
             <Col md={12}>
-              {t('notfound-page-message')}
+              <p>{t('notfound-page-message')}</p>
+              <Link href={`/${locale}/`} passHref>
+                <a className="btn btn-primary btn-lg" >
+                  {t('notfound-page-homepage-button')}
+                </a>
+              </Link>
             </Col>
-            <Link href={`/${locale}/`} passHref>
-              <a className="btn btn-primary btn-lg" >
-                {t('notfound-page-homepage-button')}
-              </a>
-            </Link>
           </Row>
         </Container>
       </Layout>
