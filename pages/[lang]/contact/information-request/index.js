@@ -5,24 +5,24 @@ import Layout from './../../../../components/layout/layout';
 import {Container} from 'react-bootstrap';
 import ContactForm from './../../../../components/form/contact-form';
 
-const contact = () => {
+const informationRequest = () => {
   const { t } = useTranslation();
 
   return (
       <Layout banner={{
-        caption: t('livedemoreq-page-caption')
+        caption: t('inforeq-page-caption')
       }}>
         <Container>
           <h1>
-            {t('livedemoreq-page-title')}
+            {t('inforeq-page-caption')}
           </h1>
           {/*TODO:
-          gaEventName: '/live-demo-request-form-submitted',
-          requestingPage: 'live-demo',*/}
+          gaEventName: '/information-request-form-submitted',
+          requestingPage: 'information-request',*/}
           <ContactForm/>
         </Container>
       </Layout>
   );
 };
 
-export default withLocale(contact);
+export default withLocale(informationRequest);

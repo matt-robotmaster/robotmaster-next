@@ -16,7 +16,9 @@ const contact = () => {
           <h1>
             {t('contactmereq-page-title')}
           </h1>
-          {/*TODO: add contactForm, gaEventName: '/contact-page-request-form-submitted', requestingPage: 'contact-page',*/}
+          {/*TODO:
+          gaEventName: '/contact-me-request-form-submitted',
+          requestingPage: 'contact-me',,*/}
           <ContactForm/>
         </Container>
       </Layout>
