@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import mustache from "mustache/mustache";
 
 function sendEmail(ses, sourceEmailAddress, destEmailAddress, subject, email) {
   ses.sendEmail({
@@ -89,38 +90,40 @@ function getDictionary() {
 }
 
 function assembleRobotMasterEmailFor(req, requestingPage = null) {
-  const templatesDirectory = path.join(process.cwd(), 'lib/email-templates');
-  let template;
-
-  switch (requestingPage) {
-    case 'v6-trial':
-      template = fs.readFileSync(`${templatesDirectory}/form-v6-trial.tpl`);
-      break;
-    case 'v7-trial':
-      template = fs.readFileSync(`${templatesDirectory}/form-v7-trial.tpl`);
-      break;
-    default:
-      template = fs.readFileSync(`${templatesDirectory}/form.tpl`);
-      break;
-  }
-
   try {
+    const templatesDirectory = path.join(process.cwd(), 'lib/email-templates');
+    let template;
+
+    switch (requestingPage) {
+      case 'v6-trial':
+        template = fs.readFileSync(`${templatesDirectory}/form-v6-trial.tpl`, 'utf-8');
+        break;
+      case 'v7-trial':
+        template = fs.readFileSync(`${templatesDirectory}/form-v7-trial.tpl`, 'utf-8');
+        break;
+      default:
+        template = fs.readFileSync(`${templatesDirectory}/form.tpl`, 'utf-8');
+        break;
+    }
+
     return mustache.render(template, req.body);
   } catch (e) {
     console.log('ERROR | REQUEST-INFORMATION | assembleRobotMasterEmail | ', e);
   }
 }
 
-function assembleConfirmationEmail(req, dictionary) {
-  const confirmationEmailMessage = {
-    name: req.body.name,
-    message: req.body.requestingPage === 'live-demo' ?
-        dictionary[language]['confirmation-email-live-demo-message'] :
-        dictionary[language]['confirmation-email-contact-message'],
-  };
-
+function assembleConfirmationEmail(req, dictionaryForLocale) {
   try {
-    const template = fs.readFileSync(path.join(__dirname, '../localization/' + language + '/confirmationMail.tpl'));
+    const templatesDirectory = path.join(process.cwd(), 'lib/email-templates');
+
+    const confirmationEmailMessage = {
+      name: req.body.name,
+      message: req.body.requestingPage === 'live-demo' ?
+          dictionaryForLocale['confirmation-email-live-demo-message'] :
+          dictionaryForLocale['confirmation-email-contact-message'],
+    };
+
+    const template = fs.readFileSync(`${templatesDirectory}/confirmationMail.tpl`, 'utf-8');
     return mustache.render(template, confirmationEmailMessage);
   } catch (e) {
     console.log('ERROR | REQUEST-INFORMATION | assembleRobotMasterEmail | ', e);
@@ -171,7 +174,7 @@ function handlePostRequest(req, res) {
           .find(country => country.name === req.body.country).email;
 
       const emailForRobotMaster = assembleRobotMasterEmailFor(req);
-      const emailForCustomer = assembleConfirmationEmail(req, dictionary);
+      const emailForCustomer = assembleConfirmationEmail(req, dictionary[language]);
 
       sendEmail(
           ses,
