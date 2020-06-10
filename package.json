@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "aws-sdk": "^2.693.0",
     "bootstrap": "^4.4.1",
     "gray-matter": "^4.0.2",
     "mustache": "^4.0.1",
