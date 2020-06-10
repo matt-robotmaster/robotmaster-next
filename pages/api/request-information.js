@@ -1,6 +1,13 @@
 import fs from "fs";
 import path from "path";
 import mustache from "mustache/mustache";
+import aws from 'aws-sdk';
+
+aws.config.update({
+  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+  secretAccessKey: process.env.AWS_SECRET_KEY,
+  region: process.env.AWS_REGION,
+});
 
 function sendEmail(ses, sourceEmailAddress, destEmailAddress, subject, email) {
   ses.sendEmail({
@@ -20,7 +27,7 @@ function sendEmail(ses, sourceEmailAddress, destEmailAddress, subject, email) {
     },
   }, function(err) {
     if (err) {
-      console.log('ERROR | REQUEST-INFORMATION | sendEmail | ', e);
+      console.log('ERROR | REQUEST-INFORMATION | sendEmail | ', err);
     }
   });
 }
@@ -89,12 +96,12 @@ function getDictionary() {
   return dictionary;
 }
 
-function assembleRobotMasterEmailFor(req, requestingPage = null) {
+function assembleRobotMasterEmail(req) {
   try {
     const templatesDirectory = path.join(process.cwd(), 'lib/email-templates');
     let template;
 
-    switch (requestingPage) {
+    switch (req.body.requestingPage) {
       case 'v6-trial':
         template = fs.readFileSync(`${templatesDirectory}/form-v6-trial.tpl`, 'utf-8');
         break;
@@ -112,15 +119,15 @@ function assembleRobotMasterEmailFor(req, requestingPage = null) {
   }
 }
 
-function assembleConfirmationEmail(req, dictionaryForLocale) {
+function assembleConfirmationEmail(req, dictionary) {
   try {
     const templatesDirectory = path.join(process.cwd(), 'lib/email-templates');
 
     const confirmationEmailMessage = {
       name: req.body.name,
       message: req.body.requestingPage === 'live-demo' ?
-          dictionaryForLocale['confirmation-email-live-demo-message'] :
-          dictionaryForLocale['confirmation-email-contact-message'],
+          dictionary[req.body.language]['confirmation-email-live-demo-message'] :
+          dictionary[req.body.language]['confirmation-email-contact-message'],
     };
 
     const template = fs.readFileSync(`${templatesDirectory}/confirmationMail.tpl`, 'utf-8');
@@ -145,11 +152,10 @@ function handlePostRequest(req, res) {
   const language = req.body.language;
   const dictionary = getDictionary();
 
-  //TODO: add aws ses
-  //const ses = new aws.SES();
+  const ses = new aws.SES();
 
   if (requestingPage === 'trial_request') {
-    const emailForRobotMaster = assembleRobotMasterEmailFor(req, requestingPage);
+    const emailForRobotMaster = assembleRobotMasterEmail(req);
 
     sendEmail(
         ses,
@@ -173,8 +179,8 @@ function handlePostRequest(req, res) {
           countryList
           .find(country => country.name === req.body.country).email;
 
-      const emailForRobotMaster = assembleRobotMasterEmailFor(req);
-      const emailForCustomer = assembleConfirmationEmail(req, dictionary[language]);
+      const emailForRobotMaster = assembleRobotMasterEmail(req);
+      const emailForCustomer = assembleConfirmationEmail(req, dictionary);
 
       sendEmail(
           ses,

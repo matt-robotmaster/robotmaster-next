@@ -8,5 +8,11 @@ module.exports = {
     }
 
     return config
+  },
+  env: {
+    PORT: 8080,
+    AWS_ACCESS_KEY_ID: '0',
+    AWS_SECRET_KEY: '0',
+    AWS_REGION: 'us-east-1',
   }
 }
