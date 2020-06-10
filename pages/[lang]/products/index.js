@@ -3,6 +3,7 @@ import withLocale from '../../../utils/hocs/withLocale';
 import Layout from '../../../utils/components/layout/layout';
 import {Col, Row} from 'react-bootstrap';
 import useTranslation from "../../../utils/hooks/useTranslation";
+import classes from './index.module.css';
 
 const products = () => {
   const { t } = useTranslation();
@@ -28,32 +29,35 @@ const products = () => {
         <h2 id="what-is-robotmaster" className="subtitle">
           {t('products-title-1')}
         </h2>
-        <Row className="bigger-page-text">
-          <Col md={6} lg={6}>
-            <p>
-              {t('products-what-lead')}
-            </p>
-            <ul>
-              <li>
-                {t('products-what-list-1')}
-              </li>
-              <li>
-                {t('products-what-list-2')}
-              </li>
-              <li>
-                {t('products-what-list-3')}
-              </li>
-              <li>
-                {t('products-what-list-4')}
-              </li>
-            </ul>
-          </Col>
-          <Col md={6} lg={6} className="flex-center-img">
-            <img
-                src="/img/products/Computer.png"
-                style={{maxWidth: '100%', maxHeight: '300px'}} />
-          </Col>
-        </Row>
+        <section className={classes.productsSection}>
+          <Row className="bigger-page-text">
+            <Col md={6} lg={6}>
+              <p>
+                {t('products-what-lead')}
+              </p>
+              <ul>
+                <li>
+                  {t('products-what-list-1')}
+                </li>
+                <li>
+                  {t('products-what-list-2')}
+                </li>
+                <li>
+                  {t('products-what-list-3')}
+                </li>
+                <li>
+                  {t('products-what-list-4')}
+                </li>
+              </ul>
+            </Col>
+            <Col md={6} lg={6} className="flex-center-img">
+              <img
+                  src="/img/products/Computer.png"
+                  style={{maxWidth: '100%', maxHeight: '300px'}} />
+            </Col>
+          </Row>
+        </section>
+
         <h2 id="interactive" className="subtitle">
           {t('products-title-2')}
         </h2>
@@ -86,8 +90,7 @@ const products = () => {
           {t('products-title-3')}
         </h2>
         <Row className="bigger-page-text">
-          <Col xs={12} sm={12} md={{span: 8, offset: 4}} lg={{span: 8, offset: 4}}
-              className="product-feature-box right clearfix">
+          <div className="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-push-4 col-lg-push-4 product-feature-box right clearfix">
             <h3 className="subtitle">
               {t('products-feat-title-1')}
             </h3>
@@ -108,16 +111,13 @@ const products = () => {
                 {t('products-feat-list-1-4')}
               </li>
             </ul>
-          </Col>
-          {/*FIXME: col*/}
-          <Col
-              className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-pull-8 col-lg-pull-8 flex-center-img">
+          </div>
+          <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-pull-8 col-lg-pull-8 flex-center-img">
             <img src="/img/products/1.jpg" style={{maxWidth: '100%', maxHeight: '240px'}} />
-          </Col>
+          </div>
         </Row>
         <Row className="bigger-page-text">
-          <Col xs={12} sm={12} md={8} lg={8}
-              className="product-feature-box clearfix">
+          <div className="col-xs-12 col-sm-12 col-md-8 col-lg-8 product-feature-box clearfix">
             <h3 className="subtitle">
               {t('products-feat-title-2')}
             </h3>
@@ -132,13 +132,12 @@ const products = () => {
                 {t('products-feat-list-2-2')}
               </li>
             </ul>
-          </Col>
-          <Col xs={12} sm={12} md={4} lg={4} className="flex-center-img">
+          </div>
+          <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 flex-center-img">
             <img src="/img/products/4.jpg" style={{maxWidth: '100%', maxHeight: '240px'}} />
-          </Col>
+          </div>
         </Row>
         <Row className="bigger-page-text">
-          {/*FIXME: col*/}
           <div
               className="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-push-4 col-lg-push-4 product-feature-box right clearfix">
             <h3 className="subtitle">
@@ -159,7 +158,6 @@ const products = () => {
               </li>
             </ul>
           </div>
-          {/*FIXME: col*/}
           <div
               className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-pull-8 col-lg-pull-8 flex-center-img">
             <img src="/img/products/3.jpg" style={{maxWidth: '100%', maxHeight: '240px'}} />
@@ -194,7 +192,6 @@ const products = () => {
           </Col>
         </Row>
         <Row className="bigger-page-text">
-          {/*FIXME: col*/}
           <div
               className="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-push-4 col-lg-push-4 product-feature-box right clearfix">
             <h3 className="subtitle">
@@ -215,7 +212,6 @@ const products = () => {
               </li>
             </ul>
           </div>
-          {/*FIXME: col*/}
           <div
               className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-pull-8 col-lg-pull-8 flex-center-img">
             <img src="/img/products/6.jpg" style={{maxWidth: '100%', maxHeight: '240px'}} />
