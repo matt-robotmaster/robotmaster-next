@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
-import metadata from "../../translations/metas";
+import metadata from "../../../lib/translations/metas";
 import useTranslation from "../../hooks/useTranslation";
 import {useRouter} from "next/router";
-import { initGA, logPageView } from "../../lib/analytics";
+import { initGA, logPageView } from "../../../lib/analytics";
 
 const head = () => {
   const { locale } = useTranslation();

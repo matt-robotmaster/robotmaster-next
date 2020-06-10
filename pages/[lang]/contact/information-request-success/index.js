@@ -1,7 +1,7 @@
 import React from 'react';
-import withLocale from '../../../../hocs/withLocale';
-import useTranslation from '../../../../hooks/useTranslation';
-import Layout from '../../../../components/layout/layout';
+import withLocale from '../../../../utils/hocs/withLocale';
+import useTranslation from '../../../../utils/hooks/useTranslation';
+import Layout from '../../../../utils/components/layout/layout';
 
 const informationRequestSuccess = () => {
   const { t } = useTranslation();

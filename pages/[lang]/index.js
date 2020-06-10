@@ -1,10 +1,10 @@
 import React from 'react';
-import useTranslation from "../../hooks/useTranslation";
-import withLocale from "../../hocs/withLocale";
-import Layout from '../../components/layout/layout';
+import useTranslation from "../../utils/hooks/useTranslation";
+import withLocale from "../../utils/hocs/withLocale";
+import Layout from '../../utils/components/layout/layout';
 import {Carousel, Col, Container, Row} from 'react-bootstrap';
 import classes from './index.module.css';
-import Ribbon from '../../components/ribbon/ribbon';
+import Ribbon from '../../utils/components/ribbon/ribbon';
 import Link from "next/link";
 import {getLatestPostData} from "../../lib/posts";
 

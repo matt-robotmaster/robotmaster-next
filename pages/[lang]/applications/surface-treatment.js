@@ -1,10 +1,10 @@
 import React from 'react';
-import useTranslation from "../../../hooks/useTranslation";
-import withLocale from '../../../hocs/withLocale';
-import Layout from '../../../components/layout/layout';
+import useTranslation from "../../../utils/hooks/useTranslation";
+import withLocale from '../../../utils/hocs/withLocale';
+import Layout from '../../../utils/components/layout/layout';
 import classes from './index.module.css';
 import {Col, Container, Row} from "react-bootstrap";
-import VideoList from '../../../components/video-list/video-list';
+import VideoList from '../../../utils/components/video-list/video-list';
 
 const surface = () => {
   const { t } = useTranslation();

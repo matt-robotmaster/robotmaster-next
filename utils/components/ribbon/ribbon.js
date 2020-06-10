@@ -1,6 +1,6 @@
 import React from "react";
 import {Container, Carousel, Row, Col} from 'react-bootstrap';
-import events from '../../data/events.json';
+import events from '../../../content/events.json';
 import classes from './ribbon.module.css';
 import useTranslation from "../../hooks/useTranslation";
 import Link from "next/link";

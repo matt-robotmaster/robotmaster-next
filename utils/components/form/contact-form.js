@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import {Form, Button, FormGroup, Col, Row} from "react-bootstrap";
 
-import countryList from '../../translations/locales/country-list.json';
+import countryList from '../../../lib/translations/locales/country-list.json';
 import useTranslation from "../../hooks/useTranslation";
-import { logEvent } from '../../lib/analytics';
+import { logEvent } from '../../../lib/analytics';
 
 const getInputs = (t) => [
   {

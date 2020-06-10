@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import { getInitialLocale } from '../translations/getInitialLocale';
+import { getInitialLocale } from '../lib/translations/getInitialLocale';
 import { useRouter } from 'next/dist/client/router';
 
 const Index = () => {

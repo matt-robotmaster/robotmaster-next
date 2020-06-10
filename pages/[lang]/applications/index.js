@@ -1,9 +1,9 @@
 import React from 'react';
-import withLocale from '../../../hocs/withLocale';
-import useTranslation from '../../../hooks/useTranslation';
-import Layout from '../../../components/layout/layout';
+import withLocale from '../../../utils/hocs/withLocale';
+import useTranslation from '../../../utils/hooks/useTranslation';
+import Layout from '../../../utils/components/layout/layout';
 import {Col, Container, Row} from 'react-bootstrap';
-import applicationData from '../../../data/applications.json';
+import applicationData from '../../../content/applications.json';
 import classes from './index.module.css';
 import Link from "next/link";
 // import {FaChevronRight} from "react-icons/all";

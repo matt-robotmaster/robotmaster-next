@@ -5,7 +5,7 @@ import {
   Navbar, NavDropdown
 } from 'react-bootstrap';
 import useTranslation from "../../../hooks/useTranslation";
-import {languageNames} from '../../../translations/config';
+import {languageNames} from '../../../../lib/translations/config';
 import Link from 'next/link';
 
 const topbar = () => {

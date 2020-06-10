@@ -1,5 +1,5 @@
 import React from "react";
-import applicationData from '../../data/applications.json';
+import applicationData from '../../../content/applications.json';
 import {Col, Row} from "react-bootstrap";
 import classes from "./video-list.module.css";
 import Modal from "../modal/video-modal";

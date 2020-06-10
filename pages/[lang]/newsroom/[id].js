@@ -1,10 +1,10 @@
 import React from 'react';
-import Layout from '../../../components/layout/layout';
+import Layout from '../../../utils/components/layout/layout';
 import { getPostData } from "../../../lib/posts";
 import Head from "next/head";
 import {Col, Container, Row} from "react-bootstrap";
-import useTranslation from "../../../hooks/useTranslation";
-import withLocale from '../../../hocs/withLocale';
+import useTranslation from "../../../utils/hooks/useTranslation";
+import withLocale from '../../../utils/hocs/withLocale';
 import Custom404 from "../../404";
 
 const post = ({ postData }) => {

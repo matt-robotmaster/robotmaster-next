@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import useTranslation from "../hooks/useTranslation";
+import useTranslation from "../utils/hooks/useTranslation";
 
 const Error = ({ statusCode }) => {
   const { t } = useTranslation();

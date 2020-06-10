@@ -1,8 +1,8 @@
 import React from 'react';
-import withLocale from '../../../hocs/withLocale';
-import Layout from '../../../components/layout/layout';
+import withLocale from '../../../utils/hocs/withLocale';
+import Layout from '../../../utils/components/layout/layout';
 import {Col, Row} from 'react-bootstrap';
-import useTranslation from "../../../hooks/useTranslation";
+import useTranslation from "../../../utils/hooks/useTranslation";
 import classes from './index.module.css';
 
 const timelineYears = [

@@ -1,5 +1,5 @@
 import React from "react";
-import applications from '../../../applications.json';
+import applications from '../../../../content/applications.json';
 import useTranslation from "../../../hooks/useTranslation";
 import {Col, Container, Row} from "react-bootstrap";
 import classes from './footer.module.css'

@@ -1,6 +1,6 @@
 import React from 'react';
-import useTranslation from "../hooks/useTranslation";
-import Layout from "../components/layout/layout";
+import useTranslation from "../utils/hooks/useTranslation";
+import Layout from "../utils/components/layout/layout";
 import {Col, Container, Row} from "react-bootstrap";
 import Link from "next/link";
 

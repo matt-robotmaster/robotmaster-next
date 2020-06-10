@@ -1,9 +1,9 @@
 import React from 'react';
-import withLocale from './../../../../hocs/withLocale';
-import useTranslation from './../../../../hooks/useTranslation';
-import Layout from './../../../../components/layout/layout';
+import withLocale from '../../../../utils/hocs/withLocale';
+import useTranslation from '../../../../utils/hooks/useTranslation';
+import Layout from '../../../../utils/components/layout/layout';
 import {Container} from 'react-bootstrap';
-import ContactForm from './../../../../components/form/contact-form';
+import ContactForm from '../../../../utils/components/form/contact-form';
 
 const contact = () => {
   const { t } = useTranslation();
