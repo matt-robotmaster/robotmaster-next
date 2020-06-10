@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-import countryList from '../../translations/locales/country-list.json';
 
 function sendEmail(ses, sourceEmailAddress, destEmailAddress, subject, email) {
   ses.sendEmail({
@@ -79,7 +78,7 @@ function getDictionary() {
     try {
       if (fs.lstatSync(fullPath).isDirectory()) {
         const locale = fullPath.slice(-2);
-        dictionary[locale] = JSON.parse(fs.readFileSync(fullPath, 'utf8'));
+        dictionary[locale] = JSON.parse(fs.readFileSync(`${fullPath}/common.json`, 'utf8'));
       }
     } catch (e) {
       console.log('ERROR | REQUEST-INFORMATION | getDictionary | ', e);
@@ -89,13 +88,23 @@ function getDictionary() {
   return dictionary;
 }
 
-function assembleRobotMasterEmailFor(req, requestingPage) {
+function assembleRobotMasterEmailFor(req, requestingPage = null) {
+  const templatesDirectory = path.join(process.cwd(), 'lib/email-templates');
+  let template;
 
-  //TODO: switch(requestingPage) which template to use
-  //TODO: add templates
+  switch (requestingPage) {
+    case 'v6-trial':
+      template = fs.readFileSync(`${templatesDirectory}/form-v6-trial.tpl`);
+      break;
+    case 'v7-trial':
+      template = fs.readFileSync(`${templatesDirectory}/form-v7-trial.tpl`);
+      break;
+    default:
+      template = fs.readFileSync(`${templatesDirectory}/form.tpl`);
+      break;
+  }
 
   try {
-    const template = fs.readFileSync(path.join(__dirname, 'form.tpl'));
     return mustache.render(template, req.body);
   } catch (e) {
     console.log('ERROR | REQUEST-INFORMATION | assembleRobotMasterEmail | ', e);
@@ -123,63 +132,72 @@ function handlePostRequest(req, res) {
   if (!validation.success) {
     return res.json(validation);
   }
-  res.messages.push('Your request has been sent, someone will be in touch with you shortly.');
+
+  const response = {
+    success: true,
+    messages: ['Your request has been sent, someone will be in touch with you shortly.']
+  }
 
   const requestingPage = req.body.requestingPage;
   const language = req.body.language;
   const dictionary = getDictionary();
 
-  const ses = new aws.SES();
+  //TODO: add aws ses
+  //const ses = new aws.SES();
 
   if (requestingPage === 'trial_request') {
     const emailForRobotMaster = assembleRobotMasterEmailFor(req, requestingPage);
 
     sendEmail(
-        path.join(__dirname, req.body.formName),
         ses,
         'trials@robotmaster.com',
         'trials@robotmaster.com',
-        'Robotmaster Information Request - Page: ' + requestingPage,
-        req.body,
-    );
-  } else {
-    const sourceEmailAddress = (requestingPage === 'live-demo') ?
-        'sales@robotmaster.com' :
-        'info@robotmaster.com';
-    const destEmailAddress = req.body.state ?
-        countryList
-        .find(country => country.countryCode === 'US')
-        .states.find(state => state.stateCode === req.body.state).email
-        :
-        countryList
-        .find(country => country.name === req.body.country).email;
-
-    const emailForRobotMaster = assembleRobotMasterEmailFor(req);
-    const emailForCustomer = assembleConfirmationEmail(req, dictionary);
-
-    sendEmail(
-        ses,
-        sourceEmailAddress,
-        destEmailAddress,
         'Robotmaster Information Request - Page: ' + requestingPage,
         emailForRobotMaster,
     );
+  } else {
+    try {
+      const countryList  = JSON.parse(fs.readFileSync(`${process.cwd()}/translations/locales/country-list.json`, 'utf8'));
 
-    sendEmail(
-        ses,
-        '"Robotmaster" <' + sourceEmailAddress + '>',
-        req.body.email,
-        dictionary[language]['confirmation-email-subject'],
-        emailForCustomer,
-    );
+      const sourceEmailAddress = (requestingPage === 'live-demo') ?
+          'sales@robotmaster.com' :
+          'info@robotmaster.com';
+      const destEmailAddress = req.body.state ?
+          countryList
+          .find(country => country.countryCode === 'US')
+          .states.find(state => state.stateCode === req.body.state).email
+          :
+          countryList
+          .find(country => country.name === req.body.country).email;
+
+      const emailForRobotMaster = assembleRobotMasterEmailFor(req);
+      const emailForCustomer = assembleConfirmationEmail(req, dictionary);
+
+      sendEmail(
+          ses,
+          sourceEmailAddress,
+          destEmailAddress,
+          'Robotmaster Information Request - Page: ' + requestingPage,
+          emailForRobotMaster,
+      );
+
+      sendEmail(
+          ses,
+          '"Robotmaster" <' + sourceEmailAddress + '>',
+          req.body.email,
+          dictionary[language]['confirmation-email-subject'],
+          emailForCustomer,
+      );
+    } catch (e) {
+      //TODO: handle response
+      console.log('ERROR | REQUEST-INFORMATION | assembleRobotMasterEmail | ', e);
+    }
   }
+
+  res.json(response);
 }
 
 export default (req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'application/json');
-  res.end(JSON.stringify({ name: 'John Doe' }));
-
   if (req.method === 'POST') {
     handlePostRequest(req, res);
 
