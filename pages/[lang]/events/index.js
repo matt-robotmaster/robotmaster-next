@@ -11,7 +11,7 @@ const events = () => {
 
   return (
       <Layout banner={{
-        caption: t('application-page-caption')
+        caption: t('events-page-caption')
       }}>
         <Container>
           <Row>

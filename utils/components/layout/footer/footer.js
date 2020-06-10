@@ -10,37 +10,37 @@ const footer = () => {
   const columns = [{
     title: t('footer-section-about'),
     list: [
-      [t('about-title-1'), 'about#our-story'],
-      [t('about-title-2'), 'about#our-team'],
-      [t('partners-page-caption'), 'partners'],
-      [t('events-page-caption'), 'events'],
+      [t('about-title-1'), `/${locale}/about#our-story`],
+      [t('about-title-2'), `/${locale}/about#our-team`],
+      [t('partners-page-caption'), `/${locale}/partners`],
+      [t('events-page-caption'), `/${locale}/events`],
     ],
   }, {
     title: t('blog-page-caption'),
     list: [
-      [t('footer-newsroom-whatsnew'), 'newsroom'],
-      [t('success-page-caption'), 'success-stories'],
-      [t('success-section-2-title'), 'success-stories#media'],
+      [t('footer-newsroom-whatsnew'), `/${locale}/newsroom`],
+      [t('success-page-caption'), `/${locale}/success-stories`],
+      [t('success-section-2-title'), `/${locale}/success-stories#media`],
     ],
   }, {
     title: t('products-page-caption'),
     list: [
-      [t('whats-new-v66-title'), 'newsroom/robotmaster-v7-offline-robot-programming-launch'],
-      [t('products-title-2'), 'products#interactive'],
-      [t('products-title-3'), 'products#main-features'],
+      [t('whats-new-v66-title'), `/${locale}/newsroom/robotmaster-v7-offline-robot-programming-launch`],
+      [t('products-title-2'), `/${locale}/products#interactive`],
+      [t('products-title-3'), `/${locale}/products#main-features`],
     ],
   }, {
     title: t('application-page-caption'),
     list: applications.map(function(app) {
       return [
-        t('application-' + app.id), 'applications/' + app.path,
+        t('application-' + app.id), `/${locale}/applications/` + app.path,
       ];
     }),
   }, {
     title: t('why-page-caption'),
     list: [
-      [t('why-title-1'), 'why-robotmaster#robotmaster-cad-cam-programming'],
-      [t('why-title-2'), 'why-robotmaster#solving-robotic-programming-challenges'],
+      [t('why-title-1'), `/${locale}/why-robotmaster#robotmaster-cad-cam-programming`],
+      [t('why-title-2'), `/${locale}/why-robotmaster#solving-robotic-programming-challenges`],
     ],
   }];
 
@@ -55,9 +55,9 @@ const footer = () => {
             {column.list.map(element => {
               return (
                   <li key={element[0]}>
-                    <a href={element[1]}>
+                    <Link href={element[1]}>
                       {element[0]}
-                    </a>
+                    </Link>
                   </li>
               );
             })}
@@ -76,7 +76,7 @@ const footer = () => {
     );
   };
 
-  //TODO fix hrefs
+  //TODO fix social icons
 
   return (
       <div className={classes.footer}>
@@ -98,15 +98,15 @@ const footer = () => {
               <span>
                 {' | '}
               </span>
-              <a href={`/${locale}/eula`}>
+              <Link href={`/${locale}/eula`}>
                 {t('footer-terms-of-use')}
-              </a>
+              </Link>
               <span>
                 {' | '}
               </span>
-              <a href={`/${locale}/gdpr`}>
+              <Link href={`/${locale}/gdpr`}>
                 {t('footer-gdpr')}
-              </a>
+              </Link>
               <span>
                 {' | '}
               </span>
