@@ -147,7 +147,7 @@ const getInputs = () => [{
   multiline: true,
 }];
 
-const createFormInput = (input, isCountryUS, setIsCountryUS) => {
+const createFormInput = (input, isCountryUS, setIsCountryUS, selectedOptions, setSelectedOptions) => {
   if (input.isCountrySelect) {
     return createCountrySelect(input, setIsCountryUS);
   }
@@ -155,7 +155,7 @@ const createFormInput = (input, isCountryUS, setIsCountryUS) => {
     return createListSelect(input);
   }
   if (input.isMultiChoice) {
-    return createMultiChoice(input);
+    return createMultiChoice(input, selectedOptions, setSelectedOptions);
   }
 
   if (input.isProvinceSelect && isCountryUS) {
@@ -167,50 +167,72 @@ const createFormInput = (input, isCountryUS, setIsCountryUS) => {
   }
 };
 
-const handleSubmit = (e, t, locale, props) => {
+const handleSubmit = (e, locale, props, selectedOptions) => {
   e.preventDefault();
 
-  let country = e.target.C3ICountry.value.trim();
-  if (country === 'US') {
-    country = 'USA';
-  } else {
-    country = t('cc.' + country);
-  }
+  const postData = {
+    C0ICompanyName: e.target.C0ICompanyName.value.trim(),
+    C1IDepartment: e.target.C1IDepartment.value.trim(),
+    C2IAddressLine1: e.target.C2IAddressLine1.value.trim(),
+    C3IAddressLine2: e.target.C3IAddressLine2.value.trim(),
+    C4ICity: e.target.C4ICity.value.trim(),
+    C5IStateProvince: (e.target.C5IStateProvince) ?
+        e.target.C5IStateProvince.value.trim() : '',
+    C6IZipCode: e.target.C6IZipCode.value.trim(),
+    C7ICountry: e.target.C7ICountry.value.trim(),
+    C8IPhone1: e.target.C8IPhone1.value.trim(),
+    C9IPhone2: e.target.C9IPhone2.value.trim(),
+    U10I58851: e.target.U10I58851.value.trim(),
+    U11I87: selectedOptions['U11I87'],
+    U12I6: '*Robotmaster evaluation', // U12I6: e.target.U12I6.value.trim(),
+    U13I57997: 'Dealer', // U13I57997: e.target.U13I57997.value.trim(),
+    C14IFirstName: e.target.C14IFirstName.value.trim(),
+    C15ILastName: e.target.C15ILastName.value.trim(),
+    C16IPosition: e.target.C16IPosition.value.trim(),
+    U17I58850: e.target.U17I58850.value.trim(),
+    C18IPhone3: e.target.C18IPhone3.value.trim(),
+    C19IPhone3Extension: e.target.C19IPhone3Extension.value.trim(),
+    C20IPhone4: e.target.C20IPhone4.value.trim(),
+    C21IPhone4Extension: e.target.C21IPhone4Extension.value.trim(),
+    U22I17: e.target.U22I17.value.trim(),
+    U23I140: e.target.U23I140.value.split('_')[0].trim(),
+    U24I18: e.target.U24I18.value.split('_')[0].trim(),
+    U25I20: selectedOptions['U25I20'],
+    U26I19: selectedOptions['U26I19'],
+    U27I22: selectedOptions['U27I22'],
+    U28I21: selectedOptions['U28I21'],
+    U29I24: e.target.U29I24.value.trim(),
+    requestingPage: 'trial_request',
+    formName: 'v6-trial-form.tpl',
+    language: window.location.pathname.split('/')[1],
+    name: e.target.C14IFirstName.value.trim(),
+  };
 
-  const bodyToFetch =
-      {
-        C0ILastName: e.target.C0ILastName.value.trim(),
-        C1IFirstName: 'First name',
-        U1I58850: e.target.U1I58850.value.trim(),
-        C2ICompanyName: e.target.C2ICompanyName.value.trim(),
-        C3ICountry: country,
-        C4IStateProvince: country === 'USA' ? e.target.C4IStateProvince.value.trim() : '',
-        C5IPhone1: e.target.C5IPhone1.value.trim(),
-        U6I30: e.target.U6I30.value.trim(),
-        U7I57997: 'Website', // "Sales\Lead source" hidden field
-        U8I6: '*Robotmaster lead', // "Classification" hidden field
-      };
-  const emailToSend =
-      {
-        name: e.target.C0ILastName.value.trim(),
-        email: e.target.U1I58850.value.trim(),
-        company: e.target.C2ICompanyName.value.trim(),
-        country: country,
-        state: country === 'USA' ? e.target.C4IStateProvince.value.trim() : '',
-        phone: e.target.C5IPhone1.value.trim(),
-        info: e.target.U6I30.value.trim(),
-        robot: e.target.robot.value.trim(),
-        requestingPage: props.requestingPage,
-        language: locale,
-      };
+  const formBody = Object.keys(postData).map(function(key) {
+    if (postData[key] instanceof Array) {
+      let str = '';
+      postData[key].forEach(function(element, index) {
+        if (index === (postData[key].length - 1)) {
+          str += encodeURIComponent(key) + '=' + encodeURIComponent(element);
+        } else {
+          str += encodeURIComponent(key) + '=' + encodeURIComponent(element) +
+              '&';
+        }
+      });
+      return str;
+    } else {
+      return encodeURIComponent(key) + '=' + encodeURIComponent(
+          postData[key]);
+    }
+  }).join('&');
 
   //TODO: move this url into env
 
   // Send to CRM
-  fetch('https://caw.maximizercrmlive.com/Webform.aspx?request=submitwebform&token=5F50535F174C4C4330591416151F47264D1209314B67696778414D7C0D7F2B58185452414D4B476458421E5D1D477E41180C634D676C677A494A7F5C79735D565453474648416D5B421218504474421D0A624C6C69697D42482E5A2C7C0A50565246444842365D4212111E4772471F5F66426F67687E464D7B5F78785F57525344144E4264094515114E4376444808314A3C6E697B474D785E797F5154575711454D44375D4616431A1177461E5C624E6F3F6F7D411B7D587F795850555347144947615E451211184573431A0B304C6C69697D42482E5E797A50550657134548446C591616121A4677421A0A624E6F6B6F79411E7B5E782B5F51555F45104E46625D4217161D457F44180D364A6C6E3D7E4548755E7D7A0E5153574B4049446C584316161A4572431B0D62196F686A79414D7D0A7F7E585D5551424C4942645E401111134671441F0D604C6A686B7C44482E597D7F5E51505243401F41305D4212111F11724C1E58624E6F6E6F7941487C587F72',
+  fetch('https://caw.maximizercrmlive.com/Webform.aspx?request=submitwebform&token=5F50535F174C4C4330591416151F47264D1209314B67696778414D7C0D7F2B5818545E464D4D41625945135D1941734C130C634F6F6E6D7841487859787E5956515442474B416C50471719504470421B0A364C3A693B7D42482E5A2A7C5B50545217444A42675D4012161E4272461F0B66196F67687B464A7B5A78795F54525344174E10640E451011494372444A08634A6E6E3B7B474D785E7B7F5954555744454F44605D4416421A1677471E0A624A6F3F6F78411A7D5D7F78585355534717494C615B451711194577431C0B644C3A693B7D42482E5E7B7A5855005742454A4464591016151A4377431A5C624A6F6B6F7C41407B5B78285F52555F44144E45625E4216171D4373441D0D604A6F6B3B7B4948795E7D7F5C54545241454A4460584016101F4577111B59624F6A6F6F7E411A7D597F2B585555524211494D615945171413437444120B664C39693C7B124F7D5B767F5951015243401B41655C4710401A477717',
       {
         method: 'POST',
-        body: bodyToFetch,
+        body: formBody,
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
         }
@@ -221,7 +243,7 @@ const handleSubmit = (e, t, locale, props) => {
     fetch('/api/request-information',
         {
           method: 'POST',
-          body: emailToSend,
+          body: postData,
           headers: {
             'Content-Type': 'application/json'
           }
@@ -239,6 +261,7 @@ const handleSubmit = (e, t, locale, props) => {
 
 const trialForm = (props) => {
   const [isCountryUS, setIsCountryUS] = useState(false);
+  const [selectedOptions, setSelectedOptions] = useState({});
   const { t, locale } = useTranslation();
   const inputs = getInputs(t);
 
@@ -247,8 +270,8 @@ const trialForm = (props) => {
 
         {/*TODO: show messages here*/}
 
-        <Form horizontal name='form' onSubmit={(e) => handleSubmit(e, t, locale, props)}>
-          {inputs.map(input => createFormInput(input, isCountryUS, setIsCountryUS))}
+        <Form horizontal name='form' onSubmit={(e) => handleSubmit(e, locale, props, selectedOptions)}>
+          {inputs.map(input => createFormInput(input, isCountryUS, setIsCountryUS, selectedOptions, setSelectedOptions))}
           <FormGroup>
             <Col sm={{span: 4, offset: 2}}>
               <Button type='submit' variant='primary'>

@@ -108,7 +108,7 @@ export const createListSelect = (input) => {
   )
 };
 
-export const createMultiChoice = (input) => {
+export const createMultiChoice = (input, selectedOptions, setSelectedOptions) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedList, setSelectedList] = useState([]);
   const [optionsList, setOptionsList] = useState(listData[input.list]);
@@ -144,8 +144,14 @@ export const createMultiChoice = (input) => {
                         {item.name}
                       </span>
                       <i onClick={() => {
-                        setSelectedList(selectedList.filter(selected => selected.name !== item.name))
+                        const selected = selectedList.filter(selected => selected.name !== item.name);
+                        setSelectedList(selected)
                         setOptionsList([...optionsList, item]);
+
+                        setSelectedOptions({
+                          ...selectedOptions,
+                          [input.name]: selected
+                        });
                       }}>
                         X
                       </i>
@@ -159,8 +165,14 @@ export const createMultiChoice = (input) => {
                       <li
                           key={item.name}
                           onClick={() => {
-                            setSelectedList([...selectedList, item]);
+                            const selected = [...selectedList, item]
+                            setSelectedList(selected);
                             setOptionsList(optionsList.filter(option => option.name !== item.name));
+
+                            setSelectedOptions({
+                              ...selectedOptions,
+                              [input.name]: selected
+                            });
                           }}>
                         {item.name}
                       </li>))
