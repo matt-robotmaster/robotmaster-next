@@ -77,7 +77,7 @@ function validateForm(form) {
 }
 
 function getDictionary() {
-  const localesDirectory = path.join(process.cwd(), 'translations/locales');
+  const localesDirectory = path.join(process.cwd(), 'lib/translations/locales');
   const fileNames = fs.readdirSync(localesDirectory);
   const dictionary = {};
 
@@ -166,7 +166,7 @@ function handlePostRequest(req, res) {
     );
   } else {
     try {
-      const countryList  = JSON.parse(fs.readFileSync(`${process.cwd()}/translations/locales/country-list.json`, 'utf8'));
+      const countryList  = JSON.parse(fs.readFileSync(`${process.cwd()}/lib/translations/locales/country-list.json`, 'utf8'));
 
       const sourceEmailAddress = (requestingPage === 'live-demo') ?
           'sales@robotmaster.com' :
