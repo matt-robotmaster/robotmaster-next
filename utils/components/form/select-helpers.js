@@ -22,6 +22,8 @@ const listData = {
   appList,
 };
 
+//TODO: copy from old codebase, refactor
+
 export const createCountrySelect = (input, setIsCountryUS) => (
     <Form.Group key={input.name}>
       <Row>

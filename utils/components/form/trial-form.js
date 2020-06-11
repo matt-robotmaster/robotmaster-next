@@ -12,6 +12,8 @@ import {
   createDateInput
 } from "./select-helpers";
 
+//TODO: copy from old codebase, refactor
+
 const getInputs = () => [{
   caption: 'Company',
   name: 'C0ICompanyName',
@@ -167,8 +169,6 @@ const createFormInput = (input, isCountryUS, setIsCountryUS) => {
 
 const handleSubmit = (e, t, locale, props) => {
   e.preventDefault();
-
-  //TODO: handle robotWarning
 
   let country = e.target.C3ICountry.value.trim();
   if (country === 'US') {
