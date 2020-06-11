@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Robotmaster V7 Professional",
+    "id": 1
+  },
+  {
+    "name": "Robotmaster V7 Standard",
+    "id": 2
+  },
+  {
+    "name": "Robotmaster V7 Integrator",
+    "id": 3
+  },
+  {
+    "name": "Robotmaster V7 Research",
+    "id": 4
+  },
+  {
+    "name": "Robotmaster V7 Classroom",
+    "id": 5
+  },
+  {
+    "name": "Robotmaster V7 Educational",
+    "id": 6
+  }
+]

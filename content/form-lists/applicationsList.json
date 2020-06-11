@@ -1,0 +1,198 @@
+[
+  {
+    "name": "Academic - Research",
+    "id": 1
+  },
+  {
+    "name": "Academic - Teaching",
+    "id": 2
+  },
+  {
+    "name": "Additive - 3D printing",
+    "id": 3
+  },
+  {
+    "name": "Additive - Automated Fibre placement",
+    "id": 4
+  },
+  {
+    "name": "Additive - Coil Wrapping",
+    "id": 5
+  },
+  {
+    "name": "Additive - Laser cladding",
+    "id": 6
+  },
+  {
+    "name": "Additive - Other",
+    "id": 7
+  },
+  {
+    "name": "Additive - Welding",
+    "id": 8
+  },
+  {
+    "name": "Cutting - Laser",
+    "id": 8
+  },
+  {
+    "name": "Cutting - Plasma",
+    "id": 9
+  },
+  {
+    "name": "Cutting - Waterjet",
+    "id": 10
+  },
+  {
+    "name": "Deburring",
+    "id": 11
+  },
+  {
+    "name": "De-flashing",
+    "id": 12
+  },
+  {
+    "name": "Dispensing - Glue",
+    "id": 13
+  },
+  {
+    "name": "Dispensing - Non specified",
+    "id": 14
+  },
+  {
+    "name": "Dispensing - Other",
+    "id": 15
+  },
+  {
+    "name": "Dispensing - Sealant",
+    "id": 16
+  },
+  {
+    "name": "Drilling",
+    "id": 17
+  },
+  {
+    "name": "Drilling/fastening",
+    "id": 18
+  },
+  {
+    "name": "Grinding",
+    "id": 19
+  },
+  {
+    "name": "Inspection - Other",
+    "id": 20
+  },
+  {
+    "name": "Inspection - Ultrasonic",
+    "id": 21
+  },
+  {
+    "name": "Marking - Laser",
+    "id": 22
+  },
+  {
+    "name": "Milling - Architectural",
+    "id": 23
+  },
+  {
+    "name": "Milling - Artistic",
+    "id": 24
+  },
+  {
+    "name": "Milling - Non specified",
+    "id": 25
+  },
+  {
+    "name": "Milling - Orthopedic",
+    "id": 26
+  },
+  {
+    "name": "Milling - Other",
+    "id": 27
+  },
+  {
+    "name": "Milling - Prototyping",
+    "id": 28
+  },
+  {
+    "name": "Milling - Tooling",
+    "id": 29
+  },
+  {
+    "name": "Mold and die - Hammer peening",
+    "id": 30
+  },
+  {
+    "name": "Mold and die - Laser hardening",
+    "id": 31
+  },
+  {
+    "name": "Mold and die - Thermal hardening",
+    "id": 32
+  },
+  {
+    "name": "Other - Please specify in comments",
+    "id": 33
+  },
+  {
+    "name": "Polishing",
+    "id": 34
+  },
+  {
+    "name": "Sanding",
+    "id": 35
+  },
+  {
+    "name": "Spraying - Cold",
+    "id": 36
+  },
+  {
+    "name": "Spraying - Media blast",
+    "id": 37
+  },
+  {
+    "name": "Spraying - Not specified",
+    "id": 38
+  },
+  {
+    "name": "Spraying - Other",
+    "id": 39
+  },
+  {
+    "name": "Spraying - Painting",
+    "id": 40
+  },
+  {
+    "name": "Spraying - Plasma",
+    "id": 41
+  },
+  {
+    "name": "Spraying - Shot peening",
+    "id": 42
+  },
+  {
+    "name": "System Integrator - Variety of applications",
+    "id": 43
+  },
+  {
+    "name": "Trimming",
+    "id": 44
+  },
+  {
+    "name": "Welding - Arc",
+    "id": 45
+  },
+  {
+    "name": "Welding - Laser",
+    "id": 46
+  },
+  {
+    "name": "Welding - Non specified",
+    "id": 47
+  },
+  {
+    "name": "Welding - Other",
+    "id": 48
+  }
+]           

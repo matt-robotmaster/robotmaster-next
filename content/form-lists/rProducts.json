@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Robotmaster Basic Edition",
+    "id": 1
+  },
+  {
+    "name": "Robotmaster Professional Edition",
+    "id": 2
+  },
+  {
+    "name": "Robotmaster Integrator Edition",
+    "id": 3
+  },
+  {
+    "name": "Robotmaster Educational Edition",
+    "id": 4
+  },
+  {
+    "name": "Robotmaster Reseller Edition (Free)",
+    "id": 5
+  },
+  {
+    "name": "Robotmaster Integrator Edition subscription",
+    "id": 6
+  }
+]

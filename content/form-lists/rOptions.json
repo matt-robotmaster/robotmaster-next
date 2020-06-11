@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Rail1",
+    "id": 1
+  },
+  {
+    "name": "Rail2",
+    "id": 2
+  },
+  {
+    "name": "Rail3",
+    "id": 3
+  },
+  {
+    "name": "Rotary1",
+    "id": 4
+  },
+  {
+    "name": "Rotary2",
+    "id": 5
+  },
+  {
+    "name": "Toolpath Import (added to Basic Edition)",
+    "id": 6
+  },
+  {
+    "name": "Spray",
+    "id": 7
+  },
+  {
+    "name": "Deposition",
+    "id": 8
+  },
+  {
+    "name": "APlus",
+    "id": 9
+  },
+  {
+    "name": "LAM",
+    "id": 10
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "name": "ABB",
+    "id": 1
+  },
+  {
+    "name": "Comau",
+    "id": 2
+  },
+  {
+    "name": "Daihen/OTC",
+    "id": 3
+  },
+  {
+    "name": "Denso",
+    "id": 4
+  },
+  {
+    "name": "Fanuc",
+    "id": 5
+  },
+  {
+    "name": "GSK",
+    "id": 6
+  },
+  {
+    "name": "Hitachi",
+    "id": 7
+  },
+  {
+    "name": "Hyundai",
+    "id": 8
+  },
+  {
+    "name": "Kawasaki",
+    "id": 9
+  },
+  {
+    "name": "Kuka",
+    "id": 10
+  },
+  {
+    "name": "Mitsubishi",
+    "id": 11
+  },
+  {
+    "name": "Motoman",
+    "id": 12
+  },
+  {
+    "name": "Nachi",
+    "id": 13
+  },
+  {
+    "name": "Panasonic",
+    "id": 14
+  },
+  {
+    "name": "Reis",
+    "id": 15
+  },
+  {
+    "name": "Staubli",
+    "id": 16
+  },
+  {
+    "name": "STEP",
+    "id": 17
+  },
+  {
+    "name": "Universal Robots",
+    "id": 18
+  },
+  {
+    "name": "Yaskawa",
+    "id": 19
+  }
+]

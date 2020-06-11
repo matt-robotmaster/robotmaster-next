@@ -1,0 +1,26 @@
+[
+  {
+    "name": "V7 Contouring and Cycles",
+    "id": 1
+  },
+  {
+    "name": "V7 External Axis",
+    "id": 2
+  },
+  {
+    "name": "V7 Welding and Touch Sensing",
+    "id": 3
+  },
+  {
+    "name": "V7 CATIA",
+    "id": 4
+  },
+  {
+    "name": "V7 NX",
+    "id": 5
+  },
+  {
+    "name": "V7 ProE",
+    "id": 6
+  }
+]

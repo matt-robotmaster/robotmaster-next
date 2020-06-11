@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Mastercam Mill",
+    "id": 1
+  },
+  {
+    "name": "Mastercam Mill3D",
+    "id": 2
+  },
+  {
+    "name": "Mastercam Curve5ax/Drill5ax",
+    "id": 3
+  },
+  {
+    "name": "Mastercam Multiaxis",
+    "id": 4
+  },
+  {
+    "name": "Mastercam Educational Suite",
+    "id": 5
+  },
+  {
+    "name": "Mastercam Educational Multiaxis",
+    "id": 6
+  },
+  {
+    "name": "Mastercam CATIA V4 Read/Write",
+    "id": 7
+  },
+  {
+    "name": "Mastercam CATIA V5 Read Translator",
+    "id": 8
+  },
+  {
+    "name": "Mastercam Pro/E – Creo Translator",
+    "id": 9
+  },
+  {
+    "name": "Mastercam Router",
+    "id": 10
+  },
+  {
+    "name": "Mastercam Router 3D",
+    "id": 11
+  },
+  {
+    "name": "Mastercam Router Entry",
+    "id": 12
+  },
+  {
+    "name": "Mastercam Solids",
+    "id": 13
+  },
+  {
+    "name": "Mastercam True Shape Nesting",
+    "id": 14
+  },
+  {
+    "name": "Mastercam UG/NX Translator",
+    "id": 15
+  }
+]
