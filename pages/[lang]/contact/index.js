@@ -57,8 +57,9 @@ const contact = () => {
             {t('inforeq-page-caption')}
           </h2>
 
-          {/*TODO: add contactForm, gaEventName: '/contact-page-request-form-submitted', requestingPage: 'contact-page',*/}
-          <ContactForm/>
+         <ContactForm
+              requestingPage='contact-page'
+              gaEvent='contact-page-request-form-submitted'/>
 
           <hr />
           <Row>
