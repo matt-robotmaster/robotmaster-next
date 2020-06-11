@@ -12,6 +12,22 @@ import {
   createDateInput
 } from "./select-helpers";
 
+import rProductsv6 from './../../../content/form-lists/rProducts.json';
+import mPlusProductsv6 from './../../../content/form-lists/mPlusProducts.json';
+import mCamProductsv6 from './../../../content/form-lists/mCamProducts.json';
+import rOptionsv6 from './../../../content/form-lists/rOptions.json';
+
+import rProductsv7 from './../../../content/form-lists/v7rProducts.json';
+import mPlusProductsv7 from './../../../content/form-lists/v7mPlusProducts.json';
+import mCamProductsv7 from './../../../content/form-lists/v7mCamProducts.json';
+import rOptionsv7 from './../../../content/form-lists/v7rOptions.json';
+
+import rBrands from './../../../content/form-lists/rBrands.json';
+import classificationList from './../../../content/form-lists/classificationList.json';
+import sourceList from './../../../content/form-lists/sourceList.json';
+import simTypes from './../../../content/form-lists/simTypes.json';
+import appList from './../../../content/form-lists/applicationsList.json';
+
 //TODO: copy from old codebase, refactor
 
 const getInputs = () => [{
@@ -147,15 +163,15 @@ const getInputs = () => [{
   multiline: true,
 }];
 
-const createFormInput = (input, isCountryUS, setIsCountryUS, selectedOptions, setSelectedOptions) => {
+const createFormInput = (input, listData, isCountryUS, setIsCountryUS, selectedOptions, setSelectedOptions) => {
   if (input.isCountrySelect) {
     return createCountrySelect(input, setIsCountryUS);
   }
   if (input.isList) {
-    return createListSelect(input);
+    return createListSelect(input, listData);
   }
   if (input.isMultiChoice) {
-    return createMultiChoice(input, selectedOptions, setSelectedOptions);
+    return createMultiChoice(input, listData, selectedOptions, setSelectedOptions);
   }
 
   if (input.isProvinceSelect && isCountryUS) {
@@ -203,7 +219,7 @@ const handleSubmit = (e, locale, props, selectedOptions) => {
     U28I21: selectedOptions['U28I21'],
     U29I24: e.target.U29I24.value.trim(),
     requestingPage: 'trial-request',
-    version: 'v6',
+    version: props.version,
     language: window.location.pathname.split('/')[1],
     name: e.target.C14IFirstName.value.trim(),
   };
@@ -265,13 +281,25 @@ const trialForm = (props) => {
   const { t, locale } = useTranslation();
   const inputs = getInputs(t);
 
+  const listData = {
+    rProducts: (props.version === 'v6') ? rProductsv6 : rProductsv7,
+    mPlusProducts: (props.version === 'v6') ? mPlusProductsv6 : mPlusProductsv7,
+    mCamProducts: (props.version === 'v6') ? mCamProductsv6 : mCamProductsv7,
+    rOptions: (props.version === 'v6') ? rOptionsv6 : rOptionsv7,
+    rBrands,
+    classificationList,
+    sourceList,
+    simTypes,
+    appList,
+  };
+
   return (
       <React.Fragment>
 
         {/*TODO: show messages here*/}
 
         <Form horizontal name='form' onSubmit={(e) => handleSubmit(e, locale, props, selectedOptions)}>
-          {inputs.map(input => createFormInput(input, isCountryUS, setIsCountryUS, selectedOptions, setSelectedOptions))}
+          {inputs.map(input => createFormInput(input, listData, isCountryUS, setIsCountryUS, selectedOptions, setSelectedOptions))}
           <FormGroup>
             <Col sm={{span: 4, offset: 2}}>
               <Button type='submit' variant='primary'>

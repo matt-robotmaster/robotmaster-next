@@ -1,26 +1,6 @@
 import React, {useState, useEffect, useRef} from "react";
 import {Col, Form, FormGroup, Row} from "react-bootstrap";
 import countryList from "../../../lib/translations/locales/country-list.json";
-import rProducts from './../../../content/form-lists/rProducts.json';
-import mPlusProducts from './../../../content/form-lists/mPlusProducts.json';
-import mCamProducts from './../../../content/form-lists/mCamProducts.json';
-import rOptions from './../../../content/form-lists/rOptions.json';
-import rBrands from './../../../content/form-lists/rBrands.json';
-import classificationList from './../../../content/form-lists/classificationList.json';
-import sourceList from './../../../content/form-lists/sourceList.json';
-import simTypes from './../../../content/form-lists/simTypes.json';
-import appList from './../../../content/form-lists/applicationsList.json';
-const listData = {
-  rProducts,
-  mPlusProducts,
-  mCamProducts,
-  rOptions,
-  rBrands,
-  classificationList,
-  sourceList,
-  simTypes,
-  appList,
-};
 
 //TODO: copy from old codebase, refactor
 
@@ -84,7 +64,7 @@ export const createProvinceSelect = (input) => (
     </Form.Group>
 );
 
-export const createListSelect = (input) => {
+export const createListSelect = (input, listData) => {
   return (
       <Form.Group key={input.name}>
         <Row>
@@ -108,7 +88,7 @@ export const createListSelect = (input) => {
   )
 };
 
-export const createMultiChoice = (input, selectedOptions, setSelectedOptions) => {
+export const createMultiChoice = (input, listData, selectedOptions, setSelectedOptions) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedList, setSelectedList] = useState([]);
   const [optionsList, setOptionsList] = useState(listData[input.list]);
