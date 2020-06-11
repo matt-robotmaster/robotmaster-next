@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import {Form, Button, FormGroup, Col, Row} from "react-bootstrap";
+import {Form, Button, FormGroup, Col} from "react-bootstrap";
 
-import countryList from '../../../lib/translations/locales/country-list.json';
 import useTranslation from "../../hooks/useTranslation";
 import { logEvent } from '../../../lib/analytics';
+import { createCountrySelect, createProvinceSelect, createSimpleInput } from "./select-helpers";
 
 const getInputs = (t) => [
   {
@@ -27,7 +27,7 @@ const getInputs = (t) => [
     caption: t('inforeq-form-field-province'),
     name: 'C4IStateProvince',
     required: true,
-    isProvince: true,
+    isProvinceSelect: true,
   }, {
     caption: t('inforeq-form-field-phone'),
     name: 'C5IPhone1',
@@ -47,98 +47,13 @@ const createFormInput = (input, isCountryUS, setIsCountryUS) => {
   if (input.isCountrySelect) {
     return createCountrySelect(input, setIsCountryUS);
   }
-  if (input.isProvince && isCountryUS) {
+  if (input.isProvinceSelect && isCountryUS) {
     return createProvinceSelect(input);
   }
-  if (!input.isProvince) {
+  if (!input.isProvinceSelect) {
     return createSimpleInput(input);
   }
 };
-
-const createCountrySelect = (input, setIsCountryUS) => (
-    <Form.Group>
-      <Row>
-        <Col sm={1}>
-          <Form.Label htmlFor={input.name}>
-            {input.caption}
-          </Form.Label>
-        </Col>
-        <Col sm={4}>
-          <Form.Control as="select" id={input.name} name={input.name} onChange={(e) => (e.target.value === 'US') ? setIsCountryUS(true) : setIsCountryUS(false)}>
-            <option>{''}</option>
-            {getOptionForCountry('US')}
-            {getOptionForCountry('CA')}
-            <option disabled={true}>
-              ────────────────────
-            </option>
-            {countryList.map(country => (
-                    <option value={country.countryCode} key={country.countryCode}>
-                      {country.name}
-                    </option>
-                )
-            )}
-          </Form.Control>
-        </Col>
-      </Row>
-    </Form.Group>
-);
-
-const getOptionForCountry = (countryCode) => {
-  const country = countryList.find(country => country.countryCode === countryCode);
-  return (
-      <option value={country.countryCode}>
-        {country.name}
-      </option>
-  )
-};
-
-const createProvinceSelect = (input) => (
-    <Form.Group>
-      <Row>
-        <Col sm={1}>
-          <Form.Label htmlFor={input.name}>
-            {input.caption}
-          </Form.Label>
-        </Col>
-        <Col sm={4}>
-          <Form.Control as="select" name={input.name} required={input.required}>
-            <option>{''}</option>
-            {countryList.find(country => country.countryCode === 'US')
-            .states.map(state => (
-                <option value={state.stateCode} key={state.stateCode}>
-                  {state.stateName}
-                </option>
-            ))}
-          </Form.Control>
-        </Col>
-      </Row>
-    </Form.Group>
-);
-
-const createSimpleInput = (input) => (
-    <FormGroup>
-      <Row>
-        <Col sm={1}>
-          <Form.Label htmlFor={input.name}>
-            {input.caption}
-          </Form.Label>
-        </Col>
-        <Col sm={4}>
-          {input.multiline ?
-              <Form.Control as='textarea' rows={5}
-                            name={input.name}
-                            placeholder={input.placeholder || ''}
-                            required={input.required}/>
-              :
-              <Form.Control as='input' type='text'
-                            name={input.name}
-                            placeholder={input.placeholder || ''}
-                            required={input.required}/>
-          }
-        </Col>
-      </Row>
-    </FormGroup>
-);
 
 const handleSubmit = (e, t, locale, props) => {
   e.preventDefault();
