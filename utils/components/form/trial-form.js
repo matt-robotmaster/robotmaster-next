@@ -202,8 +202,8 @@ const handleSubmit = (e, locale, props, selectedOptions) => {
     U27I22: selectedOptions['U27I22'],
     U28I21: selectedOptions['U28I21'],
     U29I24: e.target.U29I24.value.trim(),
-    requestingPage: 'trial_request',
-    formName: 'v6-trial-form.tpl',
+    requestingPage: 'trial-request',
+    version: 'v6',
     language: window.location.pathname.split('/')[1],
     name: e.target.C14IFirstName.value.trim(),
   };

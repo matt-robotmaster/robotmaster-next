@@ -68,8 +68,8 @@ function validateForm(form) {
     validation.messages.push('You must be a human.');
   }
 
-  //TODO: check this out
-  if (form.requestingPage === 'trial_request') {
+  //TODO: ugly solution from the old codebase, refactor
+  if (form.requestingPage === 'trial-request') {
     validation.success = true;
   }
 
@@ -101,11 +101,11 @@ function assembleRobotMasterEmail(req) {
     const templatesDirectory = path.join(process.cwd(), 'lib/email-templates');
     let template;
 
-    switch (req.body.requestingPage) {
-      case 'v6-trial':
+    switch (req.body.version) {
+      case 'v6':
         template = fs.readFileSync(`${templatesDirectory}/form-v6-trial.tpl`, 'utf-8');
         break;
-      case 'v7-trial':
+      case 'v7':
         template = fs.readFileSync(`${templatesDirectory}/form-v7-trial.tpl`, 'utf-8');
         break;
       default:
@@ -154,7 +154,7 @@ function handlePostRequest(req, res) {
 
   const ses = new aws.SES();
 
-  if (requestingPage === 'trial_request') {
+  if (requestingPage === 'trial-request') {
     const emailForRobotMaster = assembleRobotMasterEmail(req);
 
     sendEmail(
