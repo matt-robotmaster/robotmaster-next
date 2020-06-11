@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../../../utils/components/layout/layout';
 import TrialForm from '../../../utils/components/form/trial-form';
 
-const contact = () => {
+const v6Trial = () => {
   return (
       <Layout>
         <TrialForm />
@@ -10,4 +10,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default v6Trial;

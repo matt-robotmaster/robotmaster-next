@@ -3,7 +3,14 @@ import {Form, Button, FormGroup, Col} from "react-bootstrap";
 
 import useTranslation from "../../hooks/useTranslation";
 import { logEvent } from '../../../lib/analytics';
-import { createCountrySelect, createProvinceSelect, createListSelect, createMultiChoice, createSimpleInput } from "./select-helpers";
+import {
+  createCountrySelect,
+  createProvinceSelect,
+  createListSelect,
+  createMultiChoice,
+  createSimpleInput,
+  createDateInput
+} from "./select-helpers";
 
 const getInputs = () => [{
   caption: 'Company',
@@ -151,8 +158,10 @@ const createFormInput = (input, isCountryUS, setIsCountryUS) => {
 
   if (input.isProvinceSelect && isCountryUS) {
     return createProvinceSelect(input);
-  } else if (!input.isProvinceSelect) {
+  } else if (!input.isProvinceSelect && input.type !== 'date') {
     return createSimpleInput(input);
+  } else if (input.type === 'date') {
+    return createDateInput(input);
   }
 };
 

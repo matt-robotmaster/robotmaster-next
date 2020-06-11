@@ -195,3 +195,22 @@ export const createSimpleInput = (input) => (
       </Row>
     </FormGroup>
 );
+
+export const createDateInput = (input) => (
+    <FormGroup>
+      <Row>
+        <Col sm={1}>
+          <Form.Label htmlFor={input.name}>
+            {input.caption}
+          </Form.Label>
+        </Col>
+        <Col sm={4}>
+          <Form.Control
+              name={input.name}
+              type='date'
+              placeholder={input.placeholder || ''}
+              required={input.required}/>
+        </Col>
+      </Row>
+    </FormGroup>
+);
