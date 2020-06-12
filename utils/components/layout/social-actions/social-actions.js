@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebookSquare, FaInstagram, FaTwitter, FaYoutube, FaLinkedinIn} from "react-icons/fa";
+import { FaFacebookSquare, FaInstagram, FaTwitter, FaYoutube, FaLinkedin} from "react-icons/fa";
 import classes from './social-actions.module.css';
 import { logEvent } from "../../../../lib/analytics";
 
@@ -34,7 +34,7 @@ export default function () {
         <a href="https://www.linkedin.com/company/robotmaster-"
            onClick={() => handleClick('linkedin-page-clicked-side')}
            data-eventid='linkedin'>
-          <FaLinkedinIn className={classes.socialActionsI}/>
+          <FaLinkedin className={classes.socialActionsI}/>
         </a>
       </div>
   );
