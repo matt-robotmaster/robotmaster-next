@@ -124,7 +124,7 @@ const handleSubmit = (e, t, locale, props, setValidationMessages) => {
     window.scrollTo(0, 0);
     logEvent('form', props.gaEvent);
   })
-  .catch(err => setValidationMessages(err.messages));
+  .catch(err => console.error("Error:", err));
 
   return false;
 };
