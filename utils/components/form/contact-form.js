@@ -111,7 +111,7 @@ const handleSubmit = (e, t, locale, props) => {
     fetch('/api/request-information',
         {
           method: 'POST',
-          body: emailToSend,
+          body: JSON.stringify(emailToSend),
           headers: {
             'Content-Type': 'application/json'
           }

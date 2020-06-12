@@ -259,7 +259,7 @@ const handleSubmit = (e, locale, props, selectedOptions) => {
     fetch('/api/request-information',
         {
           method: 'POST',
-          body: postData,
+          body: JSON.stringify(postData),
           headers: {
             'Content-Type': 'application/json'
           }
