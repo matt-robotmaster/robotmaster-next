@@ -24,7 +24,7 @@ const logos = [
   '/img/partners/nachi.png',
 ];
 
-const whatsNew = () => {
+const partners = () => {
   const { t } = useTranslation();
 
   return (
@@ -48,4 +48,4 @@ const whatsNew = () => {
   );
 };
 
-export default withLocale(whatsNew);
+export default withLocale(partners);
