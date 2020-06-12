@@ -1,0 +1,36 @@
+.socialActions {
+  position: fixed;
+  top: 390px;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 10px;
+}
+.socialActions a {
+  margin-bottom: 10px;
+  display: inline-block;
+  background-color: #959595;
+  border-radius: 7px;
+  padding-top: 5px;
+  width: 41px;
+  height: 41px;
+  text-align: center;
+}
+
+.socialActionsI {
+  font-size: 32px;
+  color: #fff;
+}
+
+.socialActions a:hover {
+   transition: all .25s;
+   box-shadow: 3px 3px 0 0 #bcbcbc;
+   background-color: #d0362a;
+   transform: scale(1.15);
+}
+
+.socialActions.affix-bottom {
+  position: absolute;
+}

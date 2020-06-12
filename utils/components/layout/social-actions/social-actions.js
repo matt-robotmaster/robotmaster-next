@@ -1,39 +1,40 @@
 import React from "react";
-import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaYoutubeSquare, FaLinkedinIn} from "react-icons/fa";
+import { FaFacebookSquare, FaInstagram, FaTwitter, FaYoutube, FaLinkedinIn} from "react-icons/fa";
+import classes from './social-actions.module.css';
+import { logEvent } from "../../../../lib/analytics";
 
 export default function () {
 
-  const handleClick = () => {
-    window.ga("send", "pageview", "/social-page-clicked-side");
+  const handleClick = (action) => {
+    logEvent('social-action', action)
   };
 
   return (
-      <div className='social-actions'>
+      <div className={classes.socialActions}>
         <a href="https://www.facebook.com/robotmasterolp"
-           onClick={() => handleClick()}
+           onClick={() => handleClick('facebook-page-clicked-side')}
            data-eventid='facebook'>
-          <i className="fa fa-facebook-square"/>
-          <FaFacebookSquare/>
+          <FaFacebookSquare className={classes.socialActionsI}/>
         </a>
         <a href="https://www.instagram.com/robotmaster"
-           onClick={() => handleClick()}
+           onClick={() => handleClick('instagram-page-clicked-side')}
            data-eventid='instagram'>
-          <FaInstagramSquare/>
+          <FaInstagram className={classes.socialActionsI}/>
         </a>
         <a href="https://www.twitter.com/robotmaster"
-           onClick={() => handleClick()}
+           onClick={() => handleClick('twitter-page-clicked-side')}
            data-eventid='twitter'>
-          <FaTwitterSquare/>
+          <FaTwitter className={classes.socialActionsI}/>
         </a>
         <a href="https://www.youtube.com/robotmaster"
-           onClick={() => handleClick()}
+           onClick={() => handleClick('youtube-page-clicked-side')}
            data-eventid='youtube'>
-          <FaYoutubeSquare/>
+          <FaYoutube className={classes.socialActionsI}/>
         </a>
         <a href="https://www.linkedin.com/company/robotmaster-"
-           onClick={() => handleClick()}
+           onClick={() => handleClick('linkedin-page-clicked-side')}
            data-eventid='linkedin'>
-          <FaLinkedinIn/>
+          <FaLinkedinIn className={classes.socialActionsI}/>
         </a>
       </div>
   );
