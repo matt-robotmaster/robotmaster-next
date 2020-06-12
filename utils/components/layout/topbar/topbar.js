@@ -16,6 +16,8 @@ const topbar = () => {
   const [isMobileScreen, setIsMobileScreen] = useState(false);
 
   useEffect(() => {
+    handleScroll();
+    handleResize();
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleResize);
 
