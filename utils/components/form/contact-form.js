@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Form, Button, FormGroup, Col} from "react-bootstrap";
+import {Form, Button, FormGroup, Col, Alert} from "react-bootstrap";
 
 import useTranslation from "../../hooks/useTranslation";
 import { logEvent } from '../../../lib/analytics';
@@ -57,7 +57,7 @@ const createFormInput = (input, isCountryUS, setIsCountryUS) => {
   }
 };
 
-const handleSubmit = (e, t, locale, props) => {
+const handleSubmit = (e, t, locale, props, setValidationMessages) => {
   e.preventDefault();
 
   let country = e.target.C3ICountry.value.trim();
@@ -105,39 +105,46 @@ const handleSubmit = (e, t, locale, props) => {
           'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
         }
       })
-  .then(() => {
-
-    // Send email
-    fetch('/api/request-information',
+  .then( async () => {
+    const response = await fetch('/api/request-information',
         {
           method: 'POST',
           body: JSON.stringify(emailToSend),
           headers: {
             'Content-Type': 'application/json'
           }
-        }).then(() => {
-          window.location.href = `/${locale}/contact/information-request-success`;
-    });
+        });
+    const data = await response.json();
+    setValidationMessages(data);
+
+    if (data.success) {
+      window.location.href = `/${locale}/contact/information-request-success`;
+    }
 
     window.scrollTo(0, 0);
     logEvent('form', props.gaEvent);
   })
-  .catch(err => console.error("Error:", err));
+  .catch(err => setValidationMessages(err.messages));
 
   return false;
 };
 
 const contactForm = (props) => {
   const [isCountryUS, setIsCountryUS] = useState(false);
+  const [validationMessages, setValidationMessages] = useState(null);
   const { t, locale } = useTranslation();
   const inputs = getInputs(t);
 
   return (
       <React.Fragment>
 
-        {/*TODO: show messages here*/}
+        { validationMessages && validationMessages.messages.length > 0 ? (
+            <div className='alert'>
+              {validationMessages.messages.map(message => <Alert variant={validationMessages.success ? 'success' : 'danger'}>{message}</Alert>)}
+            </div>
+        ) : null}
 
-        <Form horizontal name='form' onSubmit={(e) => handleSubmit(e, t, locale, props)}>
+        <Form horizontal name='form' onSubmit={(e) => handleSubmit(e, t, locale, props, setValidationMessages)}>
           {inputs.map(input => createFormInput(input, isCountryUS, setIsCountryUS))}
           <FormGroup>
             <Col sm={{span: 4, offset: 2}}>

@@ -138,12 +138,12 @@ function assembleConfirmationEmail(req, dictionary) {
 }
 
 function handlePostRequest(req, res) {
-  const validation = validateForm(req.body);
+  let validation = validateForm(req.body);
   if (!validation.success) {
-    return res.json(validation);
+    return res.status(400).json(validation);
   }
 
-  const response = {
+  validation = {
     success: true,
     messages: ['Your request has been sent, someone will be in touch with you shortly.']
   }
@@ -203,7 +203,7 @@ function handlePostRequest(req, res) {
     }
   }
 
-  res.json(response);
+  res.json(validation);
 }
 
 export default (req, res) => {
