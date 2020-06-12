@@ -11,100 +11,133 @@ const whatsNew = () => {
         caption: t('whats-new-page-caption')
       }}>
         <h1 className="page-header">
-          {t('whats-new-page-title-v64')}
+          {t('whats-new-v65-title')}
         </h1>
         <p>
-          {t('whats-new-v64-para-1')}
+          {t('whats-new-v65-para')}
         </p>
         <h3>
-          {t('whats-new-v64-sub-heading')}
+          {t('whats-new-v65-heading-1')}
         </h3>
         <ul>
           <li>
-            {t('whats-new-v64-listitem-1')}
+            {t('whats-new-v65-list-1-item-1')}
           </li>
           <li>
-            {t('whats-new-v64-listitem-2')}
+            {t('whats-new-v65-list-1-item-2')}
           </li>
           <li>
-            {t('whats-new-v64-listitem-3')}
+            {t('whats-new-v65-list-1-item-3')}
           </li>
           <li>
-            {t('whats-new-v64-listitem-4')}
+            {t('whats-new-v65-list-1-item-4')}
           </li>
           <li>
-            {t('whats-new-v64-listitem-5')}
+            {t('whats-new-v65-list-1-item-5')}
           </li>
           <li>
-            {t('whats-new-v64-listitem-6')}
+            {t('whats-new-v65-list-1-item-6')}
           </li>
           <li>
-            {t('whats-new-v64-listitem-7')}
+            {t('whats-new-v65-list-1-item-7')}
           </li>
           <li>
-            {t('whats-new-v64-listitem-8')}
+            {t('whats-new-v65-list-1-item-8')}
           </li>
           <li>
-            {t('whats-new-v64-listitem-9')}
+            {t('whats-new-v65-list-1-item-9')}
+          </li>
+          <li>
+            {t('whats-new-v65-list-1-item-10')}
+          </li>
+          <li>
+            {t('whats-new-v65-list-1-item-11')}
+          </li>
+          <li>
+            {t('whats-new-v65-list-1-item-12')}
+          </li>
+          <li>
+            {t('whats-new-v65-list-1-item-13')}
           </li>
         </ul>
-        <h1 className="page-header">
-          {t('whats-new-page-title-v63')}
-        </h1>
-        <p>
-          {t('whats-new-description')}
-        </p>
         <h3>
-          {t('whats-new-sub-heading')}
+          {t('whats-new-v65-heading-2')}
         </h3>
         <ul>
           <li>
-            {t('whats-new-listitem-1')}
+            {t('whats-new-v65-list-2-item-1')}
+          </li>
+          <li>
+            {t('whats-new-v65-list-2-item-2')}
             <ul>
               <li>
-                {t('whats-new-listitem-1-subitem')}
+                {t('whats-new-v65-list-2-item-2-subitem-1')}
+              </li>
+              <li>
+                {t('whats-new-v65-list-2-item-2-subitem-2')}
               </li>
             </ul>
           </li>
           <li>
-            {t('whats-new-listitem-2')}
+            {t('whats-new-v65-list-2-item-3')}
             <ul>
               <li>
-                {t('whats-new-listitem-2-subitem')}
+                {t('whats-new-v65-list-2-item-3-subitem-1')}
+              </li>
+              <li>
+                {t('whats-new-v65-list-2-item-3-subitem-2')}
               </li>
             </ul>
           </li>
           <li>
-            {t('whats-new-listitem-3')}
+            {t('whats-new-v65-list-2-item-4')}
             <ul>
               <li>
-                {t('whats-new-listitem-3-subitem')}
+                {t('whats-new-v65-list-2-item-4-subitem-1')}
+              </li>
+            </ul>
+          </li>
+          <li>
+            {t('whats-new-v65-list-2-item-5')}
+            <ul>
+              <li>
+                {t('whats-new-v65-list-2-item-5-subitem-1')}
               </li>
             </ul>
           </li>
         </ul>
-        <p>
-          {t('whats-new-para-1', {
-            supportPage: <a href="https://support.robotmaster.com/" target="_blank">
-              {t('whats-new-para-1-supportPage')}
-            </a>
-          })}
-        </p>
-        <p>
-          {t('whats-new-para-2', {
-            salesEmail: <a href="mailto:sales@robotmaster.com" target="_blank">
-              {t('whats-new-para-2-salesEmail')}
-            </a>
-          })}
-        </p>
-        <p>
-          {t('whats-new-para-3')}
-        </p>
-        <p>
-          <strong>
-            {t('whats-new-para-4')}
-          </strong>
-        </p>
+        <h3>
+          {t('whats-new-v65-heading-3')}
+        </h3>
+        <ul>
+          <li>
+            {t('whats-new-v65-list-3-item-1')}
+          </li>
+          <li>
+            {t('whats-new-v65-list-3-item-2')}
+          </li>
+          <li>
+            {t('whats-new-v65-list-3-item-3')}
+          </li>
+          <li>
+            {t('whats-new-v65-list-3-item-4')}
+          </li>
+          <li>
+            {t('whats-new-v65-list-3-item-5')}
+          </li>
+          <li>
+            {t('whats-new-v65-list-3-item-6')}
+          </li>
+          <li>
+            {t('whats-new-v65-list-3-item-7')}
+          </li>
+          <li>
+            {t('whats-new-v65-list-3-item-8')}
+          </li>
+          <li>
+            {t('whats-new-v65-list-3-item-9')}
+          </li>
+        </ul>
       </Layout>
   );
 };
