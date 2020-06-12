@@ -40,35 +40,38 @@ const topbar = () => {
     return (
         <div className={'topbar topbarMobile ' + (isTopbarFixed ? 'topbarFixed' : '')}>
           <div className="container">
-            <a
-                className={'btn btn-primary navbar-cta navbar-cta-first ' +
-                (isTopbarFixed ? 'navbar-cta-fixed' : '')}
-                href="contact/live-demo-request">
-              {t('topbar-live-demo')}
-            </a>
-            <a
-                className={'btn btn-primary navbar-cta ' +
-                (isTopbarFixed ? 'navbar-cta-fixed' : '')}
-                href="contact/contact-me-request">
-              {t('topbar-contact-me',)}
-            </a>
+            <Link href={`/${locale}/contact/live-demo-request`} passHref>
+              <a className={'btn btn-primary navbar-cta navbar-cta-first ' +
+              (isTopbarFixed ? 'navbar-cta-fixed' : '')} >
+                {t('topbar-live-demo')}
+              </a>
+            </Link>
+            <Link href={`/${locale}/contact/contact-me-request`} passHref>
+              <a className={'btn btn-primary navbar-cta ' +
+              (isTopbarFixed ? 'navbar-cta-fixed' : '')} >
+                {t('topbar-contact-me')}
+              </a>
+            </Link>
+
             <FaBars style={{fontSize: '25px', cursor: 'pointer',}}
                     onClick={() => setIsMenuOpen(!isMenuOpen)}/>
           </div>
           <div
               className={'topbarMenu ' + (isMenuOpen ? 'topbarMenu--open ' : 'topbarMenu--closed ') +
               (isTopbarFixed ? 'topbarMenu--lower' : 'topbarMenu--upper')}>
-            <a href="contact">
-              {t('contact-page-caption')}
-            </a>
-            <a href="newsroom">
+
+            <Link href={`/${locale}/contact`} >
+                {t('contact-page-caption')}
+            </Link>
+            <Link href={`/${locale}/newsroom`} >
               {t('blog-page-caption')}
-            </a>
-            <a
-                href="https://robotmaster.atlassian.net/servicedesk/customer/portals"
-                target="_blank">
-              {t('topbar-support')}
-            </a>
+            </Link>
+            <Link href='https://robotmaster.atlassian.net/servicedesk/customer/portals'>
+              <a target="_blank">
+                {t('topbar-support')}
+              </a>
+            </Link>
+
             <NavDropdown id="language-chooser" title={languageNames[locale]}>
               {Object.keys(languageNames).map(key => {
                 if (languageNames[key]) {
@@ -88,29 +91,31 @@ const topbar = () => {
   return (
       <div className={'topbar ' + (isTopbarFixed ? 'topbarFixed' : '')}>
         <div className="container">
-          <a
-              className={'btn btn-primary navbar-cta navbar-cta-first ' +
-              (isTopbarFixed ? 'navbar-cta-fixed' : '')}
-              href="contact/live-demo-request">
-            {t('topbar-live-demo')}
-          </a>
-          <a
-              className={'btn btn-primary navbar-cta ' +
-              (isTopbarFixed ? 'navbar-cta-fixed' : '')}
-              href="contact/contact-me-request">
-            {t('topbar-contact-me')}
-          </a>
-          <a href="contact">
+          <Link href={`/${locale}/contact/live-demo-request`} passHref>
+            <a className={'btn btn-primary navbar-cta navbar-cta-first ' +
+            (isTopbarFixed ? 'navbar-cta-fixed' : '')} >
+              {t('topbar-live-demo')}
+            </a>
+          </Link>
+          <Link href={`/${locale}/contact/contact-me-request`} passHref>
+            <a className={'btn btn-primary navbar-cta ' +
+            (isTopbarFixed ? 'navbar-cta-fixed' : '')} >
+              {t('topbar-contact-me')}
+            </a>
+          </Link>
+
+          <Link href={`/${locale}/contact`} >
             {t('contact-page-caption')}
-          </a>
-          <a href="newsroom">
+          </Link>
+          <Link href={`/${locale}/newsroom`} >
             {t('blog-page-caption')}
-          </a>
-          <a
-              href="https://robotmaster.atlassian.net/servicedesk/customer/portals"
-              target="_blank">
-            {t('topbar-support')}
-          </a>
+          </Link>
+          <Link href='https://robotmaster.atlassian.net/servicedesk/customer/portals'>
+            <a target="_blank">
+              {t('topbar-support')}
+            </a>
+          </Link>
+
           <NavDropdown id="language-chooser" title={languageNames[locale]}>
             {Object.keys(languageNames).map(key => {
               if (languageNames[key]) {
