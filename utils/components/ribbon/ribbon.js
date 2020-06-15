@@ -35,7 +35,7 @@ const ribbon = ({latestPost}) => {
                   <Carousel indicators={false}>
                     {events.filter(event => event.home).map(event => {
                       return (
-                          <Carousel.Item>
+                          <Carousel.Item key={event.img}>
                             <img
                                 className={`${classes.imgContainerImg} d-block w-100`}
                                 src={event.img}

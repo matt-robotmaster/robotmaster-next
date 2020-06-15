@@ -33,6 +33,7 @@ const Home = ({latestPost}) => {
                           className="d-block w-100"
                           src={t(slide)}
                           alt="slide"
+                          key={slide}
                       />
                     </Carousel.Item>
                 )
@@ -68,7 +69,7 @@ const Home = ({latestPost}) => {
                       {t('home-section-1-listitem-4')}
                     </li>
                   </ul>
-                  <Link href={`/${locale}/products`} passHref>
+                  <Link href={`/${locale}/products`}>
                     {t('general-learn-more-dotted')}
                   </Link>
                 </Col>

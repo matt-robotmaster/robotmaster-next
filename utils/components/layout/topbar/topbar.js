@@ -78,7 +78,7 @@ const topbar = () => {
               {Object.keys(languageNames).map(key => {
                 if (languageNames[key]) {
                   return (
-                      <NavDropdown.Item href={`/${key}`}>
+                      <NavDropdown.Item href={`/${key}`} key={key}>
                         {languageNames[key]}
                       </NavDropdown.Item>
                   );
