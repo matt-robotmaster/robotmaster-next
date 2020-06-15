@@ -21,3 +21,7 @@
   color: white;
   font-size: 36px;
 }
+.banner + div {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

@@ -29,7 +29,7 @@ export default function ({children, menu, banner}) {
                 imageSrc={banner.imageSrc}
             />
         ): null}
-
+        <Container>
           <Row>
             <Col md={menu ? 9 : 12} sm={menu ? 12 : 0}>
               {children}
@@ -45,6 +45,7 @@ export default function ({children, menu, banner}) {
             ) : null
             }
           </Row>
+        </Container>
         <Footer/>
         <SocialPages/>
       </div>

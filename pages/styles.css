@@ -37,6 +37,7 @@ html, body {
   padding: 4px 20px;
   font-size: 13px;
   font-weight: 400;
+  display: block;
 }
 .nav .nav > li > a {
   padding-top: 1px;
