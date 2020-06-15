@@ -5,7 +5,7 @@ import {
 import useTranslation from "../../../hooks/useTranslation";
 import {languageNames} from '../../../../lib/translations/config';
 import Link from 'next/link';
-import { FaBars} from "react-icons/fa";
+import { FaBars, FaGlobeAmericas, FaCaretDown } from "react-icons/fa";
 
 //TODO: copied from the old codebase, refactor
 
@@ -74,7 +74,7 @@ const topbar = () => {
               </a>
             </Link>
 
-            <NavDropdown id="language-chooser" title={languageNames[locale]}>
+            <NavDropdown id="language-chooser" title={<div>{languageNames[locale]} <FaGlobeAmericas/> <FaCaretDown/> </div>}>
               {Object.keys(languageNames).map(key => {
                 if (languageNames[key]) {
                   return (
@@ -118,7 +118,7 @@ const topbar = () => {
             </a>
           </Link>
 
-          <NavDropdown id="language-chooser" title={languageNames[locale]}>
+          <NavDropdown id="language-chooser" title={<div>{languageNames[locale]}<FaGlobeAmericas className='faIcon'/><FaCaretDown/></div>}>
             {Object.keys(languageNames).map(key => {
               if (languageNames[key]) {
                 return (
