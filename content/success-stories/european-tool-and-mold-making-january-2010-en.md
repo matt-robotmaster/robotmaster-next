@@ -2,7 +2,7 @@
 link: ""
 title: "European Tool & Mold Making, January 2010"
 description: ""
-publishDate: ""
+publishDate: "2010-01"
 preview: ""
 home: ""
 summary: "Machining robots are growing in market demand owing to their attractiveness to manufacturing companies looking for a time- and money-saving alternative to CNC machine tools. Robotmaster software for programming 6-axis robots provides the same flexibility and speed as software used for programming CNC machine tools because it seamlessly integrates robot programming, simulation and code generation all within a CAD/CAM environment."

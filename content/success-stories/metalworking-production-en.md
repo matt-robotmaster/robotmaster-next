@@ -2,7 +2,7 @@
 link: ""
 title: "Metalworking Production"
 description: ""
-publishDate: ""
+publishDate: "2009"
 preview: ""
 home: ""
 summary: "As robots become more popular for tasks which previously required CNC machines, software is appearing which supports the need for increased control and efficiency."
