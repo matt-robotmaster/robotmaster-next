@@ -13,7 +13,7 @@
 }
 .caption {
   position: absolute;
-  top: 256px;
+  top: 120px;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.75);
   display: inline;

@@ -23,12 +23,13 @@ const banner = (props) => {
             className={classes.bannerImgContainer}
             style={{
               backgroundImage: `url(${bannerImageSrc})`
-            }} />
-        {caption ? (
-            <div className={`hidden-xs ${classes.caption}`}>
-              {caption}
-            </div>) : ''
-        }
+            }} >
+          {caption ? (
+              <div className={`hidden-xs ${classes.caption}`}>
+                {caption}
+              </div>) : ''
+          }
+        </div>
       </Container>
   );
 };
