@@ -31,26 +31,26 @@ const privacy = () => {
         <p>
           {t('privacy-section-3-para-1')}
         </p>
-        <p>
-          {t('privacy-section-3-para-2', {
-            resources: `<a href="http://www.privacyalliance.org/resources/" target="_blank">
+        <p dangerouslySetInnerHTML={{
+          __html: t('privacy-section-3-para-2')
+          .replace('{resources}',
+              `<a href="http://www.privacyalliance.org/resources/" target="_blank">
               http://www.privacyalliance.org/resources/
-            </a>`
-          })}
-        </p>
+            </a>`)
+        }}/>
         <p>
           {t('privacy-section-3-para-3')}
         </p>
         <p>
           {t('privacy-section-3-para-4')}
         </p>
-        <p>
-          {t('privacy-section-3-para-5', {
-            webmaster: `<a href="mailto:webmaster@robotmaster.com">
-              {t('privacy-section-3-para-5-webmaster')}
-            </a>`
-          })}
-        </p>
+        <p dangerouslySetInnerHTML={{
+          __html: t('privacy-section-3-para-5')
+          .replace('{webmaster}',
+              `<a href="mailto:webmaster@robotmaster.com">
+              ${t('privacy-section-3-para-5-webmaster')}
+            </a>`)
+        }}/>
         <h3>
           {t('privacy-heading-4')}
         </h3>

@@ -86,11 +86,10 @@ const about = () => {
               __html: t('about-story-4')
               .replace('{roboticMachining}',
                   `<a
-                      href={'/${locale}/applications/machining'}>
+                      href='/${locale}/applications/machining'>
                     robotic machining
                   </a>`)
-            }}>
-            </p>
+            }}/>
             <p>
               {t('about-story-5')}
             </p>
