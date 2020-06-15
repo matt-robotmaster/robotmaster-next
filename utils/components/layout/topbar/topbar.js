@@ -55,7 +55,7 @@ const topbar = () => {
               </a>
             </Link>
 
-            <FaBars style={{fontSize: '25px', cursor: 'pointer',}}
+            <FaBars style={{fontSize: '25px', cursor: 'pointer', color: '#e32726'}}
                     onClick={() => setIsMenuOpen(!isMenuOpen)}/>
           </div>
           <div

@@ -73,13 +73,13 @@ const Home = ({latestPost}) => {
                 {t('general-learn-more-dotted')}
               </Link>
             </Col>
-            <Col md={5}>
+            <Col lg={5}>
               <img className={classes.imgResponsive} src="/img/screenshot-1.png" />
             </Col>
           </Row>
           <hr className={classes.homeHr}/>
           <Row>
-            <Col md={{span: 5, offset: 1}}>
+            <Col lg={{span: 5, offset: 1}}>
               <h1 className={classes.homeH1First}>
                 {t('home-heading-2-part-1')}
               </h1>
@@ -95,7 +95,7 @@ const Home = ({latestPost}) => {
                 {t('general-learn-more-dotted')}
               </Link>
             </Col>
-            <Col md={5}>
+            <Col lg={5}>
               <ul>
                 <li>
                   {t('home-section-2-listitem-1')}
@@ -117,7 +117,7 @@ const Home = ({latestPost}) => {
           </Row>
           <hr className={classes.homeHr} />
           <Row>
-            <Col md={{span: 5, offset: 1}}>
+            <Col lg={{span: 5, offset: 1}}>
               <h1 className={classes.homeH1First}>
                 <strong>
                   {t('home-heading-3')}
@@ -130,7 +130,7 @@ const Home = ({latestPost}) => {
                 {t('general-learn-more-dotted')}
               </Link>
             </Col>
-            <Col md={{span: 5}}>
+            <Col lg={{span: 5}}>
               <img className={`${classes.homeImgSpacer} ${classes.imgResponsive}`} src="/img/screenshot-2.png" />
             </Col>
           </Row>
