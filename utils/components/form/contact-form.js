@@ -4,6 +4,7 @@ import {Form, Button, FormGroup, Col, Alert} from "react-bootstrap";
 import useTranslation from "../../hooks/useTranslation";
 import { logEvent } from '../../../lib/analytics';
 import { createCountrySelect, createProvinceSelect, createSimpleInput } from "./select-helpers";
+import classes from './form.module.css';
 
 //TODO: copy from old codebase, refactor
 
@@ -138,13 +139,15 @@ const contactForm = (props) => {
   return (
       <React.Fragment>
 
-        { validationMessages && validationMessages.messages.length > 0 ? (
-            <div className='alert'>
-              {validationMessages.messages.map(message => <Alert variant={validationMessages.success ? 'success' : 'danger'}>{message}</Alert>)}
-            </div>
-        ) : null}
+        <div className='alert'>
+          { validationMessages && validationMessages.messages.length > 0 ? (
+              <React.Fragment>
+                {validationMessages.messages.map(message => <Alert variant={validationMessages.success ? 'success' : 'danger'}>{message}</Alert>)}
+              </React.Fragment>
+          ) : null}
+        </div>
 
-        <Form horizontal name='form' onSubmit={(e) => handleSubmit(e, t, locale, props, setValidationMessages)}>
+        <Form className={classes.form} name='form' onSubmit={(e) => handleSubmit(e, t, locale, props, setValidationMessages)}>
           {inputs.map(input => createFormInput(input, isCountryUS, setIsCountryUS))}
           <FormGroup>
             <Col sm={{span: 4, offset: 2}}>

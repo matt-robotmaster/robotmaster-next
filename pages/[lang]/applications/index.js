@@ -6,7 +6,7 @@ import {Col, Container, Row} from 'react-bootstrap';
 import applicationData from '../../../content/applications.json';
 import classes from './index.module.css';
 import Link from "next/link";
-// import {FaChevronRight} from "react-icons/all";
+import { FaChevronRight } from "react-icons/fa";
 
 const applications = () => {
   const { locale, t } = useTranslation();
@@ -49,11 +49,11 @@ const applications = () => {
                         />
                       </a>
                     </Link>
-                    <p className={classes.applicationCategoryPMore}>
+                    <p className={`${classes.applicationCategoryPMore} ${classes.applicationCategoryP}`}>
                       <Link href={`/${locale}/applications/${app.path}`} passHref>
                         <a>
                           {t('application-learn-more')}
-                          {/*<FaChevronRight className={classes.applicationCategoryPMoreI}/>*/}
+                          <FaChevronRight className={classes.applicationCategoryPMoreI}/>
                         </a>
                       </Link>
                     </p>

@@ -22,13 +22,22 @@ html, body {
   }
 }
 
-.subtitle {
+h2.subtitle {
   display: inline-block;
   background-color: #353637;
   color: #fff;
   padding: 8px 20px;
   font-size: 25px;
   margin-bottom: 50px;
+}
+
+h3.subtitle {
+  color: #e32726;
+  padding: 8px 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding-left: 0;
+  font-weight: 700;
 }
 
 .nav > li > a {
@@ -229,4 +238,43 @@ html, body {
 }
 .multiChoice .option.active {
   display: block;
+}
+.timeline-item .timeline-desc, .timeline-item .timeline-img {
+  width: 50%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timeline-item .timeline-desc p {
+  text-align: center;
+  font-weight: 700;
+  margin: 0;
+}
+.timeline-item .timeline-desc p .year {
+  color: #d5d9dc;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+.timeline-item .timeline-desc p .flavor {
+  color: #93989e;
+  font-size: 14px;
+  line-height: 1.1;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
 }

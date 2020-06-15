@@ -7,7 +7,7 @@ import countryList from "../../../lib/translations/locales/country-list.json";
 export const createCountrySelect = (input, setIsCountryUS) => (
     <Form.Group key={input.name}>
       <Row>
-        <Col sm={1}>
+        <Col sm={2} className='text-right'>
           <Form.Label htmlFor={input.name}>
             {input.caption}
           </Form.Label>
@@ -44,7 +44,7 @@ const getOptionForCountry = (countryCode) => {
 export const createProvinceSelect = (input) => (
     <Form.Group key={input.name}>
       <Row>
-        <Col sm={1}>
+        <Col sm={2} className='text-right'>
           <Form.Label htmlFor={input.name}>
             {input.caption}
           </Form.Label>
@@ -68,7 +68,7 @@ export const createListSelect = (input, listData) => {
   return (
       <Form.Group key={input.name}>
         <Row>
-          <Col sm={1}>
+          <Col sm={2} className='text-right'>
             <Form.Label htmlFor={input.name}>
               {input.caption}
             </Form.Label>
@@ -110,7 +110,7 @@ export const createMultiChoice = (input, listData, selectedOptions, setSelectedO
   return (
       <Form.Group key={input.name} ref={wrapperRef}>
         <Row>
-          <Col sm={1}>
+          <Col sm={2} className='text-right'>
             <Form.Label htmlFor={input.name}>
               {input.caption}
             </Form.Label>
@@ -168,7 +168,7 @@ export const createMultiChoice = (input, listData, selectedOptions, setSelectedO
 export const createSimpleInput = (input) => (
     <FormGroup>
       <Row>
-        <Col sm={1}>
+        <Col sm={2} className='text-right'>
           <Form.Label htmlFor={input.name}>
             {input.caption}
           </Form.Label>
@@ -193,7 +193,7 @@ export const createSimpleInput = (input) => (
 export const createDateInput = (input) => (
     <FormGroup>
       <Row>
-        <Col sm={1}>
+        <Col sm={2} className='text-right'>
           <Form.Label htmlFor={input.name}>
             {input.caption}
           </Form.Label>

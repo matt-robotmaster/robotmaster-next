@@ -146,14 +146,14 @@ const about = () => {
           </Col>
         </Row>
         <Row className='bigger-page-text' style={{marginBottom: '20px'}}>
+          <Col xs={12} sm={12} md={{span: 5, pull: 7}} lg={{span: 5, pull: 7}}
+              className='flex-center-img'>
+            <img src='/img/about/2.png' style={{maxWidth: '60%', maxHeight: '240px'}} />
+          </Col>
           <Col xs={12} sm={12} md={{span: 7, push: 5}} lg={{span: 7, push: 5}}>
             <p>
               {t('about-team-3')}
             </p>
-          </Col>
-          <Col xs={12} sm={12} md={{span: 5, pull: 7}} lg={{span: 5, pull: 7}}
-              className='flex-center-img'>
-            <img src='/img/about/2.png' style={{maxWidth: '60%', maxHeight: '240px'}} />
           </Col>
         </Row>
         <Row className='bigger-page-text' style={{marginBottom: '20px'}}>
@@ -167,14 +167,14 @@ const about = () => {
           </Col>
         </Row>
         <Row className='bigger-page-text' style={{marginBottom: '20px'}}>
+          <Col xs={12} sm={12} md={{span: 5, pull: 7}} lg={{span: 5, pull: 7}}
+              className='flex-center-img'>
+            <img src='/img/about/4.png' style={{maxWidth: '60%', maxHeight: '240px'}} />
+          </Col>
           <Col xs={12} sm={12} md={{span: 7, push: 5}} lg={{span: 7, push: 5}}>
             <p>
               {t('about-team-5')}
             </p>
-          </Col>
-          <Col xs={12} sm={12} md={{span: 5, pull: 7}} lg={{span: 5, pull: 7}}
-              className='flex-center-img'>
-            <img src='/img/about/4.png' style={{maxWidth: '60%', maxHeight: '240px'}} />
           </Col>
         </Row>
       </Layout>

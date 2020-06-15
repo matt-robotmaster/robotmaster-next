@@ -299,11 +299,13 @@ const trialForm = (props) => {
   return (
       <React.Fragment>
 
-        { validationMessages && validationMessages.messages.length > 0 ? (
-            <div className='alert'>
-              {validationMessages.messages.map(message => <Alert variant={validationMessages.success ? 'success' : 'danger'}>{message}</Alert>)}
-            </div>
-        ) : null}
+        <div className='alert'>
+          { validationMessages && validationMessages.messages.length > 0 ? (
+              <React.Fragment>
+                {validationMessages.messages.map(message => <Alert variant={validationMessages.success ? 'success' : 'danger'}>{message}</Alert>)}
+              </React.Fragment>
+          ) : null}
+        </div>
 
         <Form horizontal name='form' onSubmit={(e) => handleSubmit(e, locale, props, selectedOptions, setValidationMessages)}>
           {inputs.map(input => createFormInput(input, listData, isCountryUS, setIsCountryUS, selectedOptions, setSelectedOptions))}

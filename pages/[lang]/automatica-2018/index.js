@@ -160,7 +160,7 @@ const automatica2018 = () => {
               </Form>
             </Col>
           </Row>
-          <Row>
+          <Row className='mb-3'>
             <Col lg={12} className='text-center'>
               <img
                   style={{

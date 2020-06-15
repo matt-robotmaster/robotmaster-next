@@ -90,6 +90,9 @@ const products = () => {
           {t('products-title-3')}
         </h2>
         <Row className="bigger-page-text">
+          <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-pull-8 col-lg-pull-8">
+            <img src="/img/products/1.jpg" style={{maxWidth: '100%', maxHeight: '240px'}} />
+          </div>
           <div className="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-push-4 col-lg-push-4 product-feature-box right clearfix">
             <h3 className="subtitle">
               {t('products-feat-title-1')}
@@ -112,9 +115,6 @@ const products = () => {
               </li>
             </ul>
           </div>
-          <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-pull-8 col-lg-pull-8 flex-center-img">
-            <img src="/img/products/1.jpg" style={{maxWidth: '100%', maxHeight: '240px'}} />
-          </div>
         </Row>
         <Row className="bigger-page-text">
           <div className="col-xs-12 col-sm-12 col-md-8 col-lg-8 product-feature-box clearfix">
@@ -133,11 +133,15 @@ const products = () => {
               </li>
             </ul>
           </div>
-          <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 flex-center-img">
+          <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <img src="/img/products/4.jpg" style={{maxWidth: '100%', maxHeight: '240px'}} />
           </div>
         </Row>
         <Row className="bigger-page-text">
+          <div
+              className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-pull-8 col-lg-pull-8">
+            <img src="/img/products/3.jpg" style={{maxWidth: '100%', maxHeight: '240px'}} />
+          </div>
           <div
               className="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-push-4 col-lg-push-4 product-feature-box right clearfix">
             <h3 className="subtitle">
@@ -157,10 +161,6 @@ const products = () => {
                 {t('products-feat-list-3-3')}
               </li>
             </ul>
-          </div>
-          <div
-              className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-pull-8 col-lg-pull-8 flex-center-img">
-            <img src="/img/products/3.jpg" style={{maxWidth: '100%', maxHeight: '240px'}} />
           </div>
         </Row>
         <Row className="bigger-page-text">
@@ -187,11 +187,15 @@ const products = () => {
               </li>
             </ul>
           </Col>
-          <Col xs={12} sm={12} md={4} lg={4} className="flex-center-img">
+          <Col xs={12} sm={12} md={4} lg={4}>
             <img src="/img/products/2.jpg" style={{maxWidth: '100%', maxHeight: '240px'}} />
           </Col>
         </Row>
         <Row className="bigger-page-text">
+          <div
+              className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-pull-8 col-lg-pull-8">
+            <img src="/img/products/6.jpg" style={{maxWidth: '100%', maxHeight: '240px'}} />
+          </div>
           <div
               className="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-push-4 col-lg-push-4 product-feature-box right clearfix">
             <h3 className="subtitle">
@@ -212,10 +216,6 @@ const products = () => {
               </li>
             </ul>
           </div>
-          <div
-              className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-pull-8 col-lg-pull-8 flex-center-img">
-            <img src="/img/products/6.jpg" style={{maxWidth: '100%', maxHeight: '240px'}} />
-          </div>
         </Row>
         <Row className="bigger-page-text">
           <Col xs={12} sm={12} md={8} lg={8}
@@ -235,7 +235,7 @@ const products = () => {
               </li>
             </ul>
           </Col>
-          <Col xs={12} sm={12} md={4} lg={4} className="flex-center-img">
+          <Col xs={12} sm={12} md={4} lg={4}>
             <img src="/img/products/7.jpg" style={{maxWidth: '100%', maxHeight: '240px'}} />
           </Col>
         </Row>
