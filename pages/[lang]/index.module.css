@@ -38,3 +38,8 @@
 .carousel {
   margin-bottom: 50px;
 }
+.imgResponsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

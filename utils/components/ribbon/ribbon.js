@@ -15,7 +15,7 @@ const ribbon = ({latestPost}) => {
             <Link href={`/${locale}/newsroom`} passHref>
               <a className={classes.ribbonA} >
                 <div className={classes.imgContainer}>
-                  <img alt='Latest News' className={`${classes.fixedImageImg} ${classes.imgContainerImg}`} src={latestPost.preview} />
+                  <img alt='Latest News' className={`${classes.fixedImageImg} ${classes.imgContainerImg}`} src={latestPost.home} />
                 </div>
               </a>
             </Link>

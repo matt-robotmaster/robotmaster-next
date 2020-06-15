@@ -47,7 +47,7 @@ const footer = () => {
 
   const createColumn = (column, index) => {
     return (
-        <Col xs={6} sm={4} md={4} lg={{span: 2, offset: index === 0 ? 1 : 0}}
+        <Col xs={6} sm={4} md={4} lg={2}
              key={column.title}>
           <h5>
             {column.title}
@@ -70,7 +70,7 @@ const footer = () => {
   return (
       <div className={classes.footer}>
         <Container>
-          <Row>
+          <Row className={classes.footerMenu}>
             {columns.map(column => createColumn(column))}
           </Row>
           <Row className={classes.legal}>
