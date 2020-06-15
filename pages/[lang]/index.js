@@ -25,7 +25,7 @@ const Home = ({latestPost}) => {
       <Layout>
         <Container>
           <div className={classes.home}>
-            <Carousel>
+            <Carousel className={classes.carousel}>
               {slides.map(slide => {
                 return (
                     <Carousel.Item>

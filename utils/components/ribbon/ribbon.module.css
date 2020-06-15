@@ -13,7 +13,7 @@
   height: 180px;
   max-width: 435px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   .bannerSlideElement {
     margin-bottom: 40px;
   }

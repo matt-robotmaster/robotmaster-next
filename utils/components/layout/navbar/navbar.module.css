@@ -1,6 +1,7 @@
 .navbarDefault {
   border: 0;
   margin-bottom: 0;
+  padding: 0;
 }
 .navbarBrand {
   padding: 0;
@@ -30,9 +31,12 @@
   }
 }
 .navbarNavLiA {
-  font-weight: bold;
+  font-weight: 700;
   padding-bottom: 2px;
   padding-left: 10px;
   padding-right: 10px;
   border-bottom: 5px solid transparent;
+}
+.navbarContainer {
+  padding: 0;
 }

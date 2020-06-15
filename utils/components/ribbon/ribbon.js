@@ -11,7 +11,7 @@ const ribbon = ({latestPost}) => {
   return (
       <Container className={classes.ribbon}>
         <Row>
-          <Col md={6} sm={12} className={classes.bannerSlideElement}>
+          <Col lg={6} sm={12} className={classes.bannerSlideElement}>
             <Link href={`/${locale}/newsroom`} passHref>
               <a className={classes.ribbonA} >
                 <div className={classes.imgContainer}>
@@ -28,7 +28,7 @@ const ribbon = ({latestPost}) => {
               </a>
             </Link>
           </Col>
-          <Col md={6} sm={12} className={classes.bannerSlideElement}>
+          <Col lg={6} sm={12} className={classes.bannerSlideElement}>
             <Link href={`/${locale}/events`} passHref>
               <a className={classes.ribbonA} >
                 <div className={classes.imgContainer}>

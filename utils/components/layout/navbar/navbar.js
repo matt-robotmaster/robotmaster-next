@@ -7,20 +7,18 @@ import Link from "next/link";
 const navbar = () => {
   const { locale, t } = useTranslation();
   return (
-      <Container>
-        <Navbar bg='light' expand='lg'>
+      <Navbar bg='light' expand='lg' className={classes.navbarDefault}>
+        <Container className={classes.navbarContainer}>
           <Link href='/' passHref>
             <Navbar.Brand href='/'>
-              <div className={classes.navbarDefault}>
                 <a className={classes.navbarBrand}>
                   <div className={classes.logo} />
                 </a>
-              </div>
             </Navbar.Brand>
           </Link>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
-            <Nav className='mr-auto'>
+            <Nav className='mr-auto text-center'>
               <Link href={`/${locale}/about`} passHref>
                 <Nav.Link className={classes.navbarNavLiA}>{t('about-page-caption')}</Nav.Link>
               </Link>
@@ -41,8 +39,8 @@ const navbar = () => {
               </Link>
             </Nav>
           </Navbar.Collapse>
-        </Navbar>
-      </Container>
+        </Container>
+      </Navbar>
   );
 };
 
