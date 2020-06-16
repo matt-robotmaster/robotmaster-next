@@ -7,8 +7,6 @@ import classes from './index.module.css';
 import Ribbon from '../../utils/components/ribbon/ribbon';
 import Link from "next/link";
 import {getLatestPostData} from "../../lib/posts";
-import {locales} from "../../lib/translations/config";
-import {getInitialLocale} from "../../lib/translations/getInitialLocale";
 
 const slides = [
   'slideshow-img-1',
@@ -164,19 +162,11 @@ const Home = ({latestPost}) => {
   );
 };
 
-Home.getInitialProps = async (ctx) => {
-  if (locales.includes(ctx.query.lang)) {
-    const latestPost = await getLatestPostData();
-    return {
-      latestPost
-    };
-  } else {
-    if (ctx.res) {
-      ctx.res.writeHead(302, { Location: `/${getInitialLocale()}` });
-      ctx.res.end();
-    }
-    return { };
-  }
+Home.getInitialProps = async () => {
+  const latestPost = await getLatestPostData();
+  return {
+    latestPost
+  };
 };
 
 export default withLocale(Home);

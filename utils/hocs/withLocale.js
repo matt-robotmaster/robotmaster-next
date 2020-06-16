@@ -1,5 +1,5 @@
 import React from 'react';
-import Error from 'next/error';
+import Custom404 from "../../pages/404";
 import { getDisplayName } from 'next/dist/next-server/lib/utils';
 import { isLocale } from '../../lib/translations/types';
 import { LocaleProvider } from '../context/LocaleContext';
@@ -7,7 +7,7 @@ import { LocaleProvider } from '../context/LocaleContext';
 export default (WrappedPage) => {
   const WithLocale = ({ locale, ...pageProps }) => {
     if (!locale) {
-      return <Error statusCode={404} />
+      return <Custom404/>
     }
     return (
         <LocaleProvider lang={locale}>

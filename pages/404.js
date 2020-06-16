@@ -5,7 +5,7 @@ import {Col, Container, Row} from "react-bootstrap";
 import Link from "next/link";
 
 const Custom404 = () => {
-  const { t, locale } = useTranslation();
+  const { t } = useTranslation();
 
   return (
       <Layout banner={{
@@ -15,7 +15,7 @@ const Custom404 = () => {
           <Row>
             <Col md={12}>
               <p>{t('notfound-page-message')}</p>
-              <Link href={`/${locale}/`} passHref>
+              <Link href={`/`} passHref>
                 <a className="btn btn-primary btn-lg" >
                   {t('notfound-page-homepage-button')}
                 </a>
