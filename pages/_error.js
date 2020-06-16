@@ -14,15 +14,8 @@ const Error = ({ statusCode }) => {
 };
 
 Error.getInitialProps = async ({ res, err }) => {
-  let statusCode = null
-  if (res) {
-    ({ statusCode } = res)
-  } else if (err) {
-    ({ statusCode } = err)
-  }
-  return {
-    statusCode,
-  }
+  const statusCode = res ? res.statusCode : err ? err.statusCode : 404
+  return { statusCode }
 };
 
 Error.defaultProps = {
