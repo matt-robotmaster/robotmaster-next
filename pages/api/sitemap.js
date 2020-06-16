@@ -2,6 +2,8 @@ import {SitemapStream, streamToPromise} from "sitemap";
 import { readdirSync, writeFileSync, lstatSync } from 'fs';
 import { join } from 'path';
 import { locales } from '../../lib/translations/config';
+import { getAllPostPaths } from "../../lib/posts";
+import { getAllSuccessStoryPaths } from "../../lib/success-stories";
 
 const baseUrl = 'https://www.robotmaster.com';
 const pagesDir = 'pages/[lang]';
@@ -9,17 +11,35 @@ const publicDir = 'public';
 
 const buildSitemapXML = async () => {
   const stream = new SitemapStream( { hostname: baseUrl } );
-  const directories = getDirectories(`${process.cwd()}/${pagesDir}`);
+  const pageDirs = getDirectories(`${process.cwd()}/${pagesDir}`);
 
-  for (const directory of directories) {
-    const dirSplit = directory.split('/');
-    const url = `/${dirSplit[dirSplit.length - 2]}/${dirSplit[dirSplit.length - 1]}`;
+  for (const pageDir of pageDirs) {
+    const dirSplit = pageDir.split('/');
+    const page = dirSplit[dirSplit.length - 1];
 
     for (const locale of locales) {
       stream.write(
           {
-            url: url.replace('[lang]', locale)
+            url: `/${locale}/${page}`
           });
+    }
+
+    if (page === 'newsroom') {
+      const posts = getAllPostPaths();
+      for (const post of posts) {
+        stream.write(
+            {
+              url: `/${post.params.lang}/${page}/${post.params.id}`
+            });
+      }
+    } else if (page === 'success-stories') {
+      const successStories = getAllSuccessStoryPaths();
+      for (const successStory of successStories) {
+        stream.write(
+            {
+              url: `/${successStory.params.lang}/${page}/${successStory.params.id}`
+            });
+      }
     }
   }
 
