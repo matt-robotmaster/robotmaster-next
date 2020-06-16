@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Head from 'next/head';
 import { getInitialLocale } from '../lib/translations/getInitialLocale';
-import { useRouter } from 'next/dist/client/router';
+import Router from "next/router";
 
 const Index = () => {
-  const router = useRouter();
-  React.useEffect(() => {
-    router.replace('/[lang]', `/${getInitialLocale()}`)
+  useEffect(() => {
+    const {pathname} = Router;
+    if(pathname === '/' ){
+      Router.push(`/${getInitialLocale()}`);
+    }
   });
   return (
       <Head>
