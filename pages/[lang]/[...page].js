@@ -5,31 +5,32 @@ import Router from "next/router";
 import {isLocale} from "../../lib/translations/types";
 import useTranslation from "../../utils/hooks/useTranslation";
 import withLocale from "../../utils/hocs/withLocale";
-import {getLatestPostData} from "../../lib/posts";
 import {isPathExist} from "../../lib/utils";
+import Custom404 from "../404";
 
 const CatchAllPage = () => {
-  const { locale } = useTranslation();
-
-  //TODO: if the url hasn't got valid path then render not found
-
-  if (typeof window !== 'undefined' && !isLocale(locale)) {
-    //Router.push(`/${getInitialLocale()}`);
-  }
+  const { t, locale } = useTranslation();
+  useEffect(() => {
+    if (typeof window !== 'undefined' && !isLocale(locale)) {
+      Router.replace(`/${getInitialLocale()}${Router.asPath}`);
+    }
+  });
 
   return (
-      <Head>
-        <meta name="robots" content="noindex, nofollow" />
-      </Head>
+      <React.Fragment>
+        <Head>
+          <meta name="robots" content="noindex, nofollow" />
+        </Head>
+        <Custom404/>
+      </React.Fragment>
   );
 };
 
 CatchAllPage.getInitialProps = async (ctx) => {
 
-  if (!isLocale(ctx.query.lang) && isPathExist(`/[lang]/${ctx.query.lang}`)) {
+  if (!isLocale(ctx.query.lang) && isPathExist(`/[lang]${ctx.asPath}`)) {
     if (ctx.res) {
-      const redirectTo = [`-`, ctx.query.lang, ctx.asPath.split('/').slice(2).join('/')].join('/');
-      console.log(redirectTo);
+      const redirectTo = [`/-`, ctx.query.lang, ctx.asPath.split('/').slice(2).join('/')].join('/');
       ctx.res.writeHead(302, { Location: redirectTo });
       ctx.res.end();
     }

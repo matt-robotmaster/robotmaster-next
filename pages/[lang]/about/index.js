@@ -60,7 +60,7 @@ const about = () => {
   const { t, locale } = useTranslation();
   useEffect(() => {
     if (typeof window !== 'undefined' && !isLocale(locale)) {
-      Router.replace(`/${getInitialLocale()}/${Router.pathname.split('/').slice(2).join('/')}`);
+      Router.replace(`/${getInitialLocale()}/${Router.asPath.split('/').slice(2).join('/')}`);
     }
   });
 

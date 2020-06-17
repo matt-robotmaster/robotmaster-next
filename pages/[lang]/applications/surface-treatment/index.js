@@ -1,19 +1,19 @@
 import React, {useEffect} from 'react';
-import useTranslation from "../../../utils/hooks/useTranslation";
-import withLocale from '../../../utils/hocs/withLocale';
-import Layout from '../../../utils/components/layout/layout';
-import classes from './index.module.css';
+import useTranslation from "../../../../utils/hooks/useTranslation";
+import withLocale from '../../../../utils/hocs/withLocale';
+import Layout from '../../../../utils/components/layout/layout';
+import classes from '../index.module.css';
 import {Col, Container, Row} from "react-bootstrap";
-import VideoList from '../../../utils/components/video-list/video-list';
-import {isLocale} from "../../../lib/translations/types";
+import VideoList from '../../../../utils/components/video-list/video-list';
+import {isLocale} from "../../../../lib/translations/types";
 import Router from "next/router";
-import {getInitialLocale} from "../../../lib/translations/getInitialLocale";
+import {getInitialLocale} from "../../../../lib/translations/getInitialLocale";
 
 const surface = () => {
   const { t, locale } = useTranslation();
   useEffect(() => {
     if (typeof window !== 'undefined' && !isLocale(locale)) {
-      Router.replace(`/${getInitialLocale()}/${Router.pathname.split('/').slice(2).join('/')}`);
+      Router.replace(`/${getInitialLocale()}/${Router.asPath.split('/').slice(2).join('/')}`);
     }
   });
 
