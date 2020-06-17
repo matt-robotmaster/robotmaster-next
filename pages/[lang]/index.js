@@ -26,7 +26,7 @@ const Home = ({latestPost}) => {
   const { locale, t } = useTranslation();
 
   if (typeof window !== 'undefined' && !isLocale(locale)) {
-    Router.push(`/${getInitialLocale()}`);
+    Router.replace(`/${getInitialLocale()}`);
   }
 
   return (
@@ -175,7 +175,7 @@ Home.getInitialProps = async (ctx) => {
 
   if (!isLocale(ctx.query.lang) && isPathExist(`/[lang]/${ctx.query.lang}`)) {
     if (ctx.res) {
-      ctx.res.writeHead(302, { Location: `/${getInitialLocale()}/${ctx.query.lang}` });
+      ctx.res.writeHead(302, { Location: `/-/${ctx.query.lang}` });
       ctx.res.end();
     }
   }

@@ -12,6 +12,8 @@ const post = ({ postData }) => {
     return <Custom404/>;
   }
 
+  //TODO: check if locale correction redirections can be made here
+
   const { t } = useTranslation();
   return (
       <Layout banner={{

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import withLocale from '../../../utils/hocs/withLocale';
 import Layout from '../../../utils/components/layout/layout';
 import useTranslation from '../../../utils/hooks/useTranslation';
@@ -6,9 +6,18 @@ import classes from './index.module.css';
 import {getSuccessStoriesDataByLocales} from "../../../lib/success-stories";
 import Link from "next/link";
 import {Container} from "react-bootstrap";
+import {isLocale} from "../../../lib/translations/types";
+import Router from "next/router";
+import {getInitialLocale} from "../../../lib/translations/getInitialLocale";
 
 const successStories = ({successStories}) => {
-  const { locale, t } = useTranslation();
+  const { t, locale } = useTranslation();
+  useEffect(() => {
+    if (typeof window !== 'undefined' && !isLocale(locale)) {
+      Router.replace(`/${getInitialLocale()}/${Router.pathname.split('/').slice(2).join('/')}`);
+    }
+  });
+
   const customerStories = successStories[locale].filter(story => !story.article);
   const mediaStories = successStories[locale].filter(story => story.article);
 

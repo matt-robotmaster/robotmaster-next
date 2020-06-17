@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import withLocale from '../../../utils/hocs/withLocale';
 import Layout from '../../../utils/components/layout/layout';
 import useTranslation from '../../../utils/hooks/useTranslation';
@@ -6,9 +6,17 @@ import classes from './index.module.css';
 import {getSortedPostsData} from "../../../lib/posts";
 import Link from "next/link";
 import {Container} from "react-bootstrap";
+import {isLocale} from "../../../lib/translations/types";
+import Router from "next/router";
+import {getInitialLocale} from "../../../lib/translations/getInitialLocale";
 
 const newsroom = ({posts}) => {
-  const { locale, t } = useTranslation();
+  const { t, locale } = useTranslation();
+  useEffect(() => {
+    if (typeof window !== 'undefined' && !isLocale(locale)) {
+      Router.replace(`/${getInitialLocale()}/${Router.pathname.split('/').slice(2).join('/')}`);
+    }
+  });
 
   return (
       <Layout banner={{

@@ -7,7 +7,12 @@ import {Col, Container, Row} from "react-bootstrap";
 import VideoList from '../../../utils/components/video-list/video-list';
 
 const deburring = () => {
-  const { t } = useTranslation();
+    const { t, locale } = useTranslation();
+    useEffect(() => {
+      if (typeof window !== 'undefined' && !isLocale(locale)) {
+        Router.replace(`/${getInitialLocale()}/${Router.pathname.split('/').slice(2).join('/')}`);
+      }
+    });
 
   return (
       <Layout banner={{

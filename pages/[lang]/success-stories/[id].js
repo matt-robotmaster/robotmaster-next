@@ -12,6 +12,8 @@ const successStory = ({ successStoryData }) => {
     return <Custom404/>;
   }
 
+  //TODO: check if locale correction rediraction can be made here
+
   const { t } = useTranslation();
   return (
       <Layout banner={{

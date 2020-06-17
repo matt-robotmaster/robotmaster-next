@@ -1,11 +1,19 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Layout from '../../../utils/components/layout/layout';
 import {Button, Col, Container, Form, FormGroup, Row} from "react-bootstrap";
 import withLocale from "../../../utils/hocs/withLocale";
 import useTranslation from "../../../utils/hooks/useTranslation";
+import {isLocale} from "../../../lib/translations/types";
+import Router from "next/router";
+import {getInitialLocale} from "../../../lib/translations/getInitialLocale";
 
 const automatica2018 = () => {
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
+  useEffect(() => {
+    if (typeof window !== 'undefined' && !isLocale(locale)) {
+      Router.replace(`/${getInitialLocale()}/${Router.pathname.split('/').slice(2).join('/')}`);
+    }
+  });
 
   return (
       <Layout>

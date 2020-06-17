@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import withLocale from '../../../utils/hocs/withLocale';
 import Layout from '../../../utils/components/layout/layout';
 import {Col, Row} from 'react-bootstrap';
 import useTranslation from "../../../utils/hooks/useTranslation";
 import classes from './index.module.css';
+import {isLocale} from "../../../lib/translations/types";
+import Router from "next/router";
+import {getInitialLocale} from "../../../lib/translations/getInitialLocale";
 
 const timelineYears = [
   {
@@ -54,7 +57,12 @@ const timelineYears = [
 ];
 
 const about = () => {
-  const { locale, t } = useTranslation();
+  const { t, locale } = useTranslation();
+  useEffect(() => {
+    if (typeof window !== 'undefined' && !isLocale(locale)) {
+      Router.replace(`/${getInitialLocale()}/${Router.pathname.split('/').slice(2).join('/')}`);
+    }
+  });
 
   const menu = [{
     caption: t('about-title-1'),
