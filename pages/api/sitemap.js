@@ -2,7 +2,7 @@ import {SitemapStream, streamToPromise} from "sitemap";
 import { readdirSync, writeFileSync, lstatSync } from 'fs';
 import { join } from 'path';
 import { locales } from '../../lib/translations/config';
-import { getAllPostPaths } from "../../lib/posts";
+import { getAllPostIds } from "../../lib/posts";
 import { getAllSuccessStoryPaths } from "../../lib/success-stories";
 
 const baseUrl = 'https://www.robotmaster.com';
@@ -17,27 +17,64 @@ const buildSitemapXML = async () => {
     const dirSplit = pageDir.split('/');
     const page = dirSplit[dirSplit.length - 1];
 
+    let hreflang = [];
+
+    for (const locale of locales) {
+      hreflang.push({
+        lang: locale,
+        url: `/${locale}/${page}`
+      });
+    }
     for (const locale of locales) {
       stream.write(
           {
-            url: `/${locale}/${page}`
+            url: `/${locale}/${page}`,
+            links: hreflang
           });
     }
 
     if (page === 'newsroom') {
-      const posts = getAllPostPaths();
-      for (const post of posts) {
-        stream.write(
-            {
-              url: `/${post.params.lang}/${page}/${post.params.id}`
-            });
+      const postIds = getAllPostIds();
+
+      for (const postId of postIds) {
+
+        hreflang = [];
+        for (const locale of locales) {
+          hreflang.push({
+            lang: locale,
+            url: `/${locale}/${page}/${postId}`
+          });
+        }
+
+        console.log('');
+
+        for (const locale of locales) {
+          stream.write(
+              {
+                url: `/${locale}/${page}/${postId}`,
+                links: hreflang
+              });
+        }
       }
+
     } else if (page === 'success-stories') {
       const successStories = getAllSuccessStoryPaths();
+
       for (const successStory of successStories) {
+        const successStoryId = successStory.params.id;
+
+        hreflang = [];
+        for (const locale of locales) {
+          hreflang.push({
+            lang: locale,
+            url: `/${locale}/${page}/${successStoryId}`
+          });
+        }
+
         stream.write(
             {
-              url: `/${successStory.params.lang}/${page}/${successStory.params.id}`
+              url: `/${successStory.params.lang}/${page}/${successStory.params.id}`,
+              links: hreflang
             });
       }
     }
