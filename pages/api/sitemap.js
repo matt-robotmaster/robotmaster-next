@@ -1,9 +1,9 @@
 import {SitemapStream, streamToPromise} from "sitemap";
-import { readdirSync, writeFileSync, lstatSync } from 'fs';
-import { join } from 'path';
-import { locales } from '../../lib/translations/config';
-import { getAllPostPaths } from "../../lib/posts";
-import { getAllSuccessStoryPaths } from "../../lib/success-stories";
+import {writeFileSync} from 'fs';
+import {locales} from '../../lib/translations/config';
+import {getAllPostPaths} from "../../lib/posts";
+import {getAllSuccessStoryPaths} from "../../lib/success-stories";
+import {getDirectories} from "../../lib/utils";
 
 const baseUrl = 'https://www.robotmaster.com';
 const pagesDir = 'pages/[lang]';
@@ -81,10 +81,6 @@ const buildSitemapXML = async () => {
   const sitemap = await streamToPromise( stream );
   writeFileSync(`${publicDir}/sitemap.xml`, sitemap.toString());
 };
-
-const isDirectory = source => lstatSync(source).isDirectory();
-const getDirectories = source =>
-    readdirSync(source).map(name => join(source, name)).filter(isDirectory);
 
 export default async (req, res) => {
   try {
