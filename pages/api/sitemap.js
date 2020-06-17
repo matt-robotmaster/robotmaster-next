@@ -2,7 +2,7 @@ import {SitemapStream, streamToPromise} from "sitemap";
 import { readdirSync, writeFileSync, lstatSync } from 'fs';
 import { join } from 'path';
 import { locales } from '../../lib/translations/config';
-import { getAllPostIds } from "../../lib/posts";
+import { getAllPostPaths } from "../../lib/posts";
 import { getAllSuccessStoryPaths } from "../../lib/success-stories";
 
 const baseUrl = 'https://www.robotmaster.com';
@@ -34,9 +34,10 @@ const buildSitemapXML = async () => {
     }
 
     if (page === 'newsroom') {
-      const postIds = getAllPostIds();
+      const posts = getAllPostPaths();
 
-      for (const postId of postIds) {
+      for (const post of posts) {
+        const postId = post.params.id;
 
         hreflang = [];
         for (const locale of locales) {
@@ -46,15 +47,11 @@ const buildSitemapXML = async () => {
           });
         }
 
-        console.log('');
-
-        for (const locale of locales) {
-          stream.write(
-              {
-                url: `/${locale}/${page}/${postId}`,
-                links: hreflang
-              });
-        }
+        stream.write(
+            {
+              url: `/${post.params.lang}/${page}/${postId}`,
+              links: hreflang
+            });
       }
 
     } else if (page === 'success-stories') {
@@ -73,7 +70,7 @@ const buildSitemapXML = async () => {
 
         stream.write(
             {
-              url: `/${successStory.params.lang}/${page}/${successStory.params.id}`,
+              url: `/${successStory.params.lang}/${page}/${successStoryId}`,
               links: hreflang
             });
       }
