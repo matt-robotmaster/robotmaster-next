@@ -5,8 +5,7 @@ import Router from "next/router";
 
 const Index = () => {
   useEffect(() => {
-    const {pathname} = Router;
-    if(pathname === '/' ){
+    if(Router.pathname === '/' ){
       Router.push(`/${getInitialLocale()}`);
     }
   });

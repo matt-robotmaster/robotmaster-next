@@ -7,6 +7,10 @@ import classes from './index.module.css';
 import Ribbon from '../../utils/components/ribbon/ribbon';
 import Link from "next/link";
 import {getLatestPostData} from "../../lib/posts";
+import Router from "next/router";
+import {getInitialLocale} from "../../lib/translations/getInitialLocale";
+import {isLocale} from "../../lib/translations/types";
+import {isPathExist} from "../../lib/utils";
 
 const slides = [
   'slideshow-img-1',
@@ -20,6 +24,10 @@ const slides = [
 
 const Home = ({latestPost}) => {
   const { locale, t } = useTranslation();
+
+  if (typeof window !== 'undefined' && !isLocale(locale)) {
+    Router.push(`/${getInitialLocale()}`);
+  }
 
   return (
       <Layout>
@@ -162,8 +170,16 @@ const Home = ({latestPost}) => {
   );
 };
 
-Home.getInitialProps = async () => {
+Home.getInitialProps = async (ctx) => {
   const latestPost = await getLatestPostData();
+
+  if (!isLocale(ctx.query.lang) && isPathExist(`/[lang]/${ctx.query.lang}`)) {
+    if (ctx.res) {
+      ctx.res.writeHead(302, { Location: `/${getInitialLocale()}/${ctx.query.lang}` });
+      ctx.res.end();
+    }
+  }
+
   return {
     latestPost
   };
