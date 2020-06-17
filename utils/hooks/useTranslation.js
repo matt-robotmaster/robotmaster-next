@@ -7,10 +7,10 @@ export default function useTranslation() {
   const { locale } = useContext(LocaleContext);
 
   function t(key) {
-    if (!strings[locale][key]) {
+    if (strings[locale] && !strings[locale][key]) {
       console.warn(`Translation '${key}' for locale '${locale}' not found.`);
     }
-    return strings[locale][key] || strings[defaultLocale][key] || '';
+    return ( strings[locale]) ? strings[locale][key] : (strings[defaultLocale][key] || '');
   }
 
   return {
