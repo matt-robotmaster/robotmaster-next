@@ -35,7 +35,7 @@ const Home = ({latestPost}) => {
           <Carousel className={classes.carousel}>
             {slides.map(slide => {
               return (
-                  <Carousel.Item>
+                  <Carousel.Item key={slide}>
                     <img
                         className="d-block w-100"
                         src={t(slide)}

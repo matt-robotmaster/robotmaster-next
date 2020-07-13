@@ -166,7 +166,7 @@ export const createMultiChoice = (input, listData, selectedOptions, setSelectedO
 };
 
 export const createSimpleInput = (input) => (
-    <FormGroup>
+    <FormGroup key={input.name}>
       <Row>
         <Col sm={2} className='text-right'>
           <Form.Label htmlFor={input.name}>
