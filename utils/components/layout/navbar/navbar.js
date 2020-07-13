@@ -10,10 +10,8 @@ const navbar = () => {
       <Navbar bg='light' expand='lg' className={classes.navbarDefault}>
         <Container className={classes.navbarContainer}>
           <Link href='/' passHref>
-            <Navbar.Brand>
-                <a className={classes.navbarBrand}>
-                  <div className={classes.logo} />
-                </a>
+            <Navbar.Brand className={classes.navbarBrand}>
+              <div className={classes.logo} />
             </Navbar.Brand>
           </Link>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />

@@ -75,11 +75,9 @@ const topbar = () => {
                 {t('blog-page-caption')}
               </a>
             </Link>
-            <Link href='https://robotmaster.atlassian.net/servicedesk/customer/portals'>
-              <a target="_blank">
-                {t('topbar-support')}
-              </a>
-            </Link>
+            <a href='https://robotmaster.atlassian.net/servicedesk/customer/portals' target="_blank">
+              {t('topbar-support')}
+            </a>
 
             <NavDropdown id="language-chooser" title={<div>{languageNames[locale]} <FaGlobeAmericas/> <FaCaretDown/> </div>}>
               {Object.keys(languageNames).map(key => {
@@ -125,11 +123,9 @@ const topbar = () => {
               {t('blog-page-caption')}
             </a>
           </Link>
-          <Link href='https://robotmaster.atlassian.net/servicedesk/customer/portals'>
-            <a target="_blank">
-              {t('topbar-support')}
-            </a>
-          </Link>
+          <a href='https://robotmaster.atlassian.net/servicedesk/customer/portals' target="_blank">
+            {t('topbar-support')}
+          </a>
 
           <NavDropdown id="language-chooser" title={<div>{languageNames[locale]}<FaGlobeAmericas className='faIcon'/><FaCaretDown/></div>}>
             {Object.keys(languageNames).map(key => {
