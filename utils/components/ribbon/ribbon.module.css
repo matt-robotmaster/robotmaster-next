@@ -27,6 +27,7 @@
 }
 .ribbonA {
   color: #000;
+  cursor: pointer;
 }
 .ribbon a:hover, .ribbon a:active {
   font-weight: bold;

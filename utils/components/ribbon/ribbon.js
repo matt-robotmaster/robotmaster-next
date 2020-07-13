@@ -30,8 +30,7 @@ const ribbon = ({latestPost}) => {
           </Col>
           <Col lg={6} sm={12} className={classes.bannerSlideElement}>
             <Link href={`/${locale}/events`} passHref>
-              <a className={classes.ribbonA} >
-                <div className={classes.imgContainer}>
+                <div className={`${classes.imgContainer} ${classes.ribbonA}`}>
                   <Carousel indicators={false}>
                     {events.filter(event => event.home).map(event => {
                       return (
@@ -46,7 +45,6 @@ const ribbon = ({latestPost}) => {
                     })}
                   </Carousel>
                 </div>
-              </a>
             </Link>
             <h2 className={classes.ribbonH2}>
               {t('ribbon-heading-1')}
