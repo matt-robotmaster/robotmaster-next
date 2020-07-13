@@ -186,7 +186,7 @@ const createFormInput = (input, listData, isCountryUS, setIsCountryUS, selectedO
 const handleSubmit = (e, locale, props, selectedOptions, setValidationMessages) => {
   e.preventDefault();
 
-  const postData = {
+  const bodyToFetch = {
     C0ICompanyName: e.target.C0ICompanyName.value.trim(),
     C1IDepartment: e.target.C1IDepartment.value.trim(),
     C2IAddressLine1: e.target.C2IAddressLine1.value.trim(),
@@ -224,40 +224,19 @@ const handleSubmit = (e, locale, props, selectedOptions, setValidationMessages) 
     name: e.target.C14IFirstName.value.trim(),
   };
 
-  const formBody = Object.keys(postData).map(function(key) {
-    if (postData[key] instanceof Array) {
-      let str = '';
-      postData[key].forEach(function(element, index) {
-        if (index === (postData[key].length - 1)) {
-          str += encodeURIComponent(key) + '=' + encodeURIComponent(element);
-        } else {
-          str += encodeURIComponent(key) + '=' + encodeURIComponent(element) +
-              '&';
-        }
-      });
-      return str;
-    } else {
-      return encodeURIComponent(key) + '=' + encodeURIComponent(
-          postData[key]);
-    }
-  }).join('&');
-
-  //TODO: move this url into env
-
-  // Send to CRM
-  fetch('https://caw.maximizercrmlive.com/Webform.aspx?request=submitwebform&token=5F50535F174C4C4330591416151F47264D1209314B67696778414D7C0D7F2B5818545E464D4D41625945135D1941734C130C634F6F6E6D7841487859787E5956515442474B416C50471719504470421B0A364C3A693B7D42482E5A2A7C5B50545217444A42675D4012161E4272461F0B66196F67687B464A7B5A78795F54525344174E10640E451011494372444A08634A6E6E3B7B474D785E7B7F5954555744454F44605D4416421A1677471E0A624A6F3F6F78411A7D5D7F78585355534717494C615B451711194577431C0B644C3A693B7D42482E5E7B7A5855005742454A4464591016151A4377431A5C624A6F6B6F7C41407B5B78285F52555F44144E45625E4216171D4373441D0D604A6F6B3B7B4948795E7D7F5C54545241454A4460584016101F4577111B59624F6A6F6F7E411A7D597F2B585555524211494D615945171413437444120B664C39693C7B124F7D5B767F5951015243401B41655C4710401A477717',
+  fetch('/api/trial-form',
       {
         method: 'POST',
-        body: formBody,
+        body: JSON.stringify(bodyToFetch),
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+          'Content-Type': 'application/json'
         }
       })
   .then( async () => {
     const response = await fetch('/api/request-information',
         {
           method: 'POST',
-          body: JSON.stringify(postData),
+          body: JSON.stringify(bodyToFetch),
           headers: {
             'Content-Type': 'application/json'
           }
@@ -307,7 +286,7 @@ const trialForm = (props) => {
           ) : null}
         </div>
 
-        <Form horizontal name='form' onSubmit={(e) => handleSubmit(e, locale, props, selectedOptions, setValidationMessages)}>
+        <Form name='form' onSubmit={(e) => handleSubmit(e, locale, props, selectedOptions, setValidationMessages)}>
           {inputs.map(input => createFormInput(input, listData, isCountryUS, setIsCountryUS, selectedOptions, setSelectedOptions))}
           <FormGroup>
             <Col sm={{span: 4, offset: 2}}>

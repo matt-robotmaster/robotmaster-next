@@ -138,7 +138,7 @@ export const createMultiChoice = (input, listData, selectedOptions, setSelectedO
                     </div>
                 ))}
               </div>
-              <input required={input.required} value={selectedList} />
+              <input required={input.required} value={selectedList} readOnly />
               <ul className={isOpen ? 'option active' : 'option'}>
                 {
                   optionsList.map(item => (
@@ -191,7 +191,7 @@ export const createSimpleInput = (input) => (
 );
 
 export const createDateInput = (input) => (
-    <FormGroup>
+    <FormGroup key={input.name}>
       <Row>
         <Col sm={2} className='text-right'>
           <Form.Label htmlFor={input.name}>

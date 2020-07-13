@@ -7,7 +7,7 @@ async function handlePostRequest(req, res) {
   }).join('&');
   
   try {
-    const responseFromCRM = await fetch(process.env.CONTACT_FORM_CRM_URL,
+    const responseFromCRM = await fetch(process.env.TRIAL_FORM_CRM_URL,
         {
           method: 'POST',
           body: searchParams,
@@ -19,7 +19,7 @@ async function handlePostRequest(req, res) {
     return {success: /<([A-Za-z][A-Za-z0-9]*)\b[^>]*>(.*?)<\/\1>/.test(responseFromCRM) && responseFromCRM.includes('Form submitted.')};
   } catch (e) {
     //TODO: handle response
-    console.error('ERROR | CONTACT-FORM | handlePostRequest | ', e);
+    console.error('ERROR | TRIAL-FORM | handlePostRequest | ', e);
     return {success: false, message: e};
   }
   
