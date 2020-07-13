@@ -78,7 +78,9 @@ const Home = ({latestPost}) => {
                 </li>
               </ul>
               <Link href={`/${locale}/products`}>
-                {t('general-learn-more-dotted')}
+                <a>
+                  {t('general-learn-more-dotted')}
+                </a>
               </Link>
             </Col>
             <Col lg={5}>
@@ -100,7 +102,9 @@ const Home = ({latestPost}) => {
                 {t('home-section-2-para')}
               </p>
               <Link href={`/${locale}/why-robotmaster`}>
-                {t('general-learn-more-dotted')}
+                <a>
+                  {t('general-learn-more-dotted')}
+                </a>
               </Link>
             </Col>
             <Col lg={5}>
@@ -135,7 +139,9 @@ const Home = ({latestPost}) => {
                 {t('home-section-3-para')}
               </p>
               <Link href={`/${locale}/applications`}>
-                {t('general-learn-more-dotted')}
+                <a>
+                  {t('general-learn-more-dotted')}
+                </a>
               </Link>
             </Col>
             <Col lg={{span: 5}}>
@@ -160,7 +166,9 @@ const Home = ({latestPost}) => {
                   {t('home-section-4-para')}
                 </p>
                 <Link href={`/${locale}/why-robotmaster`}>
-                  {t('general-learn-more-dotted')}
+                  <a>
+                    {t('general-learn-more-dotted')}
+                  </a>
                 </Link>
               </Col>
             </Row>

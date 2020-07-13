@@ -66,10 +66,14 @@ const topbar = () => {
               (isTopbarFixed ? 'topbarMenu--lower' : 'topbarMenu--upper')}>
 
             <Link href={`/${locale}/contact`} >
+              <a>
                 {t('contact-page-caption')}
+              </a>
             </Link>
             <Link href={`/${locale}/newsroom`} >
-              {t('blog-page-caption')}
+              <a>
+                {t('blog-page-caption')}
+              </a>
             </Link>
             <Link href='https://robotmaster.atlassian.net/servicedesk/customer/portals'>
               <a target="_blank">
@@ -112,10 +116,14 @@ const topbar = () => {
           </Link>
 
           <Link href={`/${locale}/contact`} >
-            {t('contact-page-caption')}
+            <a>
+              {t('contact-page-caption')}
+            </a>
           </Link>
           <Link href={`/${locale}/newsroom`} >
-            {t('blog-page-caption')}
+            <a>
+              {t('blog-page-caption')}
+            </a>
           </Link>
           <Link href='https://robotmaster.atlassian.net/servicedesk/customer/portals'>
             <a target="_blank">

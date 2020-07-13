@@ -57,7 +57,9 @@ const footer = () => {
               return (
                   <li key={element[0]}>
                     <Link href={element[1]}>
-                      {element[0]}
+                      <a>
+                        {element[0]}
+                      </a>
                     </Link>
                   </li>
               );
@@ -76,25 +78,33 @@ const footer = () => {
           <Row className={classes.legal}>
             <p className={classes.legalPara}>
               <Link href={`/${locale}/privacy`}>
-                {t('privacy-page-caption')}
+                <a>
+                  {t('privacy-page-caption')}
+                </a>
               </Link>
               <span>
                 {' | '}
               </span>
               <Link href={`/${locale}/disclaimer`}>
-                {t('disclaimer-page-caption')}
+                <a>
+                  {t('disclaimer-page-caption')}
+                </a>
               </Link>
               <span>
                 {' | '}
               </span>
               <Link href={`/${locale}/eula`}>
-                {t('footer-terms-of-use')}
+                <a>
+                  {t('footer-terms-of-use')}
+                </a>
               </Link>
               <span>
                 {' | '}
               </span>
               <Link href={`/${locale}/gdpr`}>
-                {t('footer-gdpr')}
+                <a>
+                  {t('footer-gdpr')}
+                </a>
               </Link>
               <span>
                 {' | '}

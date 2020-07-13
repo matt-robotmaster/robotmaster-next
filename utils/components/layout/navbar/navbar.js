@@ -10,7 +10,7 @@ const navbar = () => {
       <Navbar bg='light' expand='lg' className={classes.navbarDefault}>
         <Container className={classes.navbarContainer}>
           <Link href='/' passHref>
-            <Navbar.Brand href='/'>
+            <Navbar.Brand>
                 <a className={classes.navbarBrand}>
                   <div className={classes.logo} />
                 </a>

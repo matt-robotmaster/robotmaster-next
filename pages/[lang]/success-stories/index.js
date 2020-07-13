@@ -53,7 +53,9 @@ const successStories = ({successStories}) => {
                       __html: story.summary,
                     }} />
                 <Link href={`/${locale}/success-stories/${story.link}`}>
+                  <a>
                     {t('general-read-full')}
+                  </a>
                 </Link>
                 <hr />
               </div>
@@ -78,7 +80,9 @@ const successStories = ({successStories}) => {
                   <img src={story.articleImagePath} alt={story.title}/>
                 </div>
                 <Link href={`${story.articleUrl}`}>
-                  {t('general-read-full')}
+                  <a>
+                    {t('general-read-full')}
+                  </a>
                 </Link>
                 <hr />
               </div>
