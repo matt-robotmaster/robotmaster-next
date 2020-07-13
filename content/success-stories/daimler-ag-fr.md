@@ -9,7 +9,7 @@ summary: "Daimler wanted to develop a hammer peening process for polishing the s
 application: "Hammer Peening, Laser Hardening, Laser Cladding Stamping Dies"
 industry: "Automotive"
 article: ""
-language: "en"
+language: "fr"
 ---
 # Offline Programming Software is Single Solution for Robotic Hammer Peening of Automotive Stamping Dies
 

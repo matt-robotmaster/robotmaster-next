@@ -1,6 +1,6 @@
 ---
 link: "avr-vision-robotics"
-title: "AV&amp;R Robotics"
+title: "AV&R Robotics"
 description: ""
 publishDate: ""
 preview: ""

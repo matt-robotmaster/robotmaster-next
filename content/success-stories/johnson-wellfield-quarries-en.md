@@ -1,5 +1,5 @@
 ---
-link: "johnson-wellfield-quarries.md"
+link: "johnson-wellfield-quarries"
 title: "Johnson Wellfield Quarries"
 description: ""
 publishDate: ""
