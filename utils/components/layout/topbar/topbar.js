@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {useRouter} from "next/router";
 import {
   NavDropdown
 } from 'react-bootstrap';
@@ -14,6 +15,8 @@ const topbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isTopbarFixed, setIsTopbarFixed] = useState(false);
   const [isMobileScreen, setIsMobileScreen] = useState(false);
+  const router = useRouter();
+  const page = router.asPath.split('/').slice(2).join('/');
 
   useEffect(() => {
     handleScroll();
@@ -78,9 +81,11 @@ const topbar = () => {
               {Object.keys(languageNames).map(key => {
                 if (languageNames[key]) {
                   return (
-                      <NavDropdown.Item href={`/${key}`} key={key}>
-                        {languageNames[key]}
-                      </NavDropdown.Item>
+                      <Link href={`/${key}/${page}`} key={key} passHref>
+                        <NavDropdown.Item>
+                          {languageNames[key]}
+                        </NavDropdown.Item>
+                      </Link>
                   );
                 }
               })}
@@ -122,9 +127,11 @@ const topbar = () => {
             {Object.keys(languageNames).map(key => {
               if (languageNames[key]) {
                 return (
-                    <NavDropdown.Item href={`/${key}`}>
-                      {languageNames[key]}
-                    </NavDropdown.Item>
+                    <Link href={`/${key}/${page}`} key={key} passHref>
+                      <NavDropdown.Item>
+                        {languageNames[key]}
+                      </NavDropdown.Item>
+                    </Link>
                 );
               }
             })}
