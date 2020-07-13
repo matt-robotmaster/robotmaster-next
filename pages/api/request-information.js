@@ -209,8 +209,7 @@ function handlePostRequest(req, res) {
 export default (req, res) => {
   if (req.method === 'POST') {
     handlePostRequest(req, res);
-
   } else {
-    // Handle any other HTTP method
+    res.send('Not found!');
   }
 };
