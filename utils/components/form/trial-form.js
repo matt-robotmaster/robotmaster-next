@@ -281,7 +281,7 @@ const trialForm = (props) => {
         <div className='alert'>
           { validationMessages && validationMessages.messages.length > 0 ? (
               <React.Fragment>
-                {validationMessages.messages.map(message => <Alert variant={validationMessages.success ? 'success' : 'danger'}>{message}</Alert>)}
+                {validationMessages.messages.map(message => <Alert key={message} variant={validationMessages.success ? 'success' : 'danger'}>{message}</Alert>)}
               </React.Fragment>
           ) : null}
         </div>

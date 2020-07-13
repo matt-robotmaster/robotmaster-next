@@ -28,7 +28,7 @@ async function handlePostRequest(req, res) {
 export default async (req, res) => {
   if (req.method === 'POST') {
     const result = await handlePostRequest(req, res);
-    (result.success) ? res.send('Ok!') : res.status(500).send(result.message);
+    (result.success) ? res.json(result) : res.status(500).send(result.message);
   } else {
     res.send('Not found!');
   }
