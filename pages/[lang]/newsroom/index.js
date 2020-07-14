@@ -37,7 +37,7 @@ const newsroom = ({posts}) => {
                 </div>
                 <img className={classes.blogPostSummaryImg} src={post.preview} />
                 <br />
-                <Link href={`/${locale}/newsroom/${post.link}`} passHref>
+                <Link href={`/[lang]/newsroom/[id]`} as={`/${locale}/newsroom/${post.link}`} passHref>
                   <a
                       className={`btn btn-primary ${classes.blogPostSummaryA}`}
                       role="button">

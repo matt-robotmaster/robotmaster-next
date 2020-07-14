@@ -47,7 +47,7 @@ const applications = () => {
                     <p className={classes.applicationCategoryP}>
                       {t('application-' + app.id)}
                     </p>
-                    <Link href={`/${locale}/applications/${app.path}`} passHref>
+                    <Link href={`/[lang]/applications/${app.path}`} as={`/${locale}/applications/${app.path}`} passHref>
                       <a>
                         <img
                             className={classes.applicationCategoryCategoryImg}
@@ -58,7 +58,7 @@ const applications = () => {
                       </a>
                     </Link>
                     <p className={`${classes.applicationCategoryPMore} ${classes.applicationCategoryP}`}>
-                      <Link href={`/${locale}/applications/${app.path}`} passHref>
+                      <Link href={`/[lang]/applications/${app.path}`} as={`/${locale}/applications/${app.path}`} passHref>
                         <a>
                           {t('application-learn-more')}
                           <FaChevronRight className={classes.applicationCategoryPMoreI}/>

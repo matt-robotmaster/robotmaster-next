@@ -11,37 +11,37 @@ const footer = () => {
   const columns = [{
     title: t('footer-section-about'),
     list: [
-      [t('about-title-1'), `/${locale}/about#our-story`],
-      [t('about-title-2'), `/${locale}/about#our-team`],
-      [t('partners-page-caption'), `/${locale}/partners`],
-      [t('events-page-caption'), `/${locale}/events`],
+      [t('about-title-1'), `/[lang]/about#our-story`, `/${locale}/about#our-story`],
+      [t('about-title-2'), `/[lang]/about#our-team`, `/${locale}/about#our-team`],
+      [t('partners-page-caption'), `/[lang]/partners`, `/${locale}/partners`],
+      [t('events-page-caption'), `/[lang]/events`, `/${locale}/events`],
     ],
   }, {
     title: t('blog-page-caption'),
     list: [
-      [t('footer-newsroom-whatsnew'), `/${locale}/newsroom`],
-      [t('success-page-caption'), `/${locale}/success-stories`],
-      [t('success-section-2-title'), `/${locale}/success-stories#media`],
+      [t('footer-newsroom-whatsnew'), `/[lang]/newsroom`, `/${locale}/newsroom`],
+      [t('success-page-caption'), `/[lang]/success-stories`, `/${locale}/success-stories`],
+      [t('success-section-2-title'), `/[lang]/success-stories#media`, `/${locale}/success-stories#media`],
     ],
   }, {
     title: t('products-page-caption'),
     list: [
-      [t('whats-new-v66-title'), `/${locale}/newsroom/robotmaster-v7-offline-robot-programming-launch`],
-      [t('products-title-2'), `/${locale}/products#interactive`],
-      [t('products-title-3'), `/${locale}/products#main-features`],
+      [t('whats-new-v66-title'), `/[lang]/newsroom/[id]`, `/${locale}/newsroom/robotmaster-v7-offline-robot-programming-launch`],
+      [t('products-title-2'), `/[lang]/products#interactive`, `/${locale}/products#interactive`],
+      [t('products-title-3'), `/[lang]/products#main-features`, `/${locale}/products#main-features`],
     ],
   }, {
     title: t('application-page-caption'),
     list: applications.map(function(app) {
       return [
-        t('application-' + app.id), `/${locale}/applications/` + app.path,
+        t('application-' + app.id), `/[lang]/applications/${app.path}`, `/${locale}/applications/${app.path}`,
       ];
     }),
   }, {
     title: t('why-page-caption'),
     list: [
-      [t('why-title-1'), `/${locale}/why-robotmaster#robotmaster-cad-cam-programming`],
-      [t('why-title-2'), `/${locale}/why-robotmaster#solving-robotic-programming-challenges`],
+      [t('why-title-1'), `/[lang]/why-robotmaster#robotmaster-cad-cam-programming`, `/${locale}/why-robotmaster#robotmaster-cad-cam-programming`],
+      [t('why-title-2'), `/[lang]/why-robotmaster#solving-robotic-programming-challenges`, `/${locale}/why-robotmaster#solving-robotic-programming-challenges`],
     ],
   }];
 
@@ -56,7 +56,7 @@ const footer = () => {
             {column.list.map(element => {
               return (
                   <li key={element[0]}>
-                    <Link href={element[1]}>
+                    <Link href={element[1]} as={element[2]}>
                       <a>
                         {element[0]}
                       </a>
@@ -77,7 +77,7 @@ const footer = () => {
           </Row>
           <Row className={classes.legal}>
             <p className={classes.legalPara}>
-              <Link href={`/${locale}/privacy`}>
+              <Link href={`/[lang]/privacy`} as={`/${locale}/privacy`}>
                 <a>
                   {t('privacy-page-caption')}
                 </a>
@@ -85,7 +85,7 @@ const footer = () => {
               <span>
                 {' | '}
               </span>
-              <Link href={`/${locale}/disclaimer`}>
+              <Link href={`/[lang]/disclaimer`} as={`/${locale}/disclaimer`}>
                 <a>
                   {t('disclaimer-page-caption')}
                 </a>
@@ -93,7 +93,7 @@ const footer = () => {
               <span>
                 {' | '}
               </span>
-              <Link href={`/${locale}/eula`}>
+              <Link href={`/[lang]/eula`} as={`/${locale}/eula`}>
                 <a>
                   {t('footer-terms-of-use')}
                 </a>
@@ -101,7 +101,7 @@ const footer = () => {
               <span>
                 {' | '}
               </span>
-              <Link href={`/${locale}/gdpr`}>
+              <Link href={`/[lang]/gdpr`} as={`/${locale}/gdpr`}>
                 <a>
                   {t('footer-gdpr')}
                 </a>

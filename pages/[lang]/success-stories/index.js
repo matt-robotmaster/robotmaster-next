@@ -52,7 +52,7 @@ const successStories = ({successStories}) => {
                     dangerouslySetInnerHTML={{
                       __html: story.summary,
                     }} />
-                <Link href={`/${locale}/success-stories/${story.link}`}>
+                <Link href={`/[lang]/success-stories/[id]`} as={`/${locale}/success-stories/${story.link}`}>
                   <a>
                     {t('general-read-full')}
                   </a>
@@ -79,11 +79,9 @@ const successStories = ({successStories}) => {
                 <div className={classes.successStoriesSummaryDiv}>
                   <img src={story.articleImagePath} alt={story.title}/>
                 </div>
-                <Link href={`${story.articleUrl}`}>
-                  <a>
-                    {t('general-read-full')}
-                  </a>
-                </Link>
+                <a href={`${story.articleUrl}`} target='_blank'>
+                  {t('general-read-full')}
+                </a>
                 <hr />
               </div>
           ))}

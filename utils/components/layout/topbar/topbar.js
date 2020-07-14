@@ -45,13 +45,13 @@ const topbar = () => {
     return (
         <div className={'topbar topbarMobile ' + (isTopbarFixed ? 'topbarFixed' : '')}>
           <div className="container">
-            <Link href={`/${locale}/contact/live-demo-request`} passHref>
+            <Link href={`/[lang]/contact/live-demo-request`} as={`/${locale}/contact/live-demo-request`} passHref>
               <a className={'btn btn-primary navbar-cta navbar-cta-first ' +
               (isTopbarFixed ? 'navbar-cta-fixed' : '')} >
                 {t('topbar-live-demo')}
               </a>
             </Link>
-            <Link href={`/${locale}/contact/contact-me-request`} passHref>
+            <Link href={`/[lang]/contact/contact-me-request`} as={`/${locale}/contact/contact-me-request`} passHref>
               <a className={'btn btn-primary navbar-cta ' +
               (isTopbarFixed ? 'navbar-cta-fixed' : '')} >
                 {t('topbar-contact-me')}
@@ -65,12 +65,12 @@ const topbar = () => {
               className={'topbarMenu ' + (isMenuOpen ? 'topbarMenu--open ' : 'topbarMenu--closed ') +
               (isTopbarFixed ? 'topbarMenu--lower' : 'topbarMenu--upper')}>
 
-            <Link href={`/${locale}/contact`} >
+            <Link href={`/[lang]/contact`} as={`/${locale}/contact`} >
               <a>
                 {t('contact-page-caption')}
               </a>
             </Link>
-            <Link href={`/${locale}/newsroom`} >
+            <Link href={`/[lang]/newsroom`} as={`/${locale}/newsroom`} >
               <a>
                 {t('blog-page-caption')}
               </a>
@@ -83,7 +83,7 @@ const topbar = () => {
               {Object.keys(languageNames).map(key => {
                 if (languageNames[key]) {
                   return (
-                      <Link href={`/${key}/${page}`} key={key} passHref>
+                      <Link href={`/[lang]/${page}`} as={`/${key}/${page}`} key={key} passHref>
                         <NavDropdown.Item>
                           {languageNames[key]}
                         </NavDropdown.Item>
@@ -100,25 +100,25 @@ const topbar = () => {
   return (
       <div className={'topbar ' + (isTopbarFixed ? 'topbarFixed' : '')}>
         <div className="container">
-          <Link href={`/${locale}/contact/live-demo-request`} passHref>
+          <Link href={`/[lang]/contact/live-demo-request`} as={`/${locale}/contact/live-demo-request`} passHref>
             <a className={'btn btn-primary navbar-cta navbar-cta-first ' +
             (isTopbarFixed ? 'navbar-cta-fixed' : '')} >
               {t('topbar-live-demo')}
             </a>
           </Link>
-          <Link href={`/${locale}/contact/contact-me-request`} passHref>
+          <Link href={`/[lang]/contact/contact-me-request`} as={`/${locale}/contact/contact-me-request`} passHref>
             <a className={'btn btn-primary navbar-cta ' +
             (isTopbarFixed ? 'navbar-cta-fixed' : '')} >
               {t('topbar-contact-me')}
             </a>
           </Link>
 
-          <Link href={`/${locale}/contact`} >
+          <Link href={`/[lang]/contact`} as={`/${locale}/contact`} >
             <a>
               {t('contact-page-caption')}
             </a>
           </Link>
-          <Link href={`/${locale}/newsroom`} >
+          <Link href={`/[lang]/newsroom`} as={`/${locale}/newsroom`} >
             <a>
               {t('blog-page-caption')}
             </a>
@@ -131,7 +131,7 @@ const topbar = () => {
             {Object.keys(languageNames).map(key => {
               if (languageNames[key]) {
                 return (
-                    <Link href={`/${key}/${page}`} key={key} passHref>
+                    <Link href={`/[lang]/${page}`} as={`/${key}/${page}`} key={key} passHref>
                       <NavDropdown.Item>
                         {languageNames[key]}
                       </NavDropdown.Item>
