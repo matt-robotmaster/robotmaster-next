@@ -29,7 +29,7 @@ const navbar = () => {
               <Link href={`/[lang]/why-robotmaster`} as={`/${locale}/why-robotmaster`} passHref>
                 <Nav.Link className={classes.navbarNavLiA}>{t('why-page-caption')}</Nav.Link>
               </Link>
-              <Link href={`/[lang]/success-stories`} as={`/${locale}/success-stories`} passHref>
+              <Link href={`/${locale}/success-stories`} passHref>
                 <Nav.Link className={classes.navbarNavLiA}>{t('success-page-caption')}</Nav.Link>
               </Link>
               <Link href={`/[lang]/partners`} as={`/${locale}/partners`} passHref>

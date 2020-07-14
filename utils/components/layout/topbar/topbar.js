@@ -70,7 +70,7 @@ const topbar = () => {
                 {t('contact-page-caption')}
               </a>
             </Link>
-            <Link href={`/[lang]/newsroom`} as={`/${locale}/newsroom`} >
+            <Link href={`/${locale}/newsroom`} >
               <a>
                 {t('blog-page-caption')}
               </a>
@@ -118,7 +118,7 @@ const topbar = () => {
               {t('contact-page-caption')}
             </a>
           </Link>
-          <Link href={`/[lang]/newsroom`} as={`/${locale}/newsroom`} >
+          <Link href={`/${locale}/newsroom`}>
             <a>
               {t('blog-page-caption')}
             </a>

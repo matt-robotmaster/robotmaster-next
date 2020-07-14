@@ -52,7 +52,7 @@ const successStories = ({successStories}) => {
                     dangerouslySetInnerHTML={{
                       __html: story.summary,
                     }} />
-                <Link href={`/[lang]/success-stories/[id]`} as={`/${locale}/success-stories/${story.link}`}>
+                <Link href={`/${locale}/success-stories/${story.link}`}>
                   <a>
                     {t('general-read-full')}
                   </a>

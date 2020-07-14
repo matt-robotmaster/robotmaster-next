@@ -19,16 +19,16 @@ const footer = () => {
   }, {
     title: t('blog-page-caption'),
     list: [
-      [t('footer-newsroom-whatsnew'), `/[lang]/newsroom`, `/${locale}/newsroom`],
-      [t('success-page-caption'), `/[lang]/success-stories`, `/${locale}/success-stories`],
-      [t('success-section-2-title'), `/[lang]/success-stories#media`, `/${locale}/success-stories#media`],
+      [t('footer-newsroom-whatsnew'), `/${locale}/newsroom`, `/${locale}/newsroom`],
+      [t('success-page-caption'), `/${locale}/success-stories`, `/${locale}/success-stories`],
+      [t('success-section-2-title'), `/${locale}/success-stories#media`, `/${locale}/success-stories#media`],
     ],
   }, {
     title: t('products-page-caption'),
     list: [
-      [t('whats-new-v66-title'), `/[lang]/newsroom/[id]`, `/${locale}/newsroom/robotmaster-v7-offline-robot-programming-launch`],
-      [t('products-title-2'), `/[lang]/products#interactive`, `/${locale}/products#interactive`],
-      [t('products-title-3'), `/[lang]/products#main-features`, `/${locale}/products#main-features`],
+      [t('whats-new-v66-title'), `/${locale}/newsroom/robotmaster-v7-offline-robot-programming-launch`, `/${locale}/newsroom/robotmaster-v7-offline-robot-programming-launch`],
+      [t('products-title-2'), `/${locale}/products#interactive`, `/${locale}/products#interactive`],
+      [t('products-title-3'), `/${locale}/products#main-features`, `/${locale}/products#main-features`],
     ],
   }, {
     title: t('application-page-caption'),

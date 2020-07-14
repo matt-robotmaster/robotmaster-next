@@ -12,7 +12,7 @@ const ribbon = ({latestPost}) => {
       <Container className={classes.ribbon}>
         <Row>
           <Col lg={6} sm={12} className={classes.bannerSlideElement}>
-            <Link href={`/[lang]/newsroom`} as={`/${locale}/newsroom`} passHref>
+            <Link href={`/${locale}/newsroom`} passHref>
               <a className={classes.ribbonA} >
                 <div className={classes.imgContainer}>
                   <img alt='Latest News' className={`${classes.fixedImageImg} ${classes.imgContainerImg}`} src={latestPost.home} />
@@ -22,7 +22,7 @@ const ribbon = ({latestPost}) => {
             <h2 className={classes.ribbonH2}>
               {t('ribbon-heading-3')}
             </h2>
-            <Link href={`[lang]/newsroom`}  as={`/${locale}/newsroom`} passHref>
+            <Link href={`/${locale}/newsroom`} passHref>
               <a className={classes.ribbonA} >
                 {t('ribbon-desc-2')}
               </a>
